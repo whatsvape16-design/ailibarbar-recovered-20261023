@@ -1,0 +1,36 @@
+import { j as e } from "./react-vendor-R4T0bNIa.js";
+import { d as r } from "./icons-vendor-BquxQ5DR.js";
+function x({ items: s }) {
+  return s.length === 0
+    ? null
+    : e.jsxs("aside", {
+        className: "rounded-2xl border border-gold/25 bg-card/60 p-5 sm:p-6",
+        "aria-label": "Key takeaways",
+        children: [
+          e.jsx("h2", {
+            className: "text-lg sm:text-xl font-bold mb-4",
+            children: "Key takeaways",
+          }),
+          e.jsx("ul", {
+            className: "space-y-2",
+            children: s.map((a) =>
+              e.jsxs(
+                "li",
+                {
+                  className:
+                    "flex gap-2 text-sm sm:text-base text-muted-foreground",
+                  children: [
+                    e.jsx(r, {
+                      className: "w-4 h-4 mt-1 text-primary shrink-0",
+                    }),
+                    e.jsx("span", { children: a }),
+                  ],
+                },
+                a,
+              ),
+            ),
+          }),
+        ],
+      });
+}
+export { x as K };

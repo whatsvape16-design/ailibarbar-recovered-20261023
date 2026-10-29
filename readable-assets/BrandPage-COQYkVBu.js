@@ -1,0 +1,235 @@
+import { t as c, j as e, N as x, L as t } from "./react-vendor-R4T0bNIa.js";
+import {
+  u as p,
+  al as b,
+  S as h,
+  N as u,
+  Q as j,
+  F as f,
+} from "./index-Bwn3vGAd.js";
+import { e as g, f as N, C as v } from "./ContentByline-DZdt81X3.js";
+import { K as w } from "./KeyTakeaways-BS73GR4f.js";
+import { g as y } from "./brands-B75G25_B.js";
+import { a as k } from "./content-figures-Bki_EQx4.js";
+import { b as q } from "./ContentFigure-DsDVXXXr.js";
+import { e as A } from "./icons-vendor-BquxQ5DR.js";
+import "./query-vendor-L3kbwvGJ.js";
+import "./CatalogueImage-3ZWkwIDw.js";
+const E = () => {
+  p();
+  const { slug: i } = c(),
+    s = y(i);
+  if (!s) return e.jsx(x, { to: "/brands", replace: !0 });
+  const r = `/brands/${s.slug}`,
+    l = [
+      { name: "Home", path: "/" },
+      { name: "Brands", path: "/brands" },
+      { name: s.name, path: r },
+    ],
+    o = g(s.title, s.intro, s.quickAnswer),
+    m = N(s.knownFor),
+    d = b({
+      name: s.name,
+      title: s.title,
+      description: s.description,
+      path: r,
+      isOwn: s.isOwn,
+      breadcrumbs: l,
+      faq: s.faq,
+    });
+  return e.jsxs("div", {
+    className: "min-h-screen bg-background",
+    children: [
+      e.jsx(h, {
+        title: `${s.title} | Alibarbar Australia`,
+        description: s.description,
+        path: r,
+        jsonLd: d,
+      }),
+      e.jsx(u, {}),
+      e.jsx("main", {
+        className: "pt-[calc(6rem+env(safe-area-inset-top))] pb-16 sm:pb-24",
+        children: e.jsxs("article", {
+          className: "container max-w-3xl",
+          children: [
+            e.jsxs("nav", {
+              "aria-label": "Breadcrumb",
+              className: "text-sm text-muted-foreground mb-6",
+              children: [
+                e.jsx(t, {
+                  to: "/",
+                  className: "hover:text-primary",
+                  children: "Home",
+                }),
+                e.jsx("span", { className: "mx-2", children: "/" }),
+                e.jsx(t, {
+                  to: "/brands",
+                  className: "hover:text-primary",
+                  children: "Brands",
+                }),
+                e.jsx("span", { className: "mx-2", children: "/" }),
+                e.jsx("span", {
+                  className: "text-foreground",
+                  children: s.name,
+                }),
+              ],
+            }),
+            e.jsxs("header", {
+              className: "mb-8",
+              children: [
+                e.jsx("p", {
+                  className:
+                    "text-xs uppercase tracking-[0.25em] text-primary mb-3 font-semibold",
+                  children: s.isOwn ? "Our brand" : "Brand guide",
+                }),
+                e.jsx("h1", {
+                  className:
+                    "text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight",
+                  children: s.title,
+                }),
+                e.jsx(v, {
+                  datePublished: s.datePublished,
+                  dateModified: s.dateModified,
+                }),
+                e.jsx(j, { data: o }),
+                e.jsx("div", { className: "gold-divider mt-6 max-w-[6rem]" }),
+              ],
+            }),
+            e.jsx(q, { figures: k(s.slug) }),
+            e.jsx("div", {
+              className: "mb-10",
+              children: e.jsx(w, { items: m }),
+            }),
+            e.jsxs("section", {
+              className: "mb-10",
+              children: [
+                e.jsx("h2", {
+                  className: "text-xl sm:text-2xl font-bold mb-3",
+                  children: "Overview",
+                }),
+                e.jsx("div", {
+                  className:
+                    "space-y-3 text-muted-foreground leading-[1.75] text-sm sm:text-base",
+                  children: s.overview.map((a, n) =>
+                    e.jsx("p", { children: a }, n),
+                  ),
+                }),
+              ],
+            }),
+            e.jsxs("section", {
+              className: "mb-10",
+              children: [
+                e.jsx("h2", {
+                  className: "text-xl sm:text-2xl font-bold mb-3",
+                  children: "Known for",
+                }),
+                e.jsx("ul", {
+                  className: "space-y-2",
+                  children: s.knownFor.map((a) =>
+                    e.jsxs(
+                      "li",
+                      {
+                        className:
+                          "flex gap-2 text-sm sm:text-base text-muted-foreground",
+                        children: [
+                          e.jsx(A, {
+                            className: "w-4 h-4 mt-1 text-primary shrink-0",
+                          }),
+                          e.jsx("span", { children: a }),
+                        ],
+                      },
+                      a,
+                    ),
+                  ),
+                }),
+              ],
+            }),
+            e.jsxs("section", {
+              className: "mb-10",
+              children: [
+                e.jsx("h2", {
+                  className: "text-xl sm:text-2xl font-bold mb-3",
+                  children: s.isOwn ? "Positioning" : `${s.name} vs Alibarbar`,
+                }),
+                e.jsx("div", {
+                  className:
+                    "space-y-3 text-muted-foreground leading-[1.75] text-sm sm:text-base",
+                  children: s.positioning.map((a, n) =>
+                    e.jsx("p", { children: a }, n),
+                  ),
+                }),
+                s.compareSlug
+                  ? e.jsxs(t, {
+                      to: `/compare/${s.compareSlug}`,
+                      className:
+                        "inline-flex items-center gap-1 mt-4 text-sm font-semibold text-primary hover:text-gold",
+                      children: [
+                        "Full comparison: Alibarbar vs ",
+                        s.name,
+                        " →",
+                      ],
+                    })
+                  : null,
+              ],
+            }),
+            s.faq && s.faq.length > 0
+              ? e.jsxs("section", {
+                  className: "mb-10",
+                  children: [
+                    e.jsx("h2", {
+                      className: "text-xl sm:text-2xl font-bold mb-4",
+                      children: "Frequently asked questions",
+                    }),
+                    e.jsx("div", {
+                      className: "space-y-4",
+                      children: s.faq.map((a) =>
+                        e.jsxs(
+                          "div",
+                          {
+                            className:
+                              "rounded-xl border border-gold/20 bg-card/50 p-4",
+                            children: [
+                              e.jsx("h3", {
+                                className: "text-sm sm:text-base font-semibold",
+                                children: a.question,
+                              }),
+                              e.jsx("p", {
+                                className:
+                                  "mt-1 text-sm text-muted-foreground leading-relaxed",
+                                children: a.answer,
+                              }),
+                            ],
+                          },
+                          a.question,
+                        ),
+                      ),
+                    }),
+                  ],
+                })
+              : null,
+            e.jsxs("div", {
+              className:
+                "rounded-2xl border border-gold/25 bg-card/60 p-6 text-center",
+              children: [
+                e.jsx("p", {
+                  className: "text-sm text-muted-foreground mb-4",
+                  children: s.isOwn
+                    ? "Ready to shop the Alibarbar Ingot 9000?"
+                    : "Want to see what Alibarbar offers?",
+                }),
+                e.jsx(t, {
+                  to: "/flavours",
+                  className:
+                    "inline-flex items-center justify-center min-h-[48px] px-8 rounded-full bg-gold text-primary-foreground font-bold uppercase tracking-widest text-xs shadow-gold hover:opacity-95 transition",
+                  children: "Explore Alibarbar flavours",
+                }),
+              ],
+            }),
+          ],
+        }),
+      }),
+      e.jsx(f, {}),
+    ],
+  });
+};
+export { E as default };

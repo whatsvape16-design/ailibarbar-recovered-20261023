@@ -1,0 +1,56 @@
+import { j as r, L as t } from "./react-vendor-R4T0bNIa.js";
+import { ai as o, aj as n } from "./index-Bwn3vGAd.js";
+function f({ inPage: s = !1 }) {
+  const l = o();
+  return r.jsxs("nav", {
+    "aria-label": "Shop Alibarbar flavours by family",
+    className: "mb-8 sm:mb-10",
+    children: [
+      r.jsx("p", {
+        className:
+          "text-xs uppercase tracking-[0.2em] text-primary mb-3 font-semibold text-center sm:text-left",
+        children: "Shop by flavour",
+      }),
+      r.jsx("ul", {
+        className: "flex flex-wrap justify-center sm:justify-start gap-2",
+        children: l.map((e) => {
+          const a = n(e.family);
+          return r.jsx(
+            "li",
+            {
+              children: s
+                ? r.jsxs("a", {
+                    href: `#${a}`,
+                    className:
+                      "inline-flex items-center gap-1.5 min-h-[40px] px-3.5 py-2 rounded-full border border-gold/35 bg-card/50 text-xs sm:text-sm font-semibold hover:border-gold hover:bg-primary/10 transition-colors",
+                    children: [
+                      e.family,
+                      r.jsx("span", {
+                        className:
+                          "text-muted-foreground font-normal tabular-nums",
+                        children: e.flavours.length,
+                      }),
+                    ],
+                  })
+                : r.jsxs(t, {
+                    to: `/flavours#${a}`,
+                    className:
+                      "inline-flex items-center gap-1.5 min-h-[40px] px-3.5 py-2 rounded-full border border-gold/35 bg-card/50 text-xs sm:text-sm font-semibold hover:border-gold hover:bg-primary/10 transition-colors",
+                    children: [
+                      e.family,
+                      r.jsx("span", {
+                        className:
+                          "text-muted-foreground font-normal tabular-nums",
+                        children: e.flavours.length,
+                      }),
+                    ],
+                  }),
+            },
+            e.family,
+          );
+        }),
+      }),
+    ],
+  });
+}
+export { f as F };

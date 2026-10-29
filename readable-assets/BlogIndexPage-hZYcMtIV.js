@@ -1,0 +1,154 @@
+import { j as e, L as s } from "./react-vendor-R4T0bNIa.js";
+import {
+  u as l,
+  a1 as t,
+  S as i,
+  N as o,
+  am as n,
+  F as m,
+} from "./index-Bwn3vGAd.js";
+import { b as d } from "./blog-B2YumUDa.js";
+import { a2 as c, w as x } from "./icons-vendor-BquxQ5DR.js";
+import "./query-vendor-L3kbwvGJ.js";
+const f = () => {
+  l();
+  const r = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        name: "Alibarbar Australia Blog",
+        description:
+          "News, buying guides and flavour reviews for Alibarbar Ingot 9000 disposable vapes in Australia.",
+        url: "https://www.ailibarbar.com/blog",
+      },
+      t([
+        { name: "Home", path: "/" },
+        { name: "Blog", path: "/blog" },
+      ]),
+    ],
+  };
+  return e.jsxs("div", {
+    className: "min-h-screen bg-background",
+    children: [
+      e.jsx(i, {
+        title: "Vape Blog: Guides, Reviews & Tips | Alibarbar Australia",
+        description:
+          "The Alibarbar Australia blog — disposable vape buying guides, flavour reviews and practical tips for adult vapers in Australia.",
+        path: "/blog",
+        jsonLd: r,
+      }),
+      e.jsx(o, {}),
+      e.jsx("main", {
+        className: "pt-[calc(6rem+env(safe-area-inset-top))] pb-16 sm:pb-24",
+        children: e.jsxs("div", {
+          className: "container max-w-4xl",
+          children: [
+            e.jsxs("nav", {
+              "aria-label": "Breadcrumb",
+              className: "text-sm text-muted-foreground mb-6",
+              children: [
+                e.jsx(s, {
+                  to: "/",
+                  className: "hover:text-primary",
+                  children: "Home",
+                }),
+                e.jsx("span", { className: "mx-2", children: "/" }),
+                e.jsx("span", {
+                  className: "text-foreground",
+                  children: "Blog",
+                }),
+              ],
+            }),
+            e.jsxs("header", {
+              className: "mb-10 sm:mb-14 max-w-2xl",
+              children: [
+                e.jsx("p", {
+                  className:
+                    "text-xs uppercase tracking-[0.25em] text-primary mb-3 font-semibold",
+                  children: "Blog",
+                }),
+                e.jsxs("h1", {
+                  className:
+                    "text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight",
+                  children: [
+                    "Alibarbar ",
+                    e.jsx("span", { className: "text-gold", children: "blog" }),
+                  ],
+                }),
+                e.jsx("p", {
+                  className:
+                    "text-muted-foreground mt-4 text-sm sm:text-base leading-relaxed",
+                  children:
+                    "Buying guides, flavour reviews and practical tips for getting the most from your Alibarbar Ingot 9000.",
+                }),
+              ],
+            }),
+            e.jsx("div", {
+              className: "grid sm:grid-cols-2 gap-4 sm:gap-6",
+              children: d.map((a) =>
+                e.jsxs(
+                  s,
+                  {
+                    to: `/blog/${a.slug}`,
+                    className:
+                      "reveal group rounded-2xl border border-gold/20 bg-card/60 p-6 flex flex-col gap-3 hover:border-gold/50 transition-colors",
+                    children: [
+                      a.image
+                        ? e.jsx("div", {
+                            className:
+                              "-mx-6 -mt-6 mb-2 aspect-[16/9] overflow-hidden border-b border-gold/15 bg-background",
+                            children: e.jsx("img", {
+                              src: a.image,
+                              alt: n(a),
+                              loading: "lazy",
+                              className:
+                                "h-full w-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-500",
+                            }),
+                          })
+                        : null,
+                      e.jsxs("div", {
+                        className:
+                          "flex items-center gap-2 text-xs uppercase tracking-wide text-primary",
+                        children: [
+                          e.jsx(c, { className: "w-4 h-4" }),
+                          a.category,
+                          " · ",
+                          a.readTime,
+                        ],
+                      }),
+                      e.jsx("h2", {
+                        className:
+                          "text-lg font-bold leading-snug group-hover:text-primary transition-colors",
+                        children: a.title,
+                      }),
+                      e.jsx("p", {
+                        className:
+                          "text-sm text-muted-foreground leading-relaxed flex-1",
+                        children: a.description,
+                      }),
+                      e.jsxs("span", {
+                        className:
+                          "inline-flex items-center gap-1 text-sm font-semibold text-gold",
+                        children: [
+                          "Read article ",
+                          e.jsx(x, {
+                            className:
+                              "w-4 h-4 group-hover:translate-x-1 transition-transform",
+                          }),
+                        ],
+                      }),
+                    ],
+                  },
+                  a.slug,
+                ),
+              ),
+            }),
+          ],
+        }),
+      }),
+      e.jsx(m, {}),
+    ],
+  });
+};
+export { f as default };

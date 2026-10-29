@@ -1,0 +1,181 @@
+import { E as h, f as g } from "./export-orders-excel-D3FBk6DR.js";
+import "./react-vendor-R4T0bNIa.js";
+import "./custom-pack-CSh3X_LM.js";
+const b = [
+    "单量",
+    "订单日期",
+    "客户名称",
+    "电话",
+    "邮箱",
+    "街道地址",
+    "城市",
+    "州",
+    "邮编",
+    "国家",
+    "产品与数量",
+    "数量",
+    "总件数",
+    "订单备注",
+  ],
+  d = [
+    5.625, 9.375, 12, 12.875, 25.125, 19, 9, 6.75, 5.625, 9, 31.75, 9, 9, 14.5,
+  ],
+  p = { name: "Tahoma", size: 10, bold: !1 };
+function w(e) {
+  const n = new Set(),
+    t = [];
+  for (const i of e) n.has(i.orderNumber) || (n.add(i.orderNumber), t.push(i));
+  return t;
+}
+function N(e) {
+  return `${e.billing.firstName} ${e.billing.lastName}`.trim();
+}
+function S(e) {
+  return [e.billing.street, e.billing.apartment].filter(Boolean).join(", ");
+}
+function x(e) {
+  const n = e.date.trim(),
+    t = /^(\d{4})-(\d{2})-(\d{2})/.exec(n);
+  if (t)
+    return new Date(Number(t[1]), Number(t[2]) - 1, Number(t[3]), 0, 0, 0, 0);
+  const i = new Date(n);
+  return Number.isNaN(i.getTime())
+    ? n
+    : new Date(i.getFullYear(), i.getMonth(), i.getDate(), 0, 0, 0, 0);
+}
+function D(e) {
+  if (!(e != null && e.trim())) return "";
+  const n = e.replace(/\D/g, "");
+  if (!n) return e.trim();
+  let t = n;
+  if (
+    (t.startsWith("61") && t.length === 11 && (t = t.slice(2)),
+    t.startsWith("0") && t.length >= 9 && (t = t.replace(/^0+/, "")),
+    t.length > 15)
+  )
+    return n;
+  const i = Number(t);
+  return Number.isSafeInteger(i) ? i : t;
+}
+function E(e) {
+  if (!(e != null && e.trim())) return "";
+  const n = e.trim();
+  return /^\d{3,4}$/.test(n) ? Number(n) : n;
+}
+function k(e) {
+  const { label: n, total: t } = g(e);
+  return {
+    label: n
+      .split(
+        `
+`,
+      )
+      .map((r) =>
+        r
+          .replace(/^Alibarbar\s+Ingot\s+9000\s+/i, "")
+          .replace(/^Ingot\s+9000\s+/i, "")
+          .trim()
+          .toLowerCase(),
+      )
+      .filter(Boolean).join(`
+`),
+    total: t,
+  };
+}
+function v(e) {
+  var n, t;
+  return [
+    (n = e.notes) == null ? void 0 : n.trim(),
+    (t = e.adminNote) == null ? void 0 : t.trim(),
+  ].filter(Boolean).join(`
+`);
+}
+function T(e) {
+  const n = [[...b]];
+  return (
+    w(e).forEach((t, i) => {
+      const r = k(t);
+      n.push([
+        i + 1,
+        x(t),
+        N(t),
+        D(t.billing.phone),
+        t.billing.email ?? "",
+        S(t),
+        t.billing.suburb,
+        t.billing.state,
+        E(t.billing.postcode),
+        t.billing.country || "Australia",
+        r.label,
+        r.total,
+        r.total,
+        v(t),
+      ]);
+    }),
+    n
+  );
+}
+function y(e, n) {
+  const t = new Blob([e instanceof ArrayBuffer ? e : new Uint8Array(e)], {
+      type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    }),
+    i = URL.createObjectURL(t),
+    r = document.createElement("a");
+  ((r.href = i), (r.download = n), r.click(), URL.revokeObjectURL(i));
+}
+async function R(e, n) {
+  const t = new Date(),
+    i = (a) => String(a).padStart(2, "0"),
+    r = `${t.getFullYear()}-${i(t.getMonth() + 1)}-${i(t.getDate())}`,
+    c = new h.Workbook(),
+    o = c.addWorksheet("Sheet1");
+  (T(e).forEach((a, s) => {
+    const l = o.addRow(a);
+    if (
+      ((l.font = { ...p }),
+      (l.alignment = { vertical: "middle", horizontal: "left", wrapText: !0 }),
+      s === 0)
+    ) {
+      ((l.alignment = {
+        vertical: "middle",
+        horizontal: "center",
+        wrapText: !0,
+      }),
+        (l.height = 18));
+      return;
+    }
+    const f = String(a[10] ?? "")
+      .split(
+        `
+`,
+      )
+      .filter(Boolean).length;
+    l.height = Math.max(22, f * 15 + 8);
+    const u = l.getCell(2);
+    (a[1] instanceof Date && ((u.value = a[1]), (u.numFmt = "mm-dd-yy")),
+      (l.getCell(12).alignment = {
+        vertical: "middle",
+        horizontal: "center",
+        wrapText: !1,
+      }),
+      (l.getCell(13).alignment = {
+        vertical: "middle",
+        horizontal: "center",
+        wrapText: !1,
+      }));
+  }),
+    o.columns.forEach((a, s) => {
+      a.width = d[s] ?? 12;
+    }),
+    (o.views = [{ state: "frozen", ySplit: 1 }]));
+  const m = await c.xlsx.writeBuffer();
+  y(m, n ?? `${r.replace(/-/g, ".")}澳洲出货表.xlsx`);
+}
+export {
+  T as buildShipSheetRows,
+  R as exportOrders2026ShipExcel,
+  x as shipSheetDate,
+  k as shipSheetFlavourLabel,
+  D as shipSheetPhone,
+  E as shipSheetPostcode,
+};

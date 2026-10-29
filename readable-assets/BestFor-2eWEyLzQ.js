@@ -1,0 +1,76 @@
+import { j as s } from "./react-vendor-R4T0bNIa.js";
+import { d as r, X as t } from "./icons-vendor-BquxQ5DR.js";
+function m({ bestFor: l, avoidFor: a = [] }) {
+  return l.length === 0 && a.length === 0
+    ? null
+    : s.jsxs("div", {
+        className: "grid sm:grid-cols-2 gap-4",
+        children: [
+          l.length > 0
+            ? s.jsxs("aside", {
+                className:
+                  "rounded-2xl border border-gold/25 bg-card/60 p-5 sm:p-6",
+                "aria-label": "Who should buy",
+                children: [
+                  s.jsx("h2", {
+                    className: "text-lg sm:text-xl font-bold mb-4",
+                    children: "Best for",
+                  }),
+                  s.jsx("ul", {
+                    className: "space-y-2",
+                    children: l.map((e) =>
+                      s.jsxs(
+                        "li",
+                        {
+                          className:
+                            "flex gap-2 text-sm sm:text-base text-muted-foreground",
+                          children: [
+                            s.jsx(r, {
+                              className: "w-4 h-4 mt-1 text-primary shrink-0",
+                            }),
+                            s.jsx("span", { children: e }),
+                          ],
+                        },
+                        e,
+                      ),
+                    ),
+                  }),
+                ],
+              })
+            : null,
+          a.length > 0
+            ? s.jsxs("aside", {
+                className:
+                  "rounded-2xl border border-gold/20 bg-card/40 p-5 sm:p-6",
+                "aria-label": "Who should avoid",
+                children: [
+                  s.jsx("h2", {
+                    className: "text-lg sm:text-xl font-bold mb-4",
+                    children: "Not ideal for",
+                  }),
+                  s.jsx("ul", {
+                    className: "space-y-2",
+                    children: a.map((e) =>
+                      s.jsxs(
+                        "li",
+                        {
+                          className:
+                            "flex gap-2 text-sm sm:text-base text-muted-foreground",
+                          children: [
+                            s.jsx(t, {
+                              className: "w-4 h-4 mt-1 text-primary shrink-0",
+                            }),
+                            s.jsx("span", { children: e }),
+                          ],
+                        },
+                        e,
+                      ),
+                    ),
+                  }),
+                ],
+              })
+            : null,
+        ],
+      });
+}
+export { m as B };

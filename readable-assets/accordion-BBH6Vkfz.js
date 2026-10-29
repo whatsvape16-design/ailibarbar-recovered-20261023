@@ -1,0 +1,46 @@
+import { r, j as a } from "./react-vendor-R4T0bNIa.js";
+import {
+  t as m,
+  H as d,
+  v as i,
+  w as c,
+  x as l,
+} from "./ui-vendor-DvfZJg73.js";
+import { c as n } from "./utils-CytzSlOG.js";
+import { i as p } from "./icons-vendor-BquxQ5DR.js";
+const u = l,
+  f = r.forwardRef(({ className: e, ...s }, o) =>
+    a.jsx(m, { ref: o, className: n("border-b", e), ...s }),
+  );
+f.displayName = "AccordionItem";
+const x = r.forwardRef(({ className: e, children: s, ...o }, t) =>
+  a.jsx(d, {
+    className: "flex",
+    children: a.jsxs(i, {
+      ref: t,
+      className: n(
+        "flex flex-1 items-center justify-between min-h-[3rem] py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180",
+        e,
+      ),
+      ...o,
+      children: [
+        s,
+        a.jsx(p, {
+          className: "h-4 w-4 shrink-0 transition-transform duration-200",
+        }),
+      ],
+    }),
+  }),
+);
+x.displayName = i.displayName;
+const N = r.forwardRef(({ className: e, children: s, ...o }, t) =>
+  a.jsx(c, {
+    ref: t,
+    className:
+      "overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+    ...o,
+    children: a.jsx("div", { className: n("pb-4 pt-0", e), children: s }),
+  }),
+);
+N.displayName = c.displayName;
+export { u as A, f as a, x as b, N as c };

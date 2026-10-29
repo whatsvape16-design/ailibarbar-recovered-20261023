@@ -1,0 +1,638 @@
+{
+  "origin": "https://www.ailibarbar.com",
+  "captured_at": "2026-10-23T09:10:50.915677+00:00",
+  "referenced_media": 90,
+  "files": [
+    {
+      "path": "public/apple-touch-icon.png",
+      "url": "https://www.ailibarbar.com/apple-touch-icon.png",
+      "bytes": 35335,
+      "sha256": "3d7dd29e0b5618c55346920459bfe9b511757856adcbb09c1cbbf6cc2329e4d0",
+      "content_type": "image/png"
+    },
+    {
+      "path": "public/assets/custom-10-pack-320-CnNxiEFF.webp",
+      "url": "https://www.ailibarbar.com/assets/custom-10-pack-320-CnNxiEFF.webp",
+      "bytes": 5594,
+      "sha256": "76b67f3bf09134b14c706332c26cb503a0d62f0ab41ca1cec56d650a5954895f",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/custom-10-pack-DLnZd2LJ.webp",
+      "url": "https://www.ailibarbar.com/assets/custom-10-pack-DLnZd2LJ.webp",
+      "bytes": 13224,
+      "sha256": "93540d70dfd1f32d8e92e6ef6273eceb1f445a15353201b78a90fb92b9fe6b5c",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/custom-20-pack-320-tXZ9Y4DF.webp",
+      "url": "https://www.ailibarbar.com/assets/custom-20-pack-320-tXZ9Y4DF.webp",
+      "bytes": 7306,
+      "sha256": "981cd6901ec78334a9d9c6be900dba23b65e4e8085840640ef036272a6b994e9",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/custom-20-pack-BmMqEb_-.webp",
+      "url": "https://www.ailibarbar.com/assets/custom-20-pack-BmMqEb_-.webp",
+      "bytes": 16794,
+      "sha256": "8f2744288a0c0b15e281874fdcb74e7b567bd8ce7777dc7e20ab7befa9c961aa",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/custom-3-pack-320-cdsUZBBz.webp",
+      "url": "https://www.ailibarbar.com/assets/custom-3-pack-320-cdsUZBBz.webp",
+      "bytes": 3764,
+      "sha256": "6b96ab3875973b2086ddcfdc77b53c8dd6b592f674ad98cdfcdd3e485602f899",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/custom-3-pack-CeShM2I-.webp",
+      "url": "https://www.ailibarbar.com/assets/custom-3-pack-CeShM2I-.webp",
+      "bytes": 9324,
+      "sha256": "ba4b3fc1a9727a14f6afc8a9a18db5cd0ad2d6ee3ccbe77efafc81a6a515ca49",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/custom-5-pack-320-CPleeVv6.webp",
+      "url": "https://www.ailibarbar.com/assets/custom-5-pack-320-CPleeVv6.webp",
+      "bytes": 3834,
+      "sha256": "63c51828765e31613c8fdb51a322ca8b29ba3afd8cb5f922afd546a112773e53",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/custom-5-pack-BjTQ7qwE.webp",
+      "url": "https://www.ailibarbar.com/assets/custom-5-pack-BjTQ7qwE.webp",
+      "bytes": 8322,
+      "sha256": "fdc8ab9d2c3ec24ae8dbe6e429a4eb475adaefa23e033566898570d26a85ce7c",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-blackberry-320-DXbhenuX.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-blackberry-320-DXbhenuX.webp",
+      "bytes": 7730,
+      "sha256": "d07035b504dbb73a5a9b3f960fbe49f14efbe7091cf3fc5cb68ebd72e2b76c1d",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-blackberry-XDIIDJcU.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-blackberry-XDIIDJcU.webp",
+      "bytes": 7786,
+      "sha256": "3807e2f226699338d73ff9fd7604afa1f6909a457e0928911e5e3cfcfb52a41a",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-blueberry-blast-320-BJtrhnqL.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-blueberry-blast-320-BJtrhnqL.webp",
+      "bytes": 12148,
+      "sha256": "152da7f4b666505522b5765c3ad9e6b947617295e8d6385c6b43f383e6222915",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-blueberry-blast-D6ExQI8B.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-blueberry-blast-D6ExQI8B.webp",
+      "bytes": 35294,
+      "sha256": "3c57955be21eac1940644883886c8c62a85ffd3130e60ecc31fdecc1a09fc5ed",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-california-sunset-320-DEhf_OxX.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-california-sunset-320-DEhf_OxX.webp",
+      "bytes": 18082,
+      "sha256": "e4be60f471268dba7377f34b45706d1d5fa432a91164434065525fb195c547b3",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-california-sunset-CaGAdxtA.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-california-sunset-CaGAdxtA.webp",
+      "bytes": 47400,
+      "sha256": "a18cabe4d3d5b1ae02c2931f378c90b02609037c96a122e853cd6c2c22a32f04",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-grape-320-ufMFTI_6.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-grape-320-ufMFTI_6.webp",
+      "bytes": 9792,
+      "sha256": "866e9c848bf5dace842ec34fe4011135cc91a30fd5470ca1acb06a43d28e5717",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-grape-C_txX5ie.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-grape-C_txX5ie.webp",
+      "bytes": 9860,
+      "sha256": "d4e3636d0ee999f258b21b1913c6412a5d5be00cd001ca5e10730ea49df65048",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-mango-320-BAaKhFyr.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-mango-320-BAaKhFyr.webp",
+      "bytes": 6652,
+      "sha256": "4611f19560f01e04e5208ec8b9c6f660cb6d6169475ae5eb8382786d9aba6b9e",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-mango-DyxZn-ii.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-mango-DyxZn-ii.webp",
+      "bytes": 6694,
+      "sha256": "140ee1dd6bf331b412aee0c5f47945a6812cde010fdc903e1e62658ec573f5a3",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-peach-ice-320-D2mBW6SY.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-peach-ice-320-D2mBW6SY.webp",
+      "bytes": 9138,
+      "sha256": "1d3d9a500ee1383315bea4ee1938b3f5f188d27f084591c9a37a64872217f11b",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-peach-ice-DjEly06_.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-peach-ice-DjEly06_.webp",
+      "bytes": 23598,
+      "sha256": "f6ef01555b4a088be59bae2e12265ef985c0142a43b573200a17d7324cbb72cb",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-quadruple-berry-320-BhyBg9CX.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-quadruple-berry-320-BhyBg9CX.webp",
+      "bytes": 11620,
+      "sha256": "89b4fa999985dcd3cc7e489b5e2cd0c99e857730afb8302c2c24529877edef01",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-quadruple-berry-BxNrjGyN.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-quadruple-berry-BxNrjGyN.webp",
+      "bytes": 31108,
+      "sha256": "dfa5fae975448de5591fae6c00d341f875a7fb184a469cadf491c36b0ddede07",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-strawberry-coconut-watermelon-320-CqsHFoFL.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-strawberry-coconut-watermelon-320-CqsHFoFL.webp",
+      "bytes": 11564,
+      "sha256": "d76539b75eefe54c0be372a65e80a660aac631f8cead0f20dc541b352a3cf812",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-strawberry-coconut-watermelon-D4hkoGi8.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-strawberry-coconut-watermelon-D4hkoGi8.webp",
+      "bytes": 30836,
+      "sha256": "a47a4bfa4bdce764ed0801be988d98402b61f42539df5b7682223bfe289ab749",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-strawberry-ice-320-b-66pnkJ.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-strawberry-ice-320-b-66pnkJ.webp",
+      "bytes": 8324,
+      "sha256": "0c0596bc0a1f64ba5bbaeacd81ccf7a2a5823300171ca948998add0a63aaa2dd",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-strawberry-ice-BFNixDzT.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-strawberry-ice-BFNixDzT.webp",
+      "bytes": 8396,
+      "sha256": "d57b4af19e1b8d88d7254d7f418d6a28077787297cf0a9444e331b9adaae18a4",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-strawberry-lychee-320-do_P0o9D.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-strawberry-lychee-320-do_P0o9D.webp",
+      "bytes": 17162,
+      "sha256": "7f0d4b99093930090a4c0b464242d8899071da6774530851f30a68d09ade3e8f",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-strawberry-lychee-CxfMzWu4.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-strawberry-lychee-CxfMzWu4.webp",
+      "bytes": 54154,
+      "sha256": "4dacbecc6921a431ee894c878543969c7826900d2fef44e1f1f2ea6435ad9efc",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-strawberry-watermelon-320-B2pX75Sg.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-strawberry-watermelon-320-B2pX75Sg.webp",
+      "bytes": 9120,
+      "sha256": "322d216028177f53f178afe4458e9defdac12fe9b0dd6b0c14a368728d61b894",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/flavor-strawberry-watermelon-DHwq2fl_.webp",
+      "url": "https://www.ailibarbar.com/assets/flavor-strawberry-watermelon-DHwq2fl_.webp",
+      "bytes": 22198,
+      "sha256": "28576d87a48e29ffaae9438c018e457fcf0976f6b70cd7555560335c078cfc69",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/hero-device-320-CL_4g5r9.webp",
+      "url": "https://www.ailibarbar.com/assets/hero-device-320-CL_4g5r9.webp",
+      "bytes": 1916,
+      "sha256": "45f44734ad67e91efac70885bf8fbbd53449ec7ec1b9949b1c2becf7bd6c4568",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/hero-device-DmvuUYbE.webp",
+      "url": "https://www.ailibarbar.com/assets/hero-device-DmvuUYbE.webp",
+      "bytes": 4740,
+      "sha256": "31c9f1c985590d3251be6c8b692135b1d193484bb2b7708cfb4f695668c7c006",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/assets/logo-header-DO0Z60aF.webp",
+      "url": "https://www.ailibarbar.com/assets/logo-header-DO0Z60aF.webp",
+      "bytes": 6170,
+      "sha256": "d62be00106ef943f59abdb057853fc942cf0da1b8707ef29176ebbf2c74fe843",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/favicon-32x32.png",
+      "url": "https://www.ailibarbar.com/favicon-32x32.png",
+      "bytes": 1828,
+      "sha256": "a1eb76374a00122234cfa95dcb7f9b781deb28f7ee7f2e591ae6f6152a30c150",
+      "content_type": "image/png"
+    },
+    {
+      "path": "public/favicon-48x48.png",
+      "url": "https://www.ailibarbar.com/favicon-48x48.png",
+      "bytes": 3522,
+      "sha256": "b0d2c6f0f03ac6f6ff272e552fc973c12a5a69a041677d9169030c17970b023d",
+      "content_type": "image/png"
+    },
+    {
+      "path": "public/favicon-96x96.png",
+      "url": "https://www.ailibarbar.com/favicon-96x96.png",
+      "bytes": 11809,
+      "sha256": "43fe7f4eb6674bd23ee7afe2e6c8c516f3197617bbcf2d498dac2c2426b8c982",
+      "content_type": "image/png"
+    },
+    {
+      "path": "public/favicon.ico",
+      "url": "https://www.ailibarbar.com/favicon.ico",
+      "bytes": 6199,
+      "sha256": "2d2ee158894ac5901eeb89df2b9f5a76666357a62a5c989b9ad7567623297e7d",
+      "content_type": "image/x-icon"
+    },
+    {
+      "path": "public/favicon.png",
+      "url": "https://www.ailibarbar.com/favicon.png",
+      "bytes": 11809,
+      "sha256": "43fe7f4eb6674bd23ee7afe2e6c8c516f3197617bbcf2d498dac2c2426b8c982",
+      "content_type": "image/png"
+    },
+    {
+      "path": "public/hero-lcp-640.webp",
+      "url": "https://www.ailibarbar.com/hero-lcp-640.webp",
+      "bytes": 5918,
+      "sha256": "6112589ed0ce328e0e163e9c8cbe830be40df2b688977e1df841022003a83a35",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/hero-lcp.jpg",
+      "url": "https://www.ailibarbar.com/hero-lcp.jpg",
+      "bytes": 61687,
+      "sha256": "6bb7775ae54ac01e761b189fb69b9079bf8c3fb8d8621f95a80b7ce0cfcd21ef",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "public/hero-lcp.webp",
+      "url": "https://www.ailibarbar.com/hero-lcp.webp",
+      "bytes": 8556,
+      "sha256": "f812e7be70ba3474f19879742d4426fd30b4d5eec1a8a5d6438e3a8aab2b6c1f",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/hero-lcp-1500.webp",
+      "url": "https://www.ailibarbar.com/images/hero-lcp-1500.webp",
+      "bytes": 30284,
+      "sha256": "1848e898e3daad83f3b93233f2406aa9a24732447f86323a736c3b135d4433a4",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/ingot-9000-collection.webp",
+      "url": "https://www.ailibarbar.com/images/ingot-9000-collection.webp",
+      "bytes": 35750,
+      "sha256": "0930dc00f29dddb354689cf724205154d32898359d62be154e8215ba4d625f8c",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/ingot-9000-hero-pair.webp",
+      "url": "https://www.ailibarbar.com/images/ingot-9000-hero-pair.webp",
+      "bytes": 28982,
+      "sha256": "71c1b3c5b5567acf39dd4c4137cd4b23692d89180c6f7920270bd0a510ac527c",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/products/blueberry-blast-1500.webp",
+      "url": "https://www.ailibarbar.com/images/products/blueberry-blast-1500.webp",
+      "bytes": 249158,
+      "sha256": "80b66135ed071877adfb92058d06a86449e4d700c8a9b8e0fc5ff908e76a3d6a",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/products/california-sunset-1500.webp",
+      "url": "https://www.ailibarbar.com/images/products/california-sunset-1500.webp",
+      "bytes": 288100,
+      "sha256": "c705656cec1d772573d3da1242e95b0140e867e4eb7031d3874008970a64949a",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/products/custom-10-pack-1500.webp",
+      "url": "https://www.ailibarbar.com/images/products/custom-10-pack-1500.webp",
+      "bytes": 99810,
+      "sha256": "3e816465d04cd1ef7bd7786734cb87cffb89fc82a5601e382760df520f42de69",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/products/custom-20-pack-1500.webp",
+      "url": "https://www.ailibarbar.com/images/products/custom-20-pack-1500.webp",
+      "bytes": 129716,
+      "sha256": "b9212e7452da41cdc61304e5d25fad62665afc2f4b7bc8cf102cead18ff5653c",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/products/custom-3-pack-1500.webp",
+      "url": "https://www.ailibarbar.com/images/products/custom-3-pack-1500.webp",
+      "bytes": 52144,
+      "sha256": "ac74e8c40e0ed1f867a566c079efac4c7d209eec184e41a387310c013a8615af",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/products/custom-5-pack-1500.webp",
+      "url": "https://www.ailibarbar.com/images/products/custom-5-pack-1500.webp",
+      "bytes": 63958,
+      "sha256": "534b9c8e3205387a15d5ff9dd4f35d14961b017348e429c954496d15da63c391",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/products/peach-ice-1500.webp",
+      "url": "https://www.ailibarbar.com/images/products/peach-ice-1500.webp",
+      "bytes": 228940,
+      "sha256": "e863185ad6788ef0c309000e2dd06dfdfe7ce66a036b4112d31a63dffd96c351",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/products/quadruple-berry-1500.webp",
+      "url": "https://www.ailibarbar.com/images/products/quadruple-berry-1500.webp",
+      "bytes": 285958,
+      "sha256": "ec7b88c408aa3c76a1db2789577ea702fc949b70fc0f3bd9246687752515f75d",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/products/strawberry-coconut-watermelon-1500.webp",
+      "url": "https://www.ailibarbar.com/images/products/strawberry-coconut-watermelon-1500.webp",
+      "bytes": 251928,
+      "sha256": "5027b89f154b84e74b84e56e0df351676091a799cfd116482b036aa212c1512c",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/products/strawberry-lychee-1500.webp",
+      "url": "https://www.ailibarbar.com/images/products/strawberry-lychee-1500.webp",
+      "bytes": 351454,
+      "sha256": "eb48b055f076d2f255afa6ef11f88061e167f005ce2c417c650f7724949073c5",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/images/products/strawberry-watermelon-1500.webp",
+      "url": "https://www.ailibarbar.com/images/products/strawberry-watermelon-1500.webp",
+      "bytes": 194162,
+      "sha256": "24114dd2cca33f7821d421094f55ef39f1a4bff842660850ae10bf89fdd8e7c4",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/logo.png",
+      "url": "https://www.ailibarbar.com/logo.png",
+      "bytes": 235746,
+      "sha256": "f69a08b10a5d76b73d66462fa6c42bde993742ba273f18dadf3d55bbba2b8cc9",
+      "content_type": "image/png"
+    },
+    {
+      "path": "public/og-image.jpg",
+      "url": "https://www.ailibarbar.com/og-image.jpg",
+      "bytes": 77180,
+      "sha256": "a188973a33dec5fb3e2bc58971db37697078670783554318a13bea5177919c85",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "public/whatsapp-avatar.png",
+      "url": "https://www.ailibarbar.com/whatsapp-avatar.png",
+      "bytes": 20337,
+      "sha256": "4376f262cde4f13fd2832a618afb45672dbc89c10bf3150a5f2898de015019b5",
+      "content_type": "image/png"
+    },
+    {
+      "path": "public/whatsapp-qr.png",
+      "url": "https://www.ailibarbar.com/whatsapp-qr.png",
+      "bytes": 70650,
+      "sha256": "d35b424403f00d9bf2834e51e2302771d74f02be1d0370518a619df3c2307817",
+      "content_type": "image/png"
+    },
+    {
+      "path": "public/authenticity/packaging-reference.jpg",
+      "url": "https://www.ailibarbar.com/authenticity/packaging-reference.jpg",
+      "bytes": 209205,
+      "sha256": "c905ea1ee430cad82edd8202a65ae1d2c7748608f02228b2110282f57c31ce1c",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "public/blog/ingot-9000-10-pack.webp",
+      "url": "https://www.ailibarbar.com/blog/ingot-9000-10-pack.webp",
+      "bytes": 13224,
+      "sha256": "93540d70dfd1f32d8e92e6ef6273eceb1f445a15353201b78a90fb92b9fe6b5c",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-01-bag-of-devices.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-01-bag-of-devices.webp",
+      "bytes": 124882,
+      "sha256": "085492b76f0785000c31072cebf925861d45df80f91220aaf413e40a5202b30c",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-01.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-01.webp",
+      "bytes": 21512,
+      "sha256": "38528cb7be2eaf7bab5934b4c5b61034e2eb01e7a9e0c1296152b591aecd47a5",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-02-two-on-dark-wood.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-02-two-on-dark-wood.webp",
+      "bytes": 158056,
+      "sha256": "b2b5dd525a0fac86082f80da87099a09b2e7be699e05576fde124811f2159b59",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-02.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-02.webp",
+      "bytes": 14168,
+      "sha256": "6c749e27529ac5f57983901ef0aeffeda48d1a917f06604c49c554c50512649c",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-03.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-03.webp",
+      "bytes": 24828,
+      "sha256": "e723276fabd9cc7f3f83a646e47dd768d8f8be967e38dc4a54f5714cbc2f1021",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-04.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-04.webp",
+      "bytes": 19978,
+      "sha256": "9643f903064c7b00d62dfa11e2d5fd68b13e200d29c3cf6e41ec0d4303dae22f",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-05.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-05.webp",
+      "bytes": 9208,
+      "sha256": "4395a9a1a89230608e15b6317628d651a67f0fb118a132fff5aa53b57665b2b9",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-06-beside-box.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-06-beside-box.webp",
+      "bytes": 44320,
+      "sha256": "3c486d1946fba72a0efd2a77af0ad62b9d8ee928037049e058335526dde1926a",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-06.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-06.webp",
+      "bytes": 8062,
+      "sha256": "3836687f68fd8f147143a67590c2b41034b2cea39a91984de317bd510766ba16",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-07-on-box-desk-mat.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-07-on-box-desk-mat.webp",
+      "bytes": 180918,
+      "sha256": "f8f1da0d24819525179172240b884b16e6299cecba09430571a854f57d31c404",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-07.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-07.webp",
+      "bytes": 21732,
+      "sha256": "1d29a645e7b3487f6a22b1dd0931639fe628ce796c60a6a3394d61161f9d913c",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-08-car-console.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-08-car-console.webp",
+      "bytes": 73206,
+      "sha256": "9f1875ed6529cf1d273ae619ebdf2033fb45ee3b4f6a6c6ff64d693bcd512df3",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-08.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-08.webp",
+      "bytes": 21500,
+      "sha256": "aaf88ff3d263bcb3c826140a31ac5cdcd756094270f294eba619e0ecb7aa7dba",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-09-two-on-desk.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-09-two-on-desk.webp",
+      "bytes": 99690,
+      "sha256": "b050e17026980f8e85ee32e8b4eb0a3fba0f446829b8faddf27a3a2a76701417",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-09.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-09.webp",
+      "bytes": 12746,
+      "sha256": "7018635355fda9175b96eca3580adbd7c2d9cbf17a59a674c6163effcc33fef0",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-10-two-on-box.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-10-two-on-box.webp",
+      "bytes": 100418,
+      "sha256": "5838fcd3e9dd414b660d10e6f44f3831fcfbe6cb9a902fc735303f6af6a1d743",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-10.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-10.webp",
+      "bytes": 14236,
+      "sha256": "ec8a8f4e67008a413c894ac8134fd7b810d0dd610f292e1b943b621ed5fc48e4",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-11-hand-with-two.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-11-hand-with-two.webp",
+      "bytes": 41588,
+      "sha256": "14c930acc7d8f5b19971d490e6101d03529ab7456797980261e3ab001bf4e4b5",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-11.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-11.webp",
+      "bytes": 9906,
+      "sha256": "f3b8d10c92ca32230d3c2b8467418124f4bb29476818ee4387c45544643009df",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-12-open-hand.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-12-open-hand.webp",
+      "bytes": 29724,
+      "sha256": "7fc668c3e391f3fa8c52e083706eac2a063587c79477847be2db94bc887b44f8",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-12.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-12.webp",
+      "bytes": 9116,
+      "sha256": "eb7b08816ec152ee1d8a5628d4cadffa324ea389a126cac972df2d44a4b3b3c6",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-13-hand-holding-two.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-13-hand-holding-two.webp",
+      "bytes": 27166,
+      "sha256": "e936c953cd4ba4a13ede93763eeb7c010d13bc80f89e50ea066327d54f31de7d",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-13.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-13.webp",
+      "bytes": 7476,
+      "sha256": "0d449bcbf5dca0dbc037c16364f27fe35f9f6380d4a32086d742844c3adaaf73",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-14.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-14.webp",
+      "bytes": 14272,
+      "sha256": "49f9336c96c88ea004a81654d6d22d4811a30063cf168d88250039846b8d5c20",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-15.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-15.webp",
+      "bytes": 18672,
+      "sha256": "48d35ba48a45c9b2401df57200ac710a6845a0e274de65414aee6c2ea78c6f15",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-16.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-16.webp",
+      "bytes": 18324,
+      "sha256": "fc52381b7a350d92a474c987bec5260f0fbc507bc64a2e75f73073fd0d9ac4ca",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-17.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-17.webp",
+      "bytes": 15756,
+      "sha256": "49c0b4faf1e291a59394b77a8a06c731ab1d5ec76992fe5e4073b212b16e5959",
+      "content_type": "image/webp"
+    },
+    {
+      "path": "public/reviews/review-18.webp",
+      "url": "https://www.ailibarbar.com/reviews/review-18.webp",
+      "bytes": 14156,
+      "sha256": "9335b1554bf12a9cb2ac5e33fe3c12de69fdf9bb08d7a9a91c273cd8ccabf380",
+      "content_type": "image/webp"
+    }
+  ],
+  "errors": []
+}

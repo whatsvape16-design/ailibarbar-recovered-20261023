@@ -1,0 +1,695 @@
+{
+  "origin": "https://www.ailibarbar.com",
+  "captured_at": "2026-10-23T08:51:31.832886+00:00",
+  "scope": "Same-origin public HTML, JavaScript and CSS referenced by three pages and the discovered JS bundles.",
+  "files": [
+    {
+      "path": "public/assets/Admin2026Page-kxubGwC6.js",
+      "url": "https://www.ailibarbar.com/assets/Admin2026Page-kxubGwC6.js",
+      "bytes": 489227,
+      "sha256": "e2788c8261db2927aca4d9df88f9b7eed6ce4b142dfda83899c7648021d9c502",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/AdminOrdersPage-B-itYidd.js",
+      "url": "https://www.ailibarbar.com/assets/AdminOrdersPage-B-itYidd.js",
+      "bytes": 59368,
+      "sha256": "918052c2601a7116a169e6a509f4cd624806931c596c931a75470fdb5db44336",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/AuthModal-DnA7dnTh.js",
+      "url": "https://www.ailibarbar.com/assets/AuthModal-DnA7dnTh.js",
+      "bytes": 4724,
+      "sha256": "7bcc4f5750133506faf39c51374ac854ddfb9fdbf2d82bf0712fb012a9003eb3",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/AuthorPage-z3z3b8_c.js",
+      "url": "https://www.ailibarbar.com/assets/AuthorPage-z3z3b8_c.js",
+      "bytes": 6078,
+      "sha256": "42393e12413d2740166c36b13d3bf9ee625cb838dc372f288c810308d8bc52fd",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/BackAwareLink-Brjggm6m.js",
+      "url": "https://www.ailibarbar.com/assets/BackAwareLink-Brjggm6m.js",
+      "bytes": 407,
+      "sha256": "4ba067ecfe5203184fb588d84b5e0950ef1a23912e2012f3dc1cffd6940399a4",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/BestAlibarbarPage-BqqBKwXZ.js",
+      "url": "https://www.ailibarbar.com/assets/BestAlibarbarPage-BqqBKwXZ.js",
+      "bytes": 8427,
+      "sha256": "7d3ae107e370b61bb0b52bb6aad321695ab79d54bb33bff638f3f54f2cd7f9ff",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/BestFor-2eWEyLzQ.js",
+      "url": "https://www.ailibarbar.com/assets/BestFor-2eWEyLzQ.js",
+      "bytes": 1180,
+      "sha256": "9075c2a2fecc58402eb099cc86c522eb32505df20e4e34f5342329e61b7df2d3",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/BlogIndexPage-hZYcMtIV.js",
+      "url": "https://www.ailibarbar.com/assets/BlogIndexPage-hZYcMtIV.js",
+      "bytes": 3057,
+      "sha256": "5364423d50e81aac11584623f37c841f6653e3a35d8f23e9ea0dd66c0029e682",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/BlogPostPage-CO9BShFD.js",
+      "url": "https://www.ailibarbar.com/assets/BlogPostPage-CO9BShFD.js",
+      "bytes": 10397,
+      "sha256": "69124040efb789e1907afbe9f7f9d581d39d438dc3ca9349c06d1d556c8d3938",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/BrandKnowledgePage-DKVp6G8O.js",
+      "url": "https://www.ailibarbar.com/assets/BrandKnowledgePage-DKVp6G8O.js",
+      "bytes": 3719,
+      "sha256": "d38d1837972fa2d18f49568aba7c45cc7098754cc9d90fec35bb3602921f8054",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/BrandPage-COQYkVBu.js",
+      "url": "https://www.ailibarbar.com/assets/BrandPage-COQYkVBu.js",
+      "bytes": 4371,
+      "sha256": "9ad0f14b2ea335678983abc1adaaa822bcffdcf2e42958c71f2cce274adda1e5",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/BrandsIndexPage-Z4MluKRf.js",
+      "url": "https://www.ailibarbar.com/assets/BrandsIndexPage-Z4MluKRf.js",
+      "bytes": 2941,
+      "sha256": "f2e3a330f3870ca3b24b716be541c36c5153a16155a57b489a2eb8cf801281a4",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/CartPage-BOtxnPw0.js",
+      "url": "https://www.ailibarbar.com/assets/CartPage-BOtxnPw0.js",
+      "bytes": 6468,
+      "sha256": "cc23090412ffde8ba798f35baaf7bea306f86b75f0a8ace5528b941970c7046f",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/CatalogueImage-3ZWkwIDw.js",
+      "url": "https://www.ailibarbar.com/assets/CatalogueImage-3ZWkwIDw.js",
+      "bytes": 374,
+      "sha256": "562d7094cbcfb3d151c538f224c4a95a9f5ef06b934bec9dce83acb0e0a528c9",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/CheckoutPage-Bfv8WpO9.js",
+      "url": "https://www.ailibarbar.com/assets/CheckoutPage-Bfv8WpO9.js",
+      "bytes": 26856,
+      "sha256": "95e990416df0a18b464072b1f035ff2af2231b59ddfa2d902ac1dca9856b4061",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/CiteThis-BAlrQ0q4.js",
+      "url": "https://www.ailibarbar.com/assets/CiteThis-BAlrQ0q4.js",
+      "bytes": 615,
+      "sha256": "01c519dee3485c8d30f628c4c19e887bd3bbbcce86193aaa8b9d0efd5cec32e3",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/CompareIndexPage-bZb7sDgr.js",
+      "url": "https://www.ailibarbar.com/assets/CompareIndexPage-bZb7sDgr.js",
+      "bytes": 3091,
+      "sha256": "d94a72410cdc971560bd80fe72dea0c33dc9f168951bac8d7a67ae6a1c821949",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ComparePage-CAeCYmDJ.js",
+      "url": "https://www.ailibarbar.com/assets/ComparePage-CAeCYmDJ.js",
+      "bytes": 10124,
+      "sha256": "afcfc64c6b61bc1577997a8308ff2b7d59362f7a25bfd18e7c8d5513bd8f7ed1",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ContactPage-Brk_DlEG.js",
+      "url": "https://www.ailibarbar.com/assets/ContactPage-Brk_DlEG.js",
+      "bytes": 4387,
+      "sha256": "10c52fe8a1d6aafc245d29a16b97f9aaf7c57e4258ac9a9ded69eb472386d341",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ContentByline-DZdt81X3.js",
+      "url": "https://www.ailibarbar.com/assets/ContentByline-DZdt81X3.js",
+      "bytes": 3874,
+      "sha256": "ab15cd2b792b27f7468338325bdcabe1f3b2d957eab9ab423097dea52a20ad89",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ContentFigure-DsDVXXXr.js",
+      "url": "https://www.ailibarbar.com/assets/ContentFigure-DsDVXXXr.js",
+      "bytes": 1158,
+      "sha256": "44a35679214a279c5fb758447921a1987df4ac03825349ef347a130c57fdc8ec",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ContentHubLinks-D60vS9Nb.js",
+      "url": "https://www.ailibarbar.com/assets/ContentHubLinks-D60vS9Nb.js",
+      "bytes": 1770,
+      "sha256": "0c5e64c1ab17c0ca1d254f720497b28dab4941da11c66490cd6a5fbd54a27d09",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ContentPage-9RBwV0qb.js",
+      "url": "https://www.ailibarbar.com/assets/ContentPage-9RBwV0qb.js",
+      "bytes": 21534,
+      "sha256": "e476948fd89867f34696212b09c4952f406ad38861b1c1353df1b3bf52c757af",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/DocumentationPage-Cj6jQt9t.js",
+      "url": "https://www.ailibarbar.com/assets/DocumentationPage-Cj6jQt9t.js",
+      "bytes": 4738,
+      "sha256": "8cc4ad8d292b6ac35bf0213f842d9e7fc151fd28b899d62be4318c1ac0c81c4f",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/FaqPage-DPwhLO1K.js",
+      "url": "https://www.ailibarbar.com/assets/FaqPage-DPwhLO1K.js",
+      "bytes": 4799,
+      "sha256": "e3dd39ea955dd5f54131ea2d7137cbf928a9ea0ef47ca56a78357a8dc5d6ea38",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/FaqTopicPage-C_0hL062.js",
+      "url": "https://www.ailibarbar.com/assets/FaqTopicPage-C_0hL062.js",
+      "bytes": 3042,
+      "sha256": "b8ff5d13e9ee970ff047f8208d8158e7f6f11eb72acb4daa014438943518fe8f",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/Flavors-OiAJL5bF.js",
+      "url": "https://www.ailibarbar.com/assets/Flavors-OiAJL5bF.js",
+      "bytes": 5969,
+      "sha256": "d7e7dbc3f4c0e0da4d8ac78476dd01e561d8d591b9a106449e576b5ba8a7321c",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/FlavourFamilyNav-wkokEJYz.js",
+      "url": "https://www.ailibarbar.com/assets/FlavourFamilyNav-wkokEJYz.js",
+      "bytes": 1284,
+      "sha256": "10275b8c1344f157443be239897715240346736fd05eb8f606acf90320fb0d2b",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/FlavourPage-Z-MMlTZZ.js",
+      "url": "https://www.ailibarbar.com/assets/FlavourPage-Z-MMlTZZ.js",
+      "bytes": 9695,
+      "sha256": "df7ec9bb664e55cc65328a368e9d4400ff2fdf2cac68db261b142220a351d7e7",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/FlavoursIndexPage-Ci67HC4q.js",
+      "url": "https://www.ailibarbar.com/assets/FlavoursIndexPage-Ci67HC4q.js",
+      "bytes": 12614,
+      "sha256": "dfdea64acef0595e643822dbf1e3b21d33ef5cd1c16fc12f569b93e524ae9ab1",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/GuidePage-KMzx5wp6.js",
+      "url": "https://www.ailibarbar.com/assets/GuidePage-KMzx5wp6.js",
+      "bytes": 7121,
+      "sha256": "aa1bf6202861179934b99e079af847451a3e7570b329cc81e49305f3bf691cde",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/GuidesIndexPage-BwAbP6AT.js",
+      "url": "https://www.ailibarbar.com/assets/GuidesIndexPage-BwAbP6AT.js",
+      "bytes": 2962,
+      "sha256": "953562c7f7f3c49f5cfbf42d6281b9095eb5e0d6979a9032bc34c5b886af6cc2",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/HomeBelowFold-DJrATJxJ.js",
+      "url": "https://www.ailibarbar.com/assets/HomeBelowFold-DJrATJxJ.js",
+      "bytes": 31383,
+      "sha256": "a5cec9e7adbb5ba4d186f2f1902f97e76d50a32ca7c925c3a41a9769b9e7ce61",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/Ingot9000Page-o_3ymPIb.js",
+      "url": "https://www.ailibarbar.com/assets/Ingot9000Page-o_3ymPIb.js",
+      "bytes": 22400,
+      "sha256": "d405c1c8513212180050b5f2fe3be6a3a12ee17fba75befc90b556b174e92405",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/IngotPackBuilder-duO6IeYR.js",
+      "url": "https://www.ailibarbar.com/assets/IngotPackBuilder-duO6IeYR.js",
+      "bytes": 3457,
+      "sha256": "4c81f4f2a34150d036d22a9b1b780e6b1d9b0531cf2a7cedccad7812d985f447",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/IngotSpecStrip-DlvK-vKx.js",
+      "url": "https://www.ailibarbar.com/assets/IngotSpecStrip-DlvK-vKx.js",
+      "bytes": 1049,
+      "sha256": "b60d038f543d5fede8a765bd4752203346975c97fbbacee7ea50b2a167d43fd9",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/KeyTakeaways-BS73GR4f.js",
+      "url": "https://www.ailibarbar.com/assets/KeyTakeaways-BS73GR4f.js",
+      "bytes": 602,
+      "sha256": "2f5a07f0e380c2fbbfeab9bf23795a72be8b08d37f324df8c2b30ef50ae97c75",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ManufacturerVerifyText-Dr_h7BDx.js",
+      "url": "https://www.ailibarbar.com/assets/ManufacturerVerifyText-Dr_h7BDx.js",
+      "bytes": 453,
+      "sha256": "9e8b240055927fe756941fe304097651d94e2418373a34e4d96d0f8b5275d535",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/OrderCompletePage-DLJTBF38.js",
+      "url": "https://www.ailibarbar.com/assets/OrderCompletePage-DLJTBF38.js",
+      "bytes": 16952,
+      "sha256": "53f2e2fb8d394695593bd9fb75e077eaa6f9edddf799d566313a0638355eeefe",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/OrderShipmentPanel-ZN9lerFj.js",
+      "url": "https://www.ailibarbar.com/assets/OrderShipmentPanel-ZN9lerFj.js",
+      "bytes": 24396,
+      "sha256": "9a0a8b4e792312070f51c651af6ce68012713d010d94b55a7090c9ac9af685df",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/PriceHubLinks-DMmxDbNF.js",
+      "url": "https://www.ailibarbar.com/assets/PriceHubLinks-DMmxDbNF.js",
+      "bytes": 1072,
+      "sha256": "a6c32b0301ce506be9909046be3e6ce1b917bb178415e81121cddf304762a28c",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ProductPage-DbRlzwtJ.js",
+      "url": "https://www.ailibarbar.com/assets/ProductPage-DbRlzwtJ.js",
+      "bytes": 25546,
+      "sha256": "7c8fe8590c74ca3fc152047b14affaadd3c11c9f0533cbb92e4e52cd1bc309d9",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ProductPrice-BJiKzrJ6.js",
+      "url": "https://www.ailibarbar.com/assets/ProductPrice-BJiKzrJ6.js",
+      "bytes": 586,
+      "sha256": "052318496ddba4b5f5fa37c1042934572499a6bd8ed0430d93bcc6d15fb363d4",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ResearchIndexPage-BV5lt9yE.js",
+      "url": "https://www.ailibarbar.com/assets/ResearchIndexPage-BV5lt9yE.js",
+      "bytes": 2716,
+      "sha256": "976bc423015e7c761188000d4e4076e6857da4c9dccc437934ed384807194b51",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ResearchPage-CcioMRDE.js",
+      "url": "https://www.ailibarbar.com/assets/ResearchPage-CcioMRDE.js",
+      "bytes": 4508,
+      "sha256": "d7b0cc17192ea1daf580edbf68453e6f1a564ddd3087852b0fd93f8fda74706e",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ResetPasswordPage-BfJnNfCz.js",
+      "url": "https://www.ailibarbar.com/assets/ResetPasswordPage-BfJnNfCz.js",
+      "bytes": 2460,
+      "sha256": "32d81e1c7d008c9e5e08a9f73193834a06ae059090d1694a2aa5fdf3e3923a53",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ReviewForm-DbPvxTEy.js",
+      "url": "https://www.ailibarbar.com/assets/ReviewForm-DbPvxTEy.js",
+      "bytes": 22301,
+      "sha256": "98faf3615636b4b97418bbefc15e1d156f57e119b3432fb719437af2dcde3901",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ReviewPage-CZie62aj.js",
+      "url": "https://www.ailibarbar.com/assets/ReviewPage-CZie62aj.js",
+      "bytes": 9567,
+      "sha256": "034222303829409b4da39b743b0039ce5ddfa6d4b659e54c92284d698b407447",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ReviewsIndexPage-D9hYEivi.js",
+      "url": "https://www.ailibarbar.com/assets/ReviewsIndexPage-D9hYEivi.js",
+      "bytes": 3759,
+      "sha256": "72e14becc392f97c73decc4aac18f09ca8a004ea13d05fae496f46713d936806",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/SearchPage-DmdLexnC.js",
+      "url": "https://www.ailibarbar.com/assets/SearchPage-DmdLexnC.js",
+      "bytes": 3982,
+      "sha256": "91fe6e30e16e10b67a734294e4a938ff6ed494e3791d1a0fb9d7c0adc7263a68",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ShopPage-BrJcnfcf.js",
+      "url": "https://www.ailibarbar.com/assets/ShopPage-BrJcnfcf.js",
+      "bytes": 5126,
+      "sha256": "b84042d9fae4799bfd3d0e660afcd816078d2e15aeab6cce3b510cba9278224a",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/SyndicationPage-UjBzq83e.js",
+      "url": "https://www.ailibarbar.com/assets/SyndicationPage-UjBzq83e.js",
+      "bytes": 8781,
+      "sha256": "7377daf6e082d0f759dadc4ef745e124fc56da4eaf9bdc82a151f8fc74540b99",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/TaiwanSisterStorePage-Oyztbs3A.js",
+      "url": "https://www.ailibarbar.com/assets/TaiwanSisterStorePage-Oyztbs3A.js",
+      "bytes": 4329,
+      "sha256": "e2a0f381cf19a3006f5beef69e984940c1204e24b7ce185329e52943df9d79c0",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/TopicPage-CIAFu2Z3.js",
+      "url": "https://www.ailibarbar.com/assets/TopicPage-CIAFu2Z3.js",
+      "bytes": 5567,
+      "sha256": "b11f6c245ec50b4d69557d2f5d1f71ea094af7a988dd883a50c71b09143fb5c4",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/TopicsIndexPage-DCv9EYyx.js",
+      "url": "https://www.ailibarbar.com/assets/TopicsIndexPage-DCv9EYyx.js",
+      "bytes": 2869,
+      "sha256": "1ab72b74bf223adb7273547bd2a0524d7e574b95e6f36b71ed0abac0f1c6ad6e",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/WhatsAppFloat-Dd-HVPgS.js",
+      "url": "https://www.ailibarbar.com/assets/WhatsAppFloat-Dd-HVPgS.js",
+      "bytes": 3374,
+      "sha256": "a8cb40aea81912bc1a6e063452bb2f70868280e11e606a8ceeaa70d58a79e225",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/WhatsAppQrPage-BZo7fXtw.js",
+      "url": "https://www.ailibarbar.com/assets/WhatsAppQrPage-BZo7fXtw.js",
+      "bytes": 3309,
+      "sha256": "0da3200e9368948c160760d17c3d1c1a7031d937c92b4ca093b4c3dbec2a0e06",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/WholesalePage-Btg2Ha0H.js",
+      "url": "https://www.ailibarbar.com/assets/WholesalePage-Btg2Ha0H.js",
+      "bytes": 19125,
+      "sha256": "865f73940d655fa6e1b8ac77ad4c72e479840170b6afc0a3718c5163e1bc3f0c",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/accordion-BBH6Vkfz.js",
+      "url": "https://www.ailibarbar.com/assets/accordion-BBH6Vkfz.js",
+      "bytes": 1062,
+      "sha256": "f118c19a1c36692b1db9ab697ec11344e49aca44da40bb24294c08411d6fa496",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/australia-B23Bxbja.js",
+      "url": "https://www.ailibarbar.com/assets/australia-B23Bxbja.js",
+      "bytes": 1016,
+      "sha256": "77ae7f17b1023f600b889270be8b8e1324cfbdb72ae76ccf5b8020aa0baa83bf",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/best-alibarbar-Bj86B0m0.js",
+      "url": "https://www.ailibarbar.com/assets/best-alibarbar-Bj86B0m0.js",
+      "bytes": 8334,
+      "sha256": "06e99fbfbc46fe9d2400d3559546c5981cd214a4c7922390adfca7a054ac4196",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/blog-B2YumUDa.js",
+      "url": "https://www.ailibarbar.com/assets/blog-B2YumUDa.js",
+      "bytes": 147358,
+      "sha256": "7b5156447391dbcdcd693a9b78f07473723a69fd76f7e1ec1b05822b1ddd8f95",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/brand-knowledge-CHUGPLTm.js",
+      "url": "https://www.ailibarbar.com/assets/brand-knowledge-CHUGPLTm.js",
+      "bytes": 8524,
+      "sha256": "e3d87acd01419a9d4e33e97f05ca171ce1a9a3fd315a7fe228784058721128a8",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/brands-B75G25_B.js",
+      "url": "https://www.ailibarbar.com/assets/brands-B75G25_B.js",
+      "bytes": 11261,
+      "sha256": "06d2a910523fe6436ba3e7334658bcf6568488b8557a0a9281ae0c6946271714",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/button-DuRxsHai.js",
+      "url": "https://www.ailibarbar.com/assets/button-DuRxsHai.js",
+      "bytes": 1334,
+      "sha256": "9a75f5b8fcd1921aedb3cd8bb23b4e9d351dc280119abd147b5bb91544ce6320",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/checkbox-Bzjvod8r.js",
+      "url": "https://www.ailibarbar.com/assets/checkbox-Bzjvod8r.js",
+      "bytes": 912,
+      "sha256": "21502ae624af90a2d37563f7e7c49a48a4527c4d766355da7ed044a02face8ca",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/checkout-DPIwGQ19.js",
+      "url": "https://www.ailibarbar.com/assets/checkout-DPIwGQ19.js",
+      "bytes": 711,
+      "sha256": "c3d100140e58bc573bb7ec8712aa3b1f834fc134e44ed54750260ebbee8ebd25",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/citations-DtahB83O.js",
+      "url": "https://www.ailibarbar.com/assets/citations-DtahB83O.js",
+      "bytes": 3289,
+      "sha256": "0ca4a3c2f1c3e457e8d11e82ca018378c489be256979cfde297f8b79b456808d",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/comparisons-BN826Jyq.js",
+      "url": "https://www.ailibarbar.com/assets/comparisons-BN826Jyq.js",
+      "bytes": 32300,
+      "sha256": "f62672825e4c31590066f2473f5cca0ad4580d4bfccaaec3457bb5fb55f65cf7",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/content-figures-Bki_EQx4.js",
+      "url": "https://www.ailibarbar.com/assets/content-figures-Bki_EQx4.js",
+      "bytes": 3831,
+      "sha256": "f09ed8727284fd0ddb65a621781695b0d4b8d5798151a44c0efdc87f9226b648",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/custom-pack-CSh3X_LM.js",
+      "url": "https://www.ailibarbar.com/assets/custom-pack-CSh3X_LM.js",
+      "bytes": 815,
+      "sha256": "7a26e56fbedeb640c87f686f09d9d823a0e369453ac970d272c5148c15d220d9",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/dialog-Czj21GWi.js",
+      "url": "https://www.ailibarbar.com/assets/dialog-Czj21GWi.js",
+      "bytes": 2231,
+      "sha256": "4c5d011b9990a20c633502243d3cf47172b8d152b4fbfa1fe93e37115e170a77",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/export-orders-excel-D3FBk6DR.js",
+      "url": "https://www.ailibarbar.com/assets/export-orders-excel-D3FBk6DR.js",
+      "bytes": 942022,
+      "sha256": "b08d5a82482aa2e5b8f3897396cdf0f133d3ac3cd50d2e9fd4e9b5c8137d4ab9",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/export-orders2026-excel-fza839z9.js",
+      "url": "https://www.ailibarbar.com/assets/export-orders2026-excel-fza839z9.js",
+      "bytes": 3214,
+      "sha256": "ab56bd772064bf43884d92e2b3185df3af9fcfcd376de492ad03d713dde36b84",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/faq-topics-BsVQeyl5.js",
+      "url": "https://www.ailibarbar.com/assets/faq-topics-BsVQeyl5.js",
+      "bytes": 20543,
+      "sha256": "c6bf7cdb84681e9a7acaa889e287635ad0c2a5f2ec8b08f7740416603dc828aa",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/hub-link-GeK-zZMD.js",
+      "url": "https://www.ailibarbar.com/assets/hub-link-GeK-zZMD.js",
+      "bytes": 2023,
+      "sha256": "279d0caa378979239a754e01d00fc5b1aba8068d5a4a882ada0db03e2d6ee83d",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/icons-vendor-BquxQ5DR.js",
+      "url": "https://www.ailibarbar.com/assets/icons-vendor-BquxQ5DR.js",
+      "bytes": 27076,
+      "sha256": "9ad59784019d1cfbec2691599f17ac95d3803d4923776fee011b03dd76d2bd43",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/index-BWHxTCve.css",
+      "url": "https://www.ailibarbar.com/assets/index-BWHxTCve.css",
+      "bytes": 117457,
+      "sha256": "e1549dd34a53b775eef4f95cc742d2d1056a3bbca1aa0a14cb5a65d4291868d5",
+      "content_type": "text/css"
+    },
+    {
+      "path": "public/assets/index-Bwn3vGAd.js",
+      "url": "https://www.ailibarbar.com/assets/index-Bwn3vGAd.js",
+      "bytes": 275989,
+      "sha256": "ae0aec6725999a7c3f737aeea2c11ab1a84a3f9724db4b29fdb6d971819b8d80",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/index-BwobEAja.js",
+      "url": "https://www.ailibarbar.com/assets/index-BwobEAja.js",
+      "bytes": 797,
+      "sha256": "721ad57cd1b31d8d017454ee6a813eeb7ec39ea0d91dbed6112dcb76c79d06a8",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ingot-hub-CmU4AF5o.js",
+      "url": "https://www.ailibarbar.com/assets/ingot-hub-CmU4AF5o.js",
+      "bytes": 8179,
+      "sha256": "d670848b10e639afbad5c359a997e90d96a1a5df296ff7c35233415e05c2060e",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/label--J037EDp.js",
+      "url": "https://www.ailibarbar.com/assets/label--J037EDp.js",
+      "bytes": 932,
+      "sha256": "690c1d5603f67c67012479c3d28990d3a6f1979b7392bb90c448cfc061d2122f",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/orders-api-BZUM9ZAd.js",
+      "url": "https://www.ailibarbar.com/assets/orders-api-BZUM9ZAd.js",
+      "bytes": 7741,
+      "sha256": "fd6f1e70522dc2b462e35d13d18abd6f5a846cce3659d4a2b246deb04c8c64f8",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/query-vendor-L3kbwvGJ.js",
+      "url": "https://www.ailibarbar.com/assets/query-vendor-L3kbwvGJ.js",
+      "bytes": 39186,
+      "sha256": "434d7d0a82da6c52a2fb74be12f0b91d6a6309eb548c0230c081055fcb185626",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/react-vendor-R4T0bNIa.js",
+      "url": "https://www.ailibarbar.com/assets/react-vendor-R4T0bNIa.js",
+      "bytes": 187622,
+      "sha256": "bb0e3948f5320b64bd111b6ca259f922d5fedd8dfaa8ce1cb489c95b0de47785",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/research-GE_y4zKV.js",
+      "url": "https://www.ailibarbar.com/assets/research-GE_y4zKV.js",
+      "bytes": 8349,
+      "sha256": "6efed052c68e90755039036471c31b48cf2dcca5d1c4604697e7ec4d3944fc3e",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/reviews-DJ7_M9DW.js",
+      "url": "https://www.ailibarbar.com/assets/reviews-DJ7_M9DW.js",
+      "bytes": 34805,
+      "sha256": "9c7a6256e472fe7bbc7bfd0d87d586439f3c1f56d15572eeb87cea82fa2f9703",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/reviews-api-CwdLLAEm.js",
+      "url": "https://www.ailibarbar.com/assets/reviews-api-CwdLLAEm.js",
+      "bytes": 2479,
+      "sha256": "7cb487db9c0be182c1e50a4ba237b6ebc35b4193dfce46a5f33aaf75891466a7",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/select-CFS8SIyg.js",
+      "url": "https://www.ailibarbar.com/assets/select-CFS8SIyg.js",
+      "bytes": 3052,
+      "sha256": "4805dc692a15001f96b120795d925bd9f5d032aea984e3859bfbba649ef6e7c0",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/sonner-BKvM7BHG.js",
+      "url": "https://www.ailibarbar.com/assets/sonner-BKvM7BHG.js",
+      "bytes": 2048,
+      "sha256": "5b26b9326222ccf7cc320ceafb011932e409f74806b3d8cbad801498e0830067",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/textarea-v45I66dK.js",
+      "url": "https://www.ailibarbar.com/assets/textarea-v45I66dK.js",
+      "bytes": 535,
+      "sha256": "774ca411d0c5916dc5f4abb853be8c826287791cc967428ebb3b4ac6a9392017",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/toaster-DE1gW70d.js",
+      "url": "https://www.ailibarbar.com/assets/toaster-DE1gW70d.js",
+      "bytes": 4330,
+      "sha256": "726aafb52193abb5d7d36f6cef80efb24e25177abef369abe030e608b7752c34",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/topics-Ct7Ly1mH.js",
+      "url": "https://www.ailibarbar.com/assets/topics-Ct7Ly1mH.js",
+      "bytes": 17888,
+      "sha256": "458a31117ecf1bc4b873d0cb3a7c0d3893545af7df8b82db7d21f426b0fb1ea2",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/ui-vendor-DvfZJg73.js",
+      "url": "https://www.ailibarbar.com/assets/ui-vendor-DvfZJg73.js",
+      "bytes": 115939,
+      "sha256": "56822ab88627150d8cafb54fd5af7e222324d5563e1ed0c338b9d07dc5d271ef",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/assets/utils-CytzSlOG.js",
+      "url": "https://www.ailibarbar.com/assets/utils-CytzSlOG.js",
+      "bytes": 20318,
+      "sha256": "848558ccc9f28606deffff78746bb6e8f28da1c0502d424fab855622afc8b4fd",
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "public/guides/index.html",
+      "url": "https://www.ailibarbar.com/guides",
+      "bytes": 81784,
+      "sha256": "72f5b31eb1e44288dea09c1e521327d33c192c869acba90381ca0476c99e2084",
+      "content_type": "text/html"
+    },
+    {
+      "path": "public/index.html",
+      "url": "https://www.ailibarbar.com/",
+      "bytes": 316787,
+      "sha256": "cf221850954178c1b8b9640fd9359cce4414aa7304156f91d67ab0f2cbfe524e",
+      "content_type": "text/html"
+    },
+    {
+      "path": "public/ingot-9000/index.html",
+      "url": "https://www.ailibarbar.com/ingot-9000",
+      "bytes": 175408,
+      "sha256": "900da00147db5b92c9ecd78308961afeedd962b798d8b258d5a20f621fb017ee",
+      "content_type": "text/html"
+    }
+  ],
+  "errors": [],
+  "verification_note": "All 95 hashed JS/CSS references discovered in the saved files were present locally. The initial scanner also saw 19 package-internal relative filenames; these were not website assets and were excluded."
+}

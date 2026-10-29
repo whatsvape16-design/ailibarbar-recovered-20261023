@@ -1,0 +1,372 @@
+import { j as e, L as l } from "./react-vendor-R4T0bNIa.js";
+import {
+  d as b,
+  S as j,
+  N as g,
+  o as t,
+  l as f,
+  q as x,
+  F as N,
+} from "./index-Bwn3vGAd.js";
+import { B as r } from "./button-DuRxsHai.js";
+import { s as u, S as v, a as y, o as w } from "./checkout-DPIwGQ19.js";
+import { d as k } from "./custom-pack-CSh3X_LM.js";
+import { b as C, c as S, h as q } from "./icons-vendor-BquxQ5DR.js";
+import "./query-vendor-L3kbwvGJ.js";
+import "./ui-vendor-DvfZJg73.js";
+import "./index-BwobEAja.js";
+import "./utils-CytzSlOG.js";
+const E = () => {
+  const {
+      lines: i,
+      deviceCount: a,
+      subtotal: d,
+      setLineQty: o,
+      removeLine: h,
+    } = b(),
+    m = i.length > 0,
+    c = w(d, a),
+    n = y(a);
+  return e.jsxs("div", {
+    className: "min-h-screen bg-background",
+    children: [
+      e.jsx(j, {
+        title: "Cart | Alibarbar Australia",
+        description: "Review your Alibarbar Australia cart before checkout.",
+        path: "/cart",
+        noindex: !0,
+      }),
+      e.jsx(g, {}),
+      e.jsxs("main", {
+        className:
+          "container pt-[calc(5rem+env(safe-area-inset-top))] sm:pt-[calc(6rem+env(safe-area-inset-top))] pb-28 sm:pb-20 lg:pb-20",
+        children: [
+          e.jsxs("nav", {
+            className: "text-sm text-muted-foreground mb-6",
+            "aria-label": "Checkout steps",
+            children: [
+              e.jsx("span", {
+                className:
+                  "text-foreground font-medium underline underline-offset-4",
+                children: "Shopping Cart",
+              }),
+              e.jsx("span", { className: "mx-2", children: "→" }),
+              e.jsx(l, {
+                to: "/checkout",
+                className: "hover:text-primary transition-colors",
+                children: "Checkout",
+              }),
+              e.jsx("span", { className: "mx-2", children: "→" }),
+              e.jsx("span", { children: "Order Complete" }),
+            ],
+          }),
+          e.jsx("h1", {
+            className:
+              "text-2xl sm:text-3xl font-semibold text-foreground mb-8",
+            children: "Shopping cart",
+          }),
+          m
+            ? e.jsxs("div", {
+                className:
+                  "lg:hidden rounded-xl border border-border bg-muted/40 p-4 mb-6 space-y-2 text-sm",
+                children: [
+                  e.jsxs("div", {
+                    className: "flex justify-between",
+                    children: [
+                      e.jsx("span", {
+                        className: "text-muted-foreground",
+                        children: "Subtotal",
+                      }),
+                      e.jsx("span", {
+                        className: "font-medium tabular-nums",
+                        children: t(d),
+                      }),
+                    ],
+                  }),
+                  e.jsxs("div", {
+                    className: "flex justify-between",
+                    children: [
+                      e.jsxs("span", {
+                        className: "text-muted-foreground",
+                        children: ["Shipping (", a, " devices)"],
+                      }),
+                      e.jsx("span", {
+                        className: "tabular-nums",
+                        children: u(a),
+                      }),
+                    ],
+                  }),
+                  n
+                    ? e.jsx("p", {
+                        className: "text-xs text-primary/90 leading-relaxed",
+                        children: n,
+                      })
+                    : null,
+                  e.jsxs("div", {
+                    className:
+                      "flex justify-between items-baseline border-t border-border pt-2 font-semibold",
+                    children: [
+                      e.jsx("span", { children: "Total" }),
+                      e.jsx("span", {
+                        className: "text-lg text-primary tabular-nums",
+                        children: t(c),
+                      }),
+                    ],
+                  }),
+                ],
+              })
+            : null,
+          i.length === 0
+            ? e.jsxs("div", {
+                className:
+                  "rounded-xl border border-border bg-card/50 p-8 text-center max-w-lg mx-auto",
+                children: [
+                  e.jsx("p", {
+                    className: "text-muted-foreground mb-6",
+                    children: "Your cart is empty.",
+                  }),
+                  e.jsx(r, {
+                    asChild: !0,
+                    children: e.jsx(l, {
+                      to: "/shop",
+                      children: "Browse flavours",
+                    }),
+                  }),
+                ],
+              })
+            : e.jsxs("div", {
+                className:
+                  "grid lg:grid-cols-[1fr_380px] gap-10 lg:gap-12 items-start",
+                children: [
+                  e.jsx("ul", {
+                    className: "space-y-4",
+                    children: i.map((s) => {
+                      const p = s.price * s.qty;
+                      return e.jsxs(
+                        "li",
+                        {
+                          className:
+                            "flex gap-4 flex-wrap sm:flex-nowrap rounded-xl border border-border bg-card p-4",
+                          children: [
+                            e.jsx("div", {
+                              className:
+                                "h-20 w-20 shrink-0 overflow-hidden rounded-lg bg-muted",
+                              children: e.jsx("img", {
+                                src: s.image,
+                                alt: f(x(s.name)),
+                                className: "h-full w-full object-cover",
+                              }),
+                            }),
+                            e.jsxs("div", {
+                              className: "min-w-0 flex-1",
+                              children: [
+                                e.jsx("p", {
+                                  className:
+                                    "font-medium text-foreground leading-snug",
+                                  children: x(k(s.name)),
+                                }),
+                                e.jsxs("p", {
+                                  className:
+                                    "text-sm text-muted-foreground mt-1",
+                                  children: [t(s.price), " each"],
+                                }),
+                                e.jsxs("div", {
+                                  className: "flex items-center gap-3 mt-3",
+                                  children: [
+                                    e.jsxs("div", {
+                                      className:
+                                        "inline-flex items-center rounded-md border border-input",
+                                      children: [
+                                        e.jsx(r, {
+                                          type: "button",
+                                          variant: "ghost",
+                                          size: "icon",
+                                          className:
+                                            "h-11 w-11 rounded-none shrink-0",
+                                          onClick: () => o(s.slug, s.qty - 1),
+                                          "aria-label": "Decrease quantity",
+                                          children: e.jsx(C, {
+                                            className: "h-4 w-4",
+                                          }),
+                                        }),
+                                        e.jsx("span", {
+                                          className:
+                                            "tabular-nums text-sm w-10 text-center",
+                                          children: s.qty,
+                                        }),
+                                        e.jsx(r, {
+                                          type: "button",
+                                          variant: "ghost",
+                                          size: "icon",
+                                          className:
+                                            "h-11 w-11 rounded-none shrink-0",
+                                          onClick: () => o(s.slug, s.qty + 1),
+                                          "aria-label": "Increase quantity",
+                                          children: e.jsx(S, {
+                                            className: "h-4 w-4",
+                                          }),
+                                        }),
+                                      ],
+                                    }),
+                                    e.jsxs(r, {
+                                      type: "button",
+                                      variant: "ghost",
+                                      size: "sm",
+                                      className:
+                                        "min-h-[44px] text-destructive hover:text-destructive",
+                                      onClick: () => h(s.slug),
+                                      children: [
+                                        e.jsx(q, { className: "h-4 w-4 mr-1" }),
+                                        "Remove",
+                                      ],
+                                    }),
+                                  ],
+                                }),
+                              ],
+                            }),
+                            e.jsx("div", {
+                              className:
+                                "w-full sm:w-auto sm:text-right font-semibold text-primary tabular-nums",
+                              children: t(p),
+                            }),
+                          ],
+                        },
+                        s.slug,
+                      );
+                    }),
+                  }),
+                  e.jsxs("aside", {
+                    className:
+                      "hidden lg:block lg:sticky lg:top-[calc(6rem+env(safe-area-inset-top))] rounded-xl border border-border bg-muted/40 p-6 space-y-4",
+                    children: [
+                      e.jsx("h2", {
+                        className: "text-lg font-semibold",
+                        children: "Cart totals",
+                      }),
+                      e.jsxs("div", {
+                        className: "flex justify-between text-sm",
+                        children: [
+                          e.jsx("span", {
+                            className: "text-muted-foreground",
+                            children: "Subtotal",
+                          }),
+                          e.jsx("span", {
+                            className:
+                              "font-semibold text-primary tabular-nums",
+                            children: t(d),
+                          }),
+                        ],
+                      }),
+                      e.jsxs("div", {
+                        className: "flex justify-between text-sm",
+                        children: [
+                          e.jsx("span", {
+                            className: "text-muted-foreground",
+                            children: "Devices",
+                          }),
+                          e.jsx("span", {
+                            className: "tabular-nums",
+                            children: a,
+                          }),
+                        ],
+                      }),
+                      e.jsxs("div", {
+                        className: "flex justify-between text-sm",
+                        children: [
+                          e.jsx("span", {
+                            className: "text-muted-foreground",
+                            children: "Shipping",
+                          }),
+                          e.jsxs("span", {
+                            className: "tabular-nums",
+                            children: [v, ": ", u(a)],
+                          }),
+                        ],
+                      }),
+                      n
+                        ? e.jsx("p", {
+                            className:
+                              "text-xs text-primary/90 leading-relaxed",
+                            children: n,
+                          })
+                        : null,
+                      e.jsxs("div", {
+                        className:
+                          "border-t border-border pt-4 flex justify-between items-baseline",
+                        children: [
+                          e.jsx("span", {
+                            className: "font-medium",
+                            children: "Total",
+                          }),
+                          e.jsx("span", {
+                            className:
+                              "text-xl font-bold text-primary tabular-nums",
+                            children: t(c),
+                          }),
+                        ],
+                      }),
+                      e.jsx(r, {
+                        asChild: !0,
+                        className: "w-full",
+                        size: "lg",
+                        children: e.jsx(l, {
+                          to: "/checkout",
+                          children: "Proceed to checkout",
+                        }),
+                      }),
+                      e.jsx(r, {
+                        asChild: !0,
+                        variant: "outline",
+                        className: "w-full bg-background",
+                        children: e.jsx(l, {
+                          to: "/shop",
+                          children: "Continue shopping",
+                        }),
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+          m
+            ? e.jsx("aside", {
+                "aria-label": "Cart summary",
+                className:
+                  "lg:hidden fixed bottom-0 inset-x-0 z-40 border-t border-gold/30 bg-background/95 backdrop-blur-xl px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]",
+                children: e.jsxs("div", {
+                  className:
+                    "flex items-center justify-between gap-4 max-w-lg mx-auto",
+                  children: [
+                    e.jsxs("div", {
+                      className: "min-w-0",
+                      children: [
+                        e.jsxs("p", {
+                          className: "text-xs text-muted-foreground",
+                          children: ["Total (", a, " devices)"],
+                        }),
+                        e.jsx("p", {
+                          className:
+                            "text-xl font-bold text-primary tabular-nums",
+                          children: t(c),
+                        }),
+                      ],
+                    }),
+                    e.jsx(r, {
+                      asChild: !0,
+                      size: "lg",
+                      className: "shrink-0 min-h-[48px] px-6",
+                      children: e.jsx(l, {
+                        to: "/checkout",
+                        children: "Checkout",
+                      }),
+                    }),
+                  ],
+                }),
+              })
+            : null,
+        ],
+      }),
+      e.jsx(N, { variant: "compact" }),
+    ],
+  });
+};
+export { E as default };

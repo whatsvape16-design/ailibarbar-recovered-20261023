@@ -1,0 +1,433 @@
+import { t as y, j as e, N as j, L as l } from "./react-vendor-R4T0bNIa.js";
+import {
+  u as v,
+  k as w,
+  ah as g,
+  ak as N,
+  O as A,
+  S as k,
+  h as S,
+  l as o,
+  N as I,
+  Q as T,
+  F as C,
+} from "./index-Bwn3vGAd.js";
+import { P as F } from "./ProductPrice-BJiKzrJ6.js";
+import { e as B, f as P, C as L } from "./ContentByline-DZdt81X3.js";
+import { C as $ } from "./ContentHubLinks-D60vS9Nb.js";
+import { K as q } from "./KeyTakeaways-BS73GR4f.js";
+import { c as R } from "./comparisons-BN826Jyq.js";
+import { g as E } from "./reviews-DJ7_M9DW.js";
+import { C as b, a as G } from "./CatalogueImage-3ZWkwIDw.js";
+import { e as O } from "./icons-vendor-BquxQ5DR.js";
+import "./query-vendor-L3kbwvGJ.js";
+import "./utils-CytzSlOG.js";
+function c({ label: i, value: s }) {
+  return e.jsxs("div", {
+    children: [
+      e.jsxs("div", {
+        className: "flex justify-between text-xs text-muted-foreground mb-1",
+        children: [
+          e.jsx("span", { children: i }),
+          e.jsxs("span", { children: [s, "/5"] }),
+        ],
+      }),
+      e.jsx("div", {
+        className: "h-2 rounded-full bg-secondary overflow-hidden",
+        children: e.jsx("div", {
+          className:
+            "h-full rounded-full bg-gradient-to-r from-primary/70 to-gold",
+          style: { width: `${(s / 5) * 100}%` },
+        }),
+      }),
+    ],
+  });
+}
+const Q = {
+    "blackberry-ice":
+      "Blackberry Ice Alibarbar Ingot 9000: dark juicy blackberry with a clean menthol edge. Taste notes, sweetness/cooling ratings and buy in Australia.",
+    "california-sunset":
+      "California Sunset Alibarbar Ingot 9000: ripe mango, citrus and pineapple in one tropical blend. Taste notes, ratings and buy online in Australia.",
+    "grape-ice":
+      "Grape Ice Alibarbar Ingot 9000: bold candy-like grape with a crisp icy finish. Taste notes, sweetness/cooling ratings and buy online in Australia.",
+    "mango-magic":
+      "Mango Magic Alibarbar Ingot 9000: ripe, luscious tropical mango — bold and juicy. Taste notes, sweetness and cooling ratings; buy in Australia.",
+    "peach-ice":
+      "Peach Ice Alibarbar Ingot 9000: juicy orchard peach with a crisp cooling finish. Taste notes, sweetness/cooling ratings and buy online in Australia.",
+    "quadruple-berry":
+      "Quadruple Berry Alibarbar Ingot 9000: strawberry, raspberry, blackberry and blueberry medley. Taste notes, sweetness/cooling ratings and buy link.",
+    "strawberry-coconut-watermelon":
+      "Strawberry Coconut Watermelon Alibarbar Ingot 9000: creamy tropical strawberry, coconut and watermelon. Taste notes, ratings and buy in Australia.",
+    "strawberry-ice":
+      "Chupa Chups Strawberry Alibarbar Ingot 9000: candy-sweet strawberry with a menthol chill. Taste notes, ratings and buy singles or packs in Australia.",
+    "strawberry-watermelon":
+      "Strawberry Watermelon Alibarbar Ingot 9000: ripe strawberry punch meets juicy watermelon. Taste notes, ratings and buy online for Australian adults.",
+  },
+  Y = () => {
+    v();
+    const { slug: i } = y(),
+      s = w(i);
+    if (!s) return e.jsx(j, { to: "/flavours", replace: !0 });
+    const r = g(s.slug),
+      d = E(s.slug),
+      n = `/flavours/${s.slug}`,
+      x = [
+        { name: "Home", path: "/" },
+        { name: "Flavours", path: "/flavours" },
+        { name: s.name, path: n },
+      ],
+      m = s.similar.map((a) => N.find((t) => t.slug === a)).filter((a) => !!a),
+      u = R.filter(
+        (a) =>
+          a.flavourCompare &&
+          (a.leftProductSlug === s.slug || a.rightProductSlug === s.slug),
+      ),
+      h = A({
+        title: `Alibarbar Ingot 9000 ${s.name} Flavour Guide`,
+        description:
+          s.slug === "blueberry-blast"
+            ? "Taste guide for Alibarbar Ingot 9000 Blueberry Blast — jammy single-note blueberry for adult buyers in Australia."
+            : s.slug === "strawberry-lychee"
+              ? "Taste guide for Alibarbar Ingot 9000 Strawberry Lychee — sweet strawberry with floral lychee for adult buyers in Australia."
+              : s.tagline,
+        path: n,
+        image: r == null ? void 0 : r.img,
+        breadcrumbs: x,
+        faq: s.faq,
+      }),
+      p = B(`What does Alibarbar ${s.name} taste like?`, s.tagline),
+      f = P(s.bestFor);
+    return e.jsxs("div", {
+      className: "min-h-screen bg-background",
+      children: [
+        e.jsx(k, {
+          title:
+            s.slug === "blueberry-blast"
+              ? "Blueberry Blast Flavour Guide | Alibarbar Ingot 9000 Australia"
+              : s.slug === "strawberry-lychee"
+                ? "Strawberry Lychee Flavour Guide | Alibarbar Ingot 9000 Australia"
+                : `${s.name} Flavour Guide | Alibarbar Ingot 9000 Australia`,
+          description:
+            Q[s.slug] ??
+            (s.slug === "blueberry-blast"
+              ? "Blueberry Blast Alibarbar Ingot 9000 taste guide: jammy single-note blueberry, sweetness and cooling scores, who it suits, and buy links for Australia."
+              : s.slug === "strawberry-lychee"
+                ? "Strawberry Lychee Alibarbar Ingot 9000 taste guide: sweet strawberry with floral lychee, scores, who it suits, and buy links for Australia."
+                : `${s.name}: ${s.tagline} Taste notes, sweetness and cooling ratings, and who it suits. Buy the matching device on the product page.`),
+          path: n,
+          image: r ? (S(r.slug) ?? r.img) : void 0,
+          imageAlt: (r == null ? void 0 : r.imgAlt) ?? (r ? o(s.name) : void 0),
+          jsonLd: h,
+        }),
+        e.jsx(I, {}),
+        e.jsx("main", {
+          className: "pt-[calc(6rem+env(safe-area-inset-top))] pb-16 sm:pb-24",
+          children: e.jsxs("div", {
+            className: "container max-w-4xl",
+            children: [
+              e.jsxs("nav", {
+                "aria-label": "Breadcrumb",
+                className: "text-sm text-muted-foreground mb-6",
+                children: [
+                  e.jsx(l, {
+                    to: "/",
+                    className: "hover:text-primary",
+                    children: "Home",
+                  }),
+                  e.jsx("span", { className: "mx-2", children: "/" }),
+                  e.jsx(l, {
+                    to: "/flavours",
+                    className: "hover:text-primary",
+                    children: "Flavours",
+                  }),
+                  e.jsx("span", { className: "mx-2", children: "/" }),
+                  e.jsx("span", {
+                    className: "text-foreground",
+                    children: s.name,
+                  }),
+                ],
+              }),
+              e.jsxs("div", {
+                className: "grid md:grid-cols-2 gap-8 items-start",
+                children: [
+                  r
+                    ? e.jsx("div", {
+                        className:
+                          "relative rounded-2xl border border-gold/25 bg-gradient-to-b from-secondary/80 to-background overflow-hidden aspect-square",
+                        children: e.jsx(b, {
+                          src: r.img,
+                          srcSet: r.imgSrcSet,
+                          sizes: G,
+                          loading: "eager",
+                          alt: r.imgAlt ?? o(s.name),
+                          className: "w-full h-full object-contain p-8",
+                        }),
+                      })
+                    : null,
+                  e.jsxs("div", {
+                    children: [
+                      e.jsx("p", {
+                        className:
+                          "text-xs uppercase tracking-[0.25em] text-primary mb-2 font-semibold",
+                        children: s.family,
+                      }),
+                      e.jsxs("h1", {
+                        className:
+                          "text-3xl sm:text-4xl font-extrabold leading-tight",
+                        children: [
+                          s.name,
+                          " ",
+                          e.jsx("span", {
+                            className: "text-gold",
+                            children: "Ingot 9000",
+                          }),
+                        ],
+                      }),
+                      e.jsx(L, {}),
+                      e.jsx(T, { data: p }),
+                      e.jsx("div", {
+                        className: "mt-6",
+                        children: e.jsx(q, { items: f }),
+                      }),
+                      e.jsxs("div", {
+                        className:
+                          "mt-6 space-y-3 rounded-2xl border border-gold/20 bg-card/50 p-5",
+                        children: [
+                          e.jsx("p", {
+                            className:
+                              "text-xs uppercase tracking-wide text-gold font-semibold mb-1",
+                            children: "Taste profile",
+                          }),
+                          e.jsx(c, { label: "Sweetness", value: s.sweetness }),
+                          e.jsx(c, {
+                            label: "Cooling / Ice",
+                            value: s.coolness,
+                          }),
+                          e.jsx(c, {
+                            label: "Smoothness",
+                            value: s.smoothness,
+                          }),
+                        ],
+                      }),
+                      r
+                        ? e.jsxs("div", {
+                            className: "mt-6 flex flex-wrap items-center gap-4",
+                            children: [
+                              e.jsx(F, {
+                                price: r.price,
+                                originalPrice: r.originalPrice,
+                                priceClassName: "text-2xl",
+                              }),
+                              e.jsxs(l, {
+                                to: `/product/${r.slug}`,
+                                className:
+                                  "inline-flex items-center justify-center min-h-[48px] px-6 rounded-full bg-gold text-primary-foreground font-bold uppercase tracking-widest text-xs shadow-gold hover:opacity-95 transition",
+                                children: ["Shop ", s.name],
+                              }),
+                              d
+                                ? e.jsx(l, {
+                                    to: `/reviews/${d.slug}`,
+                                    className:
+                                      "inline-flex items-center justify-center min-h-[48px] px-6 rounded-full border border-gold/40 text-primary font-bold uppercase tracking-widest text-xs hover:border-gold transition",
+                                    children: "Read review",
+                                  })
+                                : null,
+                            ],
+                          })
+                        : null,
+                    ],
+                  }),
+                ],
+              }),
+              e.jsxs("section", {
+                className: "mt-12",
+                children: [
+                  e.jsx("h2", {
+                    className: "text-xl sm:text-2xl font-bold mb-3",
+                    children: "Tasting notes",
+                  }),
+                  e.jsx("div", {
+                    className:
+                      "space-y-3 text-muted-foreground leading-[1.75] text-sm sm:text-base",
+                    children: s.tastingNotes.map((a, t) =>
+                      e.jsx("p", { children: a }, t),
+                    ),
+                  }),
+                ],
+              }),
+              e.jsxs("section", {
+                className: "mt-10",
+                children: [
+                  e.jsx("h2", {
+                    className: "text-xl sm:text-2xl font-bold mb-3",
+                    children: "Who it's best for",
+                  }),
+                  e.jsx("ul", {
+                    className: "space-y-2",
+                    children: s.bestFor.map((a) =>
+                      e.jsxs(
+                        "li",
+                        {
+                          className:
+                            "flex gap-2 text-sm sm:text-base text-muted-foreground",
+                          children: [
+                            e.jsx(O, {
+                              className: "w-4 h-4 mt-1 text-primary shrink-0",
+                            }),
+                            e.jsx("span", { children: a }),
+                          ],
+                        },
+                        a,
+                      ),
+                    ),
+                  }),
+                ],
+              }),
+              s.faq.length > 0
+                ? e.jsxs("section", {
+                    className: "mt-10",
+                    children: [
+                      e.jsx("h2", {
+                        className: "text-xl sm:text-2xl font-bold mb-4",
+                        children: "FAQ",
+                      }),
+                      e.jsx("div", {
+                        className: "space-y-4",
+                        children: s.faq.map((a) =>
+                          e.jsxs(
+                            "div",
+                            {
+                              className:
+                                "rounded-xl border border-gold/20 bg-card/50 p-4",
+                              children: [
+                                e.jsx("h3", {
+                                  className:
+                                    "text-sm sm:text-base font-semibold",
+                                  children: a.question,
+                                }),
+                                e.jsx("p", {
+                                  className:
+                                    "mt-1 text-sm text-muted-foreground leading-relaxed",
+                                  children: a.answer,
+                                }),
+                              ],
+                            },
+                            a.question,
+                          ),
+                        ),
+                      }),
+                    ],
+                  })
+                : null,
+              u.length > 0
+                ? e.jsxs("p", {
+                    className: "mt-6 text-sm text-muted-foreground",
+                    children: [
+                      "SKU comparison:",
+                      " ",
+                      u.map((a, t) =>
+                        e.jsxs(
+                          "span",
+                          {
+                            children: [
+                              t > 0 ? " · " : null,
+                              e.jsxs(l, {
+                                to: `/compare/${a.slug}`,
+                                className:
+                                  "text-primary font-semibold hover:text-gold",
+                                children: [a.leftLabel, " vs ", a.rightLabel],
+                              }),
+                            ],
+                          },
+                          a.slug,
+                        ),
+                      ),
+                    ],
+                  })
+                : null,
+              m.length > 0
+                ? e.jsxs("section", {
+                    className: "mt-12",
+                    children: [
+                      e.jsx("h2", {
+                        className: "text-xl sm:text-2xl font-bold mb-5",
+                        children: "Similar flavours",
+                      }),
+                      e.jsx("div", {
+                        className:
+                          "grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-5",
+                        children: m.map((a) => {
+                          const t = g(a.slug);
+                          return e.jsxs(
+                            l,
+                            {
+                              to: `/flavours/${a.slug}`,
+                              className:
+                                "luxe-card rounded-xl overflow-hidden group flex flex-col border border-gold/20",
+                              children: [
+                                t
+                                  ? e.jsx("div", {
+                                      className:
+                                        "relative aspect-square bg-gradient-to-br from-secondary to-background",
+                                      children: e.jsx(b, {
+                                        src: t.img,
+                                        srcSet: t.imgSrcSet,
+                                        alt: o(a.name),
+                                        className:
+                                          "w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500",
+                                      }),
+                                    })
+                                  : null,
+                                e.jsx("div", {
+                                  className: "p-3 border-t border-gold/15",
+                                  children: e.jsx("h3", {
+                                    className:
+                                      "text-xs sm:text-sm font-bold leading-snug group-hover:text-primary transition-colors line-clamp-2",
+                                    children: a.name,
+                                  }),
+                                }),
+                              ],
+                            },
+                            a.slug,
+                          );
+                        }),
+                      }),
+                    ],
+                  })
+                : null,
+              e.jsxs("div", {
+                className: "mt-12 text-sm text-muted-foreground",
+                children: [
+                  "Explore the",
+                  " ",
+                  e.jsx(l, {
+                    to: "/ingot-9000",
+                    className: "text-primary font-semibold hover:text-gold",
+                    children: "Alibarbar Ingot 9000 hub",
+                  }),
+                  ", all options in the",
+                  " ",
+                  e.jsx(l, {
+                    to: "/flavours",
+                    className: "text-primary font-semibold hover:text-gold",
+                    children: "Flavour Centre",
+                  }),
+                  " or read the",
+                  " ",
+                  e.jsx(l, {
+                    to: "/guides/best-alibarbar-flavours-australia",
+                    className: "text-primary font-semibold hover:text-gold",
+                    children: "best flavours guide",
+                  }),
+                  ".",
+                ],
+              }),
+              e.jsx($, {}),
+            ],
+          }),
+        }),
+        e.jsx(C, {}),
+      ],
+    });
+  };
+export { Y as default };

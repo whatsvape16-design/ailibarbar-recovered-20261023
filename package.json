@@ -1,0 +1,25 @@
+{
+  "name": "ailibarbar-local-operations",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "build:admin": "vite build admin-app --outDir ../admin-dist",
+    "dev:admin": "vite admin-app --host 127.0.0.1",
+    "admin:key": "node -e \"import('./backend.js').then(m=>console.log(m.getAdminKey()))\"",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  }
+}

@@ -1,0 +1,33 @@
+import { j as t } from "./react-vendor-R4T0bNIa.js";
+import { c as a } from "./utils-CytzSlOG.js";
+import { o } from "./index-Bwn3vGAd.js";
+function d({
+  price: n,
+  originalPrice: e,
+  className: l,
+  priceClassName: m,
+  originalClassName: i,
+}) {
+  const r = Number.parseFloat(n),
+    s = e ? Number.parseFloat(e) : NaN,
+    u = Number.isFinite(s) && s > r;
+  return t.jsxs("div", {
+    className: a("flex flex-wrap items-baseline gap-2", l),
+    children: [
+      t.jsx("span", {
+        className: a("font-bold text-gold tabular-nums", m),
+        children: o(r),
+      }),
+      u
+        ? t.jsx("span", {
+            className: a(
+              "text-sm text-muted-foreground line-through tabular-nums",
+              i,
+            ),
+            children: o(s),
+          })
+        : null,
+    ],
+  });
+}
+export { d as P };

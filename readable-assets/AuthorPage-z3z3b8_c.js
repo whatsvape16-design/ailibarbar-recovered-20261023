@@ -1,0 +1,333 @@
+import { t as c, j as e, N as n, L as a } from "./react-vendor-R4T0bNIa.js";
+import {
+  u as m,
+  as as x,
+  S as h,
+  at as p,
+  N as u,
+  F as j,
+  K as g,
+} from "./index-Bwn3vGAd.js";
+import { C as b, d as N } from "./citations-DtahB83O.js";
+import { r as f } from "./reviews-DJ7_M9DW.js";
+import { e as v } from "./icons-vendor-BquxQ5DR.js";
+import "./query-vendor-L3kbwvGJ.js";
+const $ = () => {
+  m();
+  const { slug: r } = c(),
+    s = x(r);
+  if (!s) return e.jsx(n, { to: "/about", replace: !0 });
+  const i = `/author/${s.slug}`,
+    l = g.slice(0, 4),
+    o = f.slice(0, 4);
+  return e.jsxs("div", {
+    className: "min-h-screen bg-background",
+    children: [
+      e.jsx(h, {
+        title: `${s.name} — ${s.title} | Alibarbar Australia`,
+        description: `${s.name} is an ${s.title.toLowerCase()} with ${s.yearsExperience}+ years experience and ${s.productsReviewed}+ disposable vape products reviewed for Alibarbar Australia.`,
+        path: i,
+        jsonLd: p(s.slug),
+      }),
+      e.jsx(u, {}),
+      e.jsx("main", {
+        className: "pt-[calc(6rem+env(safe-area-inset-top))] pb-16 sm:pb-24",
+        children: e.jsxs("article", {
+          className: "container max-w-3xl",
+          children: [
+            e.jsxs("nav", {
+              "aria-label": "Breadcrumb",
+              className: "text-sm text-muted-foreground mb-6",
+              children: [
+                e.jsx(a, {
+                  to: "/",
+                  className: "hover:text-primary",
+                  children: "Home",
+                }),
+                e.jsx("span", { className: "mx-2", children: "/" }),
+                e.jsx(a, {
+                  to: "/about",
+                  className: "hover:text-primary",
+                  children: "About",
+                }),
+                e.jsx("span", { className: "mx-2", children: "/" }),
+                e.jsx("span", {
+                  className: "text-foreground",
+                  children: s.name,
+                }),
+              ],
+            }),
+            e.jsxs("header", {
+              className: "mb-8",
+              children: [
+                e.jsx("p", {
+                  className:
+                    "text-xs uppercase tracking-[0.25em] text-primary mb-3 font-semibold",
+                  children: "Author · E-E-A-T",
+                }),
+                e.jsx("h1", {
+                  className:
+                    "text-3xl sm:text-4xl font-extrabold leading-tight",
+                  children: s.name,
+                }),
+                e.jsx("p", {
+                  className: "text-gold font-semibold mt-2",
+                  children: s.title,
+                }),
+                e.jsxs("p", {
+                  className: "text-sm text-muted-foreground mt-3",
+                  children: [
+                    s.yearsExperience,
+                    "+ years experience · ",
+                    s.productsReviewed,
+                    "+ products reviewed · specialises in the Australian vape market",
+                  ],
+                }),
+                e.jsx("div", { className: "gold-divider mt-6 max-w-[6rem]" }),
+              ],
+            }),
+            e.jsxs("aside", {
+              className:
+                "mb-8 rounded-2xl border border-gold/30 bg-gradient-to-br from-card/80 to-secondary/40 p-5 sm:p-6",
+              children: [
+                e.jsx("p", {
+                  className:
+                    "text-xs uppercase tracking-[0.2em] text-gold font-semibold mb-3",
+                  children: "Expert credentials",
+                }),
+                e.jsxs("ul", {
+                  className:
+                    "grid sm:grid-cols-2 gap-3 text-sm sm:text-base text-muted-foreground",
+                  children: [
+                    e.jsxs("li", {
+                      children: [
+                        "Reviewed ",
+                        s.productsReviewed,
+                        "+ disposable vape products",
+                      ],
+                    }),
+                    e.jsxs("li", {
+                      children: [
+                        s.yearsExperience,
+                        "+ years in the Australian market",
+                      ],
+                    }),
+                    e.jsx("li", {
+                      children:
+                        "Specialises in flavour profiling & device longevity",
+                    }),
+                    e.jsx("li", {
+                      children: "Structured tasting notes on every review",
+                    }),
+                  ],
+                }),
+              ],
+            }),
+            e.jsx("div", {
+              className:
+                "space-y-6 text-muted-foreground leading-[1.75] text-sm sm:text-base",
+              children: s.bio.map((t, d) => e.jsx("p", { children: t }, d)),
+            }),
+            e.jsxs("section", {
+              className: "mt-10",
+              children: [
+                e.jsx("h2", {
+                  className: "text-xl font-bold mb-3",
+                  children: "Areas of expertise",
+                }),
+                e.jsx("ul", {
+                  className: "space-y-2",
+                  children: s.expertise.map((t) =>
+                    e.jsxs(
+                      "li",
+                      {
+                        className:
+                          "flex gap-2 text-sm sm:text-base text-muted-foreground",
+                        children: [
+                          e.jsx(v, {
+                            className: "w-4 h-4 mt-1 text-primary shrink-0",
+                          }),
+                          e.jsx("span", { children: t }),
+                        ],
+                      },
+                      t,
+                    ),
+                  ),
+                }),
+              ],
+            }),
+            e.jsxs("section", {
+              className: "mt-10",
+              children: [
+                e.jsx("h2", {
+                  className: "text-xl font-bold mb-3",
+                  children: "How Jason works (E-E-A-T)",
+                }),
+                e.jsxs("ul", {
+                  className:
+                    "space-y-2 text-sm sm:text-base text-muted-foreground",
+                  children: [
+                    e.jsx("li", {
+                      children:
+                        "• Experience: multi-year hands-on testing of disposables sold to Australian adults",
+                    }),
+                    e.jsx("li", {
+                      children:
+                        "• Expertise: flavour dimensions, capacity claims, competitor range literacy",
+                    }),
+                    e.jsx("li", {
+                      children:
+                        "• Authoritativeness: named byline on guides, comparisons, reviews and research notes",
+                    }),
+                    e.jsx("li", {
+                      children:
+                        "• Trust: commercial relationship disclosed; corrections via orders@ailibarbar.com",
+                    }),
+                  ],
+                }),
+              ],
+            }),
+            e.jsxs("section", {
+              className: "mt-10",
+              children: [
+                e.jsx("h2", {
+                  className: "text-xl font-bold mb-4",
+                  children: "Selected published work",
+                }),
+                e.jsxs("div", {
+                  className: "grid sm:grid-cols-2 gap-4",
+                  children: [
+                    e.jsxs("div", {
+                      children: [
+                        e.jsx("h3", {
+                          className: "text-sm font-semibold text-gold mb-2",
+                          children: "Guides",
+                        }),
+                        e.jsx("ul", {
+                          className: "space-y-2",
+                          children: l.map((t) =>
+                            e.jsx(
+                              "li",
+                              {
+                                children: e.jsx(a, {
+                                  to: `/guides/${t.slug}`,
+                                  className:
+                                    "text-sm text-primary hover:text-gold",
+                                  children: t.title,
+                                }),
+                              },
+                              t.slug,
+                            ),
+                          ),
+                        }),
+                      ],
+                    }),
+                    e.jsxs("div", {
+                      children: [
+                        e.jsx("h3", {
+                          className: "text-sm font-semibold text-gold mb-2",
+                          children: "Reviews",
+                        }),
+                        e.jsx("ul", {
+                          className: "space-y-2",
+                          children: o.map((t) =>
+                            e.jsx(
+                              "li",
+                              {
+                                children: e.jsx(a, {
+                                  to: `/reviews/${t.slug}`,
+                                  className:
+                                    "text-sm text-primary hover:text-gold",
+                                  children: t.title,
+                                }),
+                              },
+                              t.slug,
+                            ),
+                          ),
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+            e.jsxs("section", {
+              className:
+                "mt-10 rounded-2xl border border-gold/20 bg-card/50 p-5 sm:p-6",
+              children: [
+                e.jsx("h2", {
+                  className: "text-lg font-bold mb-3",
+                  children: "Editorial standards",
+                }),
+                e.jsxs("p", {
+                  className: "text-sm text-muted-foreground leading-relaxed",
+                  children: [
+                    "All guides, comparisons and reviews follow our",
+                    " ",
+                    e.jsx(a, {
+                      to: "/editorial-policy",
+                      className: "text-primary font-semibold hover:text-gold",
+                      children: "Editorial Policy",
+                    }),
+                    ", including fact checking, competitor disclaimers and a corrections process. See",
+                    " ",
+                    e.jsx(a, {
+                      to: "/why-trust-us",
+                      className: "text-primary font-semibold hover:text-gold",
+                      children: "Why Trust Us",
+                    }),
+                    " ",
+                    "for how we maintain accuracy.",
+                  ],
+                }),
+              ],
+            }),
+            e.jsx("div", {
+              className: "mt-10",
+              children: e.jsx(b, { items: N, title: "Public references" }),
+            }),
+            e.jsxs("div", {
+              className: "mt-10 flex flex-wrap gap-3 text-sm",
+              children: [
+                e.jsx(a, {
+                  to: "/guides",
+                  className: "text-primary font-semibold hover:text-gold",
+                  children: "Read guides",
+                }),
+                e.jsx("span", {
+                  className: "text-muted-foreground",
+                  children: "·",
+                }),
+                e.jsx(a, {
+                  to: "/reviews",
+                  className: "text-primary font-semibold hover:text-gold",
+                  children: "Read reviews",
+                }),
+                e.jsx("span", {
+                  className: "text-muted-foreground",
+                  children: "·",
+                }),
+                e.jsx(a, {
+                  to: "/research",
+                  className: "text-primary font-semibold hover:text-gold",
+                  children: "Research",
+                }),
+                e.jsx("span", {
+                  className: "text-muted-foreground",
+                  children: "·",
+                }),
+                e.jsx(a, {
+                  to: "/compare",
+                  className: "text-primary font-semibold hover:text-gold",
+                  children: "Compare brands",
+                }),
+              ],
+            }),
+          ],
+        }),
+      }),
+      e.jsx(j, {}),
+    ],
+  });
+};
+export { $ as default };

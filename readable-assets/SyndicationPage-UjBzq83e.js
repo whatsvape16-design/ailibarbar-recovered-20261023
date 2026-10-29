@@ -1,0 +1,335 @@
+import { j as e, L as l } from "./react-vendor-R4T0bNIa.js";
+import {
+  T as i,
+  u as o,
+  a1 as n,
+  S as d,
+  N as m,
+  F as u,
+} from "./index-Bwn3vGAd.js";
+import { C as b } from "./ContentHubLinks-D60vS9Nb.js";
+import { C as h, c as p } from "./citations-DtahB83O.js";
+import "./query-vendor-L3kbwvGJ.js";
+import "./icons-vendor-BquxQ5DR.js";
+const x = [
+    {
+      slug: "best-alibarbar-australia-sync",
+      title: "Best Alibarbar Australia 2026: Ingot 9000 Flavours Ranked",
+      excerpt:
+        "Quick winners, tasting method and Australian city picks — full comparison table lives on the canonical ranked guide.",
+      canonicalPath: "/best-alibarbar-australia",
+      datePublished: "2026-07-28",
+      platforms: ["medium", "substack"],
+      mediumUrl:
+        "https://medium.com/@hxjspacex1/best-alibarbar-australia-2026-ingot-9000-flavours-ranked-fc2fbb1440c8",
+    },
+    {
+      slug: "ingot-9000-review-sync",
+      title: "Is Alibarbar Ingot 9000 Worth Buying in Australia? (2026)",
+      excerpt:
+        "Device verdict for adult AU buyers — specs, who should buy, who should skip — with link to the full Ingot 9000 review.",
+      canonicalPath: "/reviews/alibarbar-ingot-9000-review",
+      datePublished: "2026-07-28",
+      platforms: ["medium", "substack"],
+      mediumUrl:
+        "https://medium.com/@hxjspacex1/is-alibarbar-ingot-9000-worth-buying-in-australia-2026-e992ff2ef8d0",
+    },
+    {
+      slug: "buying-guide-sync",
+      title: "Alibarbar Ingot 9000 Buying Guide for Australia",
+      excerpt:
+        "How to choose between single flavours and custom packs, what the 9000-puff / 22ml / LED specs mean, and who the device suits.",
+      canonicalPath: "/guides/alibarbar-buying-guide-australia",
+      datePublished: "2026-07-18",
+      platforms: ["medium", "substack"],
+      mediumUrl:
+        "https://medium.com/@hxjspacex1/alibarbar-ingot-9000-buying-guide-for-australia-2026-bf803c52601e",
+    },
+    {
+      slug: "capacity-research-sync",
+      title: "High-Puff Disposable Capacity Snapshot (2026)",
+      excerpt:
+        "Original desktop research comparing Ingot 9000 capacity specs with typical Australian high-puff disposable ranges.",
+      canonicalPath: "/research/high-puff-disposable-capacity-australia-2026",
+      datePublished: "2026-07-18",
+      platforms: ["medium", "substack"],
+      mediumUrl:
+        "https://medium.com/@hxjspacex1/high-puff-disposable-capacity-in-australia-2026-spec-snapshot-3a3adbc1634b",
+    },
+    {
+      slug: "vs-iget-sync",
+      title: "Alibarbar vs IGET — Which Disposable Is Better?",
+      excerpt:
+        "Side-by-side comparison of puff count, tank size, display features and flavour catalogue trade-offs.",
+      canonicalPath: "/compare/alibarbar-vs-iget",
+      datePublished: "2026-07-14",
+      platforms: ["medium", "substack"],
+      mediumUrl:
+        "https://medium.com/@hxjspacex1/alibarbar-ingot-9000-vs-iget-which-disposable-vape-is-better-bb5a98a6bba2",
+    },
+    {
+      slug: "how-long-lasts-sync",
+      title: "How Long Does the Alibarbar Ingot 9000 Last?",
+      excerpt:
+        "Realistic lifespan by daily puff count — light, average and heavy use — plus tips to make each device last longer.",
+      canonicalPath: "/guides/how-long-does-alibarbar-ingot-9000-last",
+      datePublished: "2026-07-29",
+      platforms: ["medium", "substack"],
+      mediumUrl:
+        "https://medium.com/@hxjspacex1/how-long-does-the-alibarbar-ingot-9000-last-93254d2b3184",
+    },
+    {
+      slug: "spot-fake-sync",
+      title: "How to Spot a Fake Alibarbar Ingot 9000 (Australia)",
+      excerpt:
+        "Packaging, LED, vapour and spec checks so adult AU buyers can reduce counterfeit risk.",
+      canonicalPath: "/guides/how-to-spot-fake-alibarbar-ingot",
+      datePublished: "2026-07-22",
+      platforms: ["medium", "substack"],
+      mediumUrl:
+        "https://medium.com/@hxjspacex1/how-to-spot-a-fake-alibarbar-ingot-9000-australia-2df91ff95cf7",
+    },
+    {
+      slug: "best-iced-sync",
+      title: "Best Iced Alibarbar Flavours in Australia (Ranked)",
+      excerpt:
+        "Peach Ice, Blackberry Ice, Grape Ice and Chupa Chups Strawberry ranked by chill level and who each suits.",
+      canonicalPath: "/guides/best-iced-alibarbar-flavours-australia",
+      datePublished: "2026-07-22",
+      platforms: ["medium", "substack"],
+      mediumUrl:
+        "https://medium.com/@hxjspacex1/best-iced-alibarbar-flavours-in-australia-ranked-4548eb95799d",
+    },
+    {
+      slug: "led-finished-sync",
+      title: "How to Read the Alibarbar LED (When Is It Finished?)",
+      excerpt:
+        "What the Ingot 9000 battery and e-liquid indicators mean, and when to replace the device.",
+      canonicalPath: "/guides/how-to-read-alibarbar-led-when-finished",
+      datePublished: "2026-07-22",
+      platforms: ["medium", "substack"],
+      mediumUrl:
+        "https://medium.com/@hxjspacex1/how-to-read-the-alibarbar-led-when-is-it-finished-29d2090ba1a9",
+    },
+    {
+      slug: "blackberry-vs-peach-sync",
+      title: "Blackberry Ice vs Peach Ice: Which Alibarbar Flavour Is Better?",
+      excerpt:
+        "Chill level, fruit profile, who each suits, and which iced Ingot 9000 to try first in Australia.",
+      canonicalPath: "/guides/blackberry-ice-vs-peach-ice",
+      datePublished: "2026-07-22",
+      platforms: ["medium", "substack"],
+      mediumUrl:
+        "https://medium.com/@hxjspacex1/blackberry-ice-vs-peach-ice-which-alibarbar-flavour-is-better-642c91c01246",
+    },
+  ],
+  s = {
+    title: "Medium & Substack Syndication",
+    description:
+      "How Alibarbar Australia syncs buying guides, research and comparisons to Medium and Substack while keeping ailibarbar.com as the canonical source.",
+    intro:
+      "We republish selected knowledge articles to Medium and Substack so readers on those platforms can discover Alibarbar Australia content. Every mirrored post should point back to the canonical URL on this site.",
+    dateModified: "2026-07-28",
+    rules: [
+      "Canonical URL always lives on www.ailibarbar.com",
+      "Medium / Substack posts include a top link to the canonical article",
+      "Specs and pricing claims are updated on the website first, then synced",
+      "Adults 18+ disclaimer is retained on every mirrored post",
+    ],
+    mediumHome: `${i}/syndication`,
+    substackHome: `${i}/syndication`,
+    articles: x,
+  },
+  w = () => {
+    o();
+    const t = "/syndication",
+      c = {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            name: s.title,
+            description: s.description,
+            url: `${i}${t}`,
+            dateModified: s.dateModified,
+          },
+          n([
+            { name: "Home", path: "/" },
+            { name: "Syndication", path: t },
+          ]),
+        ],
+      };
+    return e.jsxs("div", {
+      className: "min-h-screen bg-background",
+      children: [
+        e.jsx(d, {
+          title: "Medium & Substack Syndication | Alibarbar Australia",
+          description: s.description,
+          path: t,
+          jsonLd: c,
+        }),
+        e.jsx(m, {}),
+        e.jsx("main", {
+          className: "pt-[calc(6rem+env(safe-area-inset-top))] pb-16 sm:pb-24",
+          children: e.jsxs("div", {
+            className: "container max-w-3xl",
+            children: [
+              e.jsxs("nav", {
+                "aria-label": "Breadcrumb",
+                className: "text-sm text-muted-foreground mb-6",
+                children: [
+                  e.jsx(l, {
+                    to: "/",
+                    className: "hover:text-primary",
+                    children: "Home",
+                  }),
+                  e.jsx("span", { className: "mx-2", children: "/" }),
+                  e.jsx("span", {
+                    className: "text-foreground",
+                    children: "Syndication",
+                  }),
+                ],
+              }),
+              e.jsxs("header", {
+                className: "mb-10",
+                children: [
+                  e.jsx("p", {
+                    className:
+                      "text-xs uppercase tracking-[0.25em] text-primary mb-3 font-semibold",
+                    children: "Content sync",
+                  }),
+                  e.jsxs("h1", {
+                    className:
+                      "text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight",
+                    children: [
+                      "Medium & Substack ",
+                      e.jsx("span", {
+                        className: "text-gold",
+                        children: "Syndication",
+                      }),
+                    ],
+                  }),
+                  e.jsx("p", {
+                    className:
+                      "text-muted-foreground mt-4 text-sm sm:text-base leading-relaxed",
+                    children: s.intro,
+                  }),
+                  e.jsx("div", { className: "gold-divider mt-6 max-w-[6rem]" }),
+                ],
+              }),
+              e.jsxs("section", {
+                className: "mb-10",
+                children: [
+                  e.jsx("h2", {
+                    className: "text-xl font-bold mb-3",
+                    children: "Sync rules",
+                  }),
+                  e.jsx("ul", {
+                    className:
+                      "space-y-2 text-sm sm:text-base text-muted-foreground",
+                    children: s.rules.map((a) =>
+                      e.jsxs("li", { children: ["• ", a] }, a),
+                    ),
+                  }),
+                ],
+              }),
+              e.jsxs("section", {
+                className: "mb-10",
+                children: [
+                  e.jsx("h2", {
+                    className: "text-xl font-bold mb-4",
+                    children: "Articles ready to sync",
+                  }),
+                  e.jsx("ul", {
+                    className: "space-y-4",
+                    children: s.articles.map((a) =>
+                      e.jsxs(
+                        "li",
+                        {
+                          className:
+                            "rounded-2xl border border-gold/20 bg-card/50 p-5",
+                          children: [
+                            e.jsx("h3", {
+                              className: "text-base font-bold",
+                              children: a.title,
+                            }),
+                            e.jsx("p", {
+                              className:
+                                "mt-2 text-sm text-muted-foreground leading-relaxed",
+                              children: a.excerpt,
+                            }),
+                            e.jsxs("p", {
+                              className: "mt-3 text-xs text-muted-foreground",
+                              children: [
+                                "Platforms: ",
+                                a.platforms
+                                  .map((r) => r[0].toUpperCase() + r.slice(1))
+                                  .join(" · "),
+                                " · Published",
+                                " ",
+                                a.datePublished,
+                              ],
+                            }),
+                            e.jsxs("div", {
+                              className:
+                                "mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm",
+                              children: [
+                                e.jsx(l, {
+                                  to: a.canonicalPath,
+                                  className:
+                                    "font-semibold text-primary hover:text-gold",
+                                  children: "Canonical page →",
+                                }),
+                                a.mediumUrl
+                                  ? e.jsx("a", {
+                                      href: a.mediumUrl,
+                                      target: "_blank",
+                                      rel: "noopener noreferrer",
+                                      className:
+                                        "font-semibold text-primary hover:text-gold",
+                                      children: "Read on Medium →",
+                                    })
+                                  : null,
+                                a.substackUrl
+                                  ? e.jsx("a", {
+                                      href: a.substackUrl,
+                                      target: "_blank",
+                                      rel: "noopener noreferrer",
+                                      className:
+                                        "font-semibold text-primary hover:text-gold",
+                                      children: "Read on Substack →",
+                                    })
+                                  : null,
+                              ],
+                            }),
+                          ],
+                        },
+                        a.slug,
+                      ),
+                    ),
+                  }),
+                ],
+              }),
+              e.jsx("div", {
+                className:
+                  "mb-10 rounded-2xl border border-gold/20 bg-card/40 p-5 text-sm text-muted-foreground leading-relaxed",
+                children: e.jsx("p", {
+                  children:
+                    "When Medium or Substack publication URLs are live, add them to site social metadata and link them from each mirrored post back to the canonical path above. Until then, this page is the public syndication contract.",
+                }),
+              }),
+              e.jsx("div", {
+                className: "mb-10",
+                children: e.jsx(h, {
+                  items: p(["medium-hub", "official-site", "github-docs"]),
+                }),
+              }),
+              e.jsx(b, {}),
+            ],
+          }),
+        }),
+        e.jsx(u, {}),
+      ],
+    });
+  };
+export { w as default };

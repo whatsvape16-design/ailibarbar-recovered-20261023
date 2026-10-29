@@ -1,0 +1,413 @@
+import { t as y, j as e, N as w, L as o } from "./react-vendor-R4T0bNIa.js";
+import { P as k } from "./PriceHubLinks-DMmxDbNF.js";
+import { M as h } from "./ManufacturerVerifyText-Dr_h7BDx.js";
+import { f as P, r as C, a as q } from "./hub-link-GeK-zZMD.js";
+import {
+  u as T,
+  M,
+  b as S,
+  K as A,
+  O as L,
+  S as R,
+  N as G,
+  Q as $,
+  R as B,
+  l as H,
+  c as g,
+  T as K,
+  F,
+} from "./index-Bwn3vGAd.js";
+import { P as I } from "./ProductPrice-BJiKzrJ6.js";
+import { e as Q, f as E, C as D } from "./ContentByline-DZdt81X3.js";
+import { C as J } from "./ContentHubLinks-D60vS9Nb.js";
+import { C as O, d as U } from "./citations-DtahB83O.js";
+import { C as V } from "./CiteThis-BAlrQ0q4.js";
+import { K as W } from "./KeyTakeaways-BS73GR4f.js";
+import { C as _ } from "./CatalogueImage-3ZWkwIDw.js";
+import { e as z, w as X } from "./icons-vendor-BquxQ5DR.js";
+import "./ingot-hub-CmU4AF5o.js";
+import "./query-vendor-L3kbwvGJ.js";
+import "./utils-CytzSlOG.js";
+const he = () => {
+  var x, u;
+  T();
+  const { slug: p } = y(),
+    s = M(p);
+  if (!s) return e.jsx(w, { to: "/guides", replace: !0 });
+  const l = `/guides/${s.slug}`,
+    b = [
+      { name: "Home", path: "/" },
+      { name: "Guides", path: "/guides" },
+      { name: s.headline ?? s.title, path: l },
+    ],
+    n = (s.relatedProducts ?? []).map((a) => S(a)).filter((a) => !!a),
+    c = (s.relatedGuides ?? [])
+      .map((a) => A.find((d) => d.slug === a))
+      .filter((a) => !!a),
+    m =
+      s.slug === "how-to-use-a-disposable-vape" ||
+      s.slug === "how-to-open-alibarbar-vape" ||
+      s.slug === "how-to-recharge-alibarbar" ||
+      s.slug === "alibarbar-authentication"
+        ? s.sections
+            .filter((a) => a.heading.toLowerCase().startsWith("step"))
+            .map((a) => ({
+              name: a.heading.replace(/^Step \d+:\s*/i, ""),
+              text: a.paragraphs.join(" "),
+            }))
+        : void 0,
+    f = L({
+      title: s.title,
+      description: s.description,
+      path: l,
+      datePublished: s.datePublished,
+      dateModified: s.dateModified,
+      breadcrumbs: b,
+      faq: s.faq,
+      howToSteps: m,
+      howToTotalTime: m ? "PT5M" : void 0,
+    }),
+    j = P(s.sections),
+    N = Q(s.title, s.intro, s.quickAnswer),
+    v = E(
+      s.keyTakeaways,
+      (x = s.sections.find((a) => a.bullets)) == null ? void 0 : x.bullets,
+      (u = s.faq) == null ? void 0 : u.map((a) => a.answer),
+    );
+  return e.jsxs("div", {
+    className: "min-h-screen bg-background",
+    children: [
+      e.jsx(R, {
+        title: `${s.title} | Alibarbar Australia`,
+        description: s.description,
+        path: l,
+        type: "article",
+        jsonLd: f,
+      }),
+      e.jsx(G, {}),
+      e.jsx("main", {
+        className: "pt-[calc(6rem+env(safe-area-inset-top))] pb-16 sm:pb-24",
+        children: e.jsxs("article", {
+          className: "container max-w-3xl",
+          children: [
+            e.jsxs("nav", {
+              "aria-label": "Breadcrumb",
+              className: "text-sm text-muted-foreground mb-6",
+              children: [
+                e.jsx(o, {
+                  to: "/",
+                  className: "hover:text-primary",
+                  children: "Home",
+                }),
+                e.jsx("span", { className: "mx-2", children: "/" }),
+                e.jsx(o, {
+                  to: "/guides",
+                  className: "hover:text-primary",
+                  children: "Guides",
+                }),
+                e.jsx("span", { className: "mx-2", children: "/" }),
+                e.jsx("span", {
+                  className: "text-foreground",
+                  children: s.category,
+                }),
+              ],
+            }),
+            e.jsxs("header", {
+              className: "mb-8",
+              children: [
+                e.jsxs("p", {
+                  className:
+                    "text-xs uppercase tracking-[0.25em] text-primary mb-3 font-semibold",
+                  children: [s.category, " · ", s.readTime],
+                }),
+                e.jsx("h1", {
+                  className:
+                    "text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight",
+                  children: s.headline ?? s.title,
+                }),
+                e.jsx(D, {
+                  datePublished: s.datePublished,
+                  dateModified: s.dateModified,
+                }),
+                s.audienceNote
+                  ? e.jsx("blockquote", {
+                      className:
+                        "mt-4 border-l-2 border-gold/40 pl-4 text-sm text-muted-foreground",
+                      children: s.audienceNote,
+                    })
+                  : null,
+                e.jsx($, { data: N }),
+                (s.audienceNote ||
+                  s.slug === "disposable-vape-laws-in-australia" ||
+                  s.slug === "where-to-buy-alibarbar-australia" ||
+                  s.slug.includes("buying") ||
+                  s.slug.includes("price")) &&
+                  e.jsx("div", {
+                    className: "mt-4",
+                    children: e.jsx(B, { compact: !0 }),
+                  }),
+                e.jsx("div", { className: "gold-divider mt-6 max-w-[6rem]" }),
+              ],
+            }),
+            e.jsx("div", {
+              className: "mb-10",
+              children: e.jsx(W, { items: v }),
+            }),
+            e.jsx("div", {
+              className: "space-y-8",
+              children: s.sections.map((a, d) =>
+                e.jsxs(
+                  "section",
+                  {
+                    children: [
+                      e.jsx("h2", {
+                        className: "text-xl sm:text-2xl font-bold mb-3",
+                        children: a.heading,
+                      }),
+                      e.jsx("div", {
+                        className:
+                          "space-y-3 text-muted-foreground leading-[1.75] text-sm sm:text-base",
+                        children: a.paragraphs.map((t, i) => {
+                          const r = C(t, d, i, j);
+                          return e.jsx(
+                            "p",
+                            {
+                              children:
+                                typeof r == "string"
+                                  ? e.jsx(h, { text: r })
+                                  : r,
+                            },
+                            i,
+                          );
+                        }),
+                      }),
+                      a.bullets
+                        ? e.jsx("ul", {
+                            className: "mt-4 space-y-2",
+                            children: a.bullets.map((t) =>
+                              e.jsxs(
+                                "li",
+                                {
+                                  className:
+                                    "flex gap-2 text-sm sm:text-base text-muted-foreground",
+                                  children: [
+                                    e.jsx(z, {
+                                      className:
+                                        "w-4 h-4 mt-1 text-primary shrink-0",
+                                    }),
+                                    e.jsx("span", { children: q(t) }),
+                                  ],
+                                },
+                                t,
+                              ),
+                            ),
+                          })
+                        : null,
+                      a.table
+                        ? e.jsx("div", {
+                            className:
+                              "mt-4 overflow-x-auto rounded-2xl border border-gold/25",
+                            children: e.jsxs("table", {
+                              className: "w-full text-sm",
+                              children: [
+                                e.jsx("thead", {
+                                  children: e.jsx("tr", {
+                                    className: "bg-card/70 text-left",
+                                    children: a.table.headers.map((t) =>
+                                      e.jsx(
+                                        "th",
+                                        {
+                                          className: "p-3 font-semibold",
+                                          children: t,
+                                        },
+                                        t,
+                                      ),
+                                    ),
+                                  }),
+                                }),
+                                e.jsx("tbody", {
+                                  children: a.table.rows.map((t) =>
+                                    e.jsx(
+                                      "tr",
+                                      {
+                                        className: "border-t border-gold/15",
+                                        children: t.map((i, r) =>
+                                          e.jsx(
+                                            "td",
+                                            {
+                                              className:
+                                                "p-3 text-muted-foreground align-top",
+                                              children: i,
+                                            },
+                                            r,
+                                          ),
+                                        ),
+                                      },
+                                      t.join("|"),
+                                    ),
+                                  ),
+                                }),
+                              ],
+                            }),
+                          })
+                        : null,
+                    ],
+                  },
+                  a.heading,
+                ),
+              ),
+            }),
+            s.faq && s.faq.length > 0
+              ? e.jsxs("section", {
+                  className: "mt-12",
+                  children: [
+                    e.jsx("h2", {
+                      className: "text-xl sm:text-2xl font-bold mb-4",
+                      children: "Frequently asked questions",
+                    }),
+                    e.jsx("div", {
+                      className: "space-y-4",
+                      children: s.faq.map((a) =>
+                        e.jsxs(
+                          "div",
+                          {
+                            className:
+                              "rounded-xl border border-gold/20 bg-card/50 p-4",
+                            children: [
+                              e.jsx("h3", {
+                                className: "text-sm sm:text-base font-semibold",
+                                children: a.question,
+                              }),
+                              e.jsx("p", {
+                                className:
+                                  "mt-1 text-sm text-muted-foreground leading-relaxed",
+                                children: e.jsx(h, { text: a.answer }),
+                              }),
+                            ],
+                          },
+                          a.question,
+                        ),
+                      ),
+                    }),
+                  ],
+                })
+              : null,
+            e.jsx(k, { currentPath: `/guides/${s.slug}` }),
+            n.length > 0
+              ? e.jsxs("section", {
+                  className: "mt-14",
+                  children: [
+                    e.jsx("h2", {
+                      className: "text-xl sm:text-2xl font-bold mb-5",
+                      children: "Shop related flavours",
+                    }),
+                    e.jsx("div", {
+                      className:
+                        "grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-5",
+                      children: n.map((a) =>
+                        e.jsxs(
+                          o,
+                          {
+                            to: `/product/${a.slug}`,
+                            className:
+                              "luxe-card rounded-xl overflow-hidden group flex flex-col border border-gold/20",
+                            children: [
+                              e.jsx("div", {
+                                className:
+                                  "relative aspect-square bg-gradient-to-br from-secondary to-background overflow-hidden",
+                                children: e.jsx(_, {
+                                  src: a.img,
+                                  srcSet: a.imgSrcSet,
+                                  alt: a.imgAlt ?? H(g(a)),
+                                  className:
+                                    "w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500",
+                                }),
+                              }),
+                              e.jsxs("div", {
+                                className:
+                                  "p-3 flex flex-col gap-1 border-t border-gold/15",
+                                children: [
+                                  e.jsx("h3", {
+                                    className:
+                                      "text-xs sm:text-sm font-bold leading-snug group-hover:text-primary transition-colors line-clamp-2",
+                                    children: g(a),
+                                  }),
+                                  e.jsx(I, {
+                                    price: a.price,
+                                    originalPrice: a.originalPrice,
+                                    priceClassName: "text-sm",
+                                  }),
+                                ],
+                              }),
+                            ],
+                          },
+                          a.slug,
+                        ),
+                      ),
+                    }),
+                  ],
+                })
+              : null,
+            c.length > 0
+              ? e.jsxs("section", {
+                  className: "mt-14",
+                  children: [
+                    e.jsx("h2", {
+                      className: "text-xl sm:text-2xl font-bold mb-5",
+                      children: "Keep reading",
+                    }),
+                    e.jsx("div", {
+                      className: "grid sm:grid-cols-2 gap-4",
+                      children: c.map((a) =>
+                        e.jsxs(
+                          o,
+                          {
+                            to: `/guides/${a.slug}`,
+                            className:
+                              "group rounded-2xl border border-gold/20 bg-card/60 p-5 flex flex-col gap-2 hover:border-gold/50 transition-colors",
+                            children: [
+                              e.jsx("h3", {
+                                className:
+                                  "text-base font-bold leading-snug group-hover:text-primary transition-colors",
+                                children: a.title,
+                              }),
+                              e.jsxs("span", {
+                                className:
+                                  "inline-flex items-center gap-1 text-sm font-semibold text-gold",
+                                children: [
+                                  "Read ",
+                                  e.jsx(X, {
+                                    className:
+                                      "w-4 h-4 group-hover:translate-x-1 transition-transform",
+                                  }),
+                                ],
+                              }),
+                            ],
+                          },
+                          a.slug,
+                        ),
+                      ),
+                    }),
+                  ],
+                })
+              : null,
+            e.jsxs("div", {
+              className: "mt-14 space-y-6",
+              children: [
+                e.jsx(O, { items: U }),
+                e.jsx(V, {
+                  title: s.title,
+                  url: `${K}${l}`,
+                  dateModified: s.dateModified,
+                }),
+              ],
+            }),
+            e.jsx(J, {}),
+          ],
+        }),
+      }),
+      e.jsx(F, {}),
+    ],
+  });
+};
+export { he as default };

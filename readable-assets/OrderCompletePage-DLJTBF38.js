@@ -1,0 +1,935 @@
+import {
+  j as e,
+  r as d,
+  i as ae,
+  q as ne,
+  k as oe,
+  v as le,
+  L as A,
+} from "./react-vendor-R4T0bNIa.js";
+import { A as ie, i as de, S as ce, r as ue } from "./australia-B23Bxbja.js";
+import { u } from "./ui-vendor-DvfZJg73.js";
+import {
+  o as b,
+  j as me,
+  v as xe,
+  S as P,
+  N as S,
+  F as T,
+  q as pe,
+  W as $,
+  w as U,
+  x as W,
+  y as he,
+} from "./index-Bwn3vGAd.js";
+import { B as v } from "./button-DuRxsHai.js";
+import {
+  D as be,
+  a as fe,
+  b as ge,
+  c as je,
+  d as ye,
+} from "./dialog-Czj21GWi.js";
+import { B as h, S as Ne } from "./checkout-DPIwGQ19.js";
+import { d as ve } from "./custom-pack-CSh3X_LM.js";
+import {
+  j as K,
+  d as we,
+  k as ke,
+  X as Ce,
+  l as Ae,
+} from "./icons-vendor-BquxQ5DR.js";
+import {
+  l as q,
+  c as H,
+  a as Pe,
+  b as Se,
+  R as Te,
+  r as Re,
+  s as Oe,
+  d as Ee,
+  e as M,
+} from "./orders-api-BZUM9ZAd.js";
+import "./query-vendor-L3kbwvGJ.js";
+import "./index-BwobEAja.js";
+import "./utils-CytzSlOG.js";
+function Be(s) {
+  const r = document.createElement("textarea");
+  ((r.value = s),
+    r.setAttribute("readonly", ""),
+    (r.style.position = "fixed"),
+    (r.style.top = "0"),
+    (r.style.left = "0"),
+    (r.style.width = "2em"),
+    (r.style.height = "2em"),
+    (r.style.padding = "0"),
+    (r.style.border = "none"),
+    (r.style.outline = "none"),
+    (r.style.boxShadow = "none"),
+    (r.style.background = "transparent"),
+    document.body.appendChild(r),
+    r.focus(),
+    r.select(),
+    r.setSelectionRange(0, r.value.length));
+  let n = !1;
+  try {
+    n = document.execCommand("copy");
+  } catch {
+    n = !1;
+  }
+  return (document.body.removeChild(r), n);
+}
+async function J(s) {
+  var c;
+  const r = s.trim();
+  if (!r) return !1;
+  const n = Be(r);
+  try {
+    if ((c = navigator.clipboard) != null && c.writeText)
+      return (await navigator.clipboard.writeText(r), !0);
+  } catch {
+    return n;
+  }
+  return n;
+}
+function De(s) {
+  const r = [
+    { label: "Account Name", value: h.accountName },
+    { label: "BSB", value: h.bsb, copyValue: h.bsb.replace(/\D/g, "") },
+    { label: "Account Number", value: h.accountNumber },
+    { label: "Swift/BIC", value: h.swift },
+    { label: "Bank", value: h.bankName },
+    { label: "Bank address", value: h.bankAddress },
+  ];
+  return (
+    typeof s.amount == "number" &&
+      r.push({
+        label: "Total Amount",
+        value: b(s.amount),
+        copyValue: s.amount.toFixed(2),
+      }),
+    s.reference && r.push({ label: "Reference", value: s.reference }),
+    r
+  );
+}
+function Le(s) {
+  return s.map((r) => `${r.label}: ${r.copyValue ?? r.value}`).join(`
+`);
+}
+function _e({ field: s, compact: r }) {
+  const [n, c] = d.useState(!1),
+    i = s.copyValue ?? s.value,
+    l = s.label === "Reference",
+    m = async () => {
+      if (!(await J(i))) {
+        u.error(`Could not copy ${s.label}. Select the text and copy it.`);
+        return;
+      }
+      (c(!0),
+        u.success(`Copied ${s.label}`),
+        window.setTimeout(() => c(!1), 1500));
+    };
+  return e.jsxs("div", {
+    className: `flex items-center justify-between gap-2 ${r ? "px-2.5 py-1.5 text-xs" : "px-3 py-2 text-sm"} ${l ? "bg-[#d7b760]/25" : ""}`,
+    children: [
+      e.jsx("p", {
+        className: `shrink-0 ${l ? "font-semibold text-[#b8942e]" : "text-muted-foreground"}`,
+        children: s.label,
+      }),
+      e.jsxs("div", {
+        className: "flex min-w-0 items-center justify-end gap-1.5",
+        children: [
+          e.jsx("p", {
+            className: `min-w-0 break-words text-right font-medium leading-snug select-text ${l ? "font-bold text-foreground" : "text-foreground"}`,
+            children: s.value,
+          }),
+          e.jsx("button", {
+            type: "button",
+            onClick: () => void m(),
+            "aria-label": `Copy ${s.label}`,
+            className: `inline-flex shrink-0 items-center justify-center rounded border border-border text-muted-foreground hover:border-primary/50 hover:text-primary ${r ? "h-7 w-7" : "h-8 w-8"}`,
+            children: n
+              ? e.jsx(we, { className: "h-3.5 w-3.5 text-emerald-500" })
+              : e.jsx(K, { className: "h-3.5 w-3.5" }),
+          }),
+        ],
+      }),
+    ],
+  });
+}
+function V({ amount: s, reference: r, compact: n = !1 }) {
+  const c = De({ amount: s, reference: r }),
+    i = async () => {
+      if (!(await J(Le(c)))) {
+        u.error("Could not copy the bank details. Copy each row instead.");
+        return;
+      }
+      u.success("Copied all bank details");
+    };
+  return e.jsxs("div", {
+    className: n ? "space-y-1.5" : "space-y-2",
+    children: [
+      e.jsxs("div", {
+        className: "flex items-center justify-between gap-2",
+        children: [
+          e.jsx("p", {
+            className: "text-sm font-medium text-foreground",
+            children: "Bank details",
+          }),
+          e.jsxs("button", {
+            type: "button",
+            onClick: () => void i(),
+            className:
+              "inline-flex h-8 items-center gap-1 rounded-md border border-border px-2 text-xs font-medium text-foreground hover:border-primary/50 hover:text-primary",
+            children: [e.jsx(K, { className: "h-3.5 w-3.5" }), "Copy all"],
+          }),
+        ],
+      }),
+      r
+        ? e.jsx("div", {
+            role: "note",
+            className: `rounded-lg border-2 border-[#d7b760] bg-[#d7b760]/20 text-foreground ${n ? "px-2.5 py-2 text-xs leading-snug" : "px-3 py-2.5 text-sm leading-snug"}`,
+            children: e.jsxs("p", {
+              className: "font-semibold",
+              children: [
+                "Important: put your order number",
+                " ",
+                e.jsx("span", {
+                  className: "font-bold text-[#b8942e]",
+                  children: r,
+                }),
+                " in the transfer reference / description so we can match your payment.",
+              ],
+            }),
+          })
+        : null,
+      e.jsx("div", {
+        className:
+          "divide-y divide-border overflow-hidden rounded-lg border border-border",
+        children: c.map((l) => e.jsx(_e, { field: l, compact: n }, l.label)),
+      }),
+      n || r
+        ? null
+        : e.jsx("p", {
+            className: "text-xs text-muted-foreground",
+            children:
+              "Place the order first. The next screen gives you an order number to use as the payment reference.",
+          }),
+    ],
+  });
+}
+const Ie = (s) => {
+    var r;
+    return (
+      ((r = ie.find((n) => n.value === s)) == null ? void 0 : r.label) ?? s
+    );
+  },
+  z = ({ title: s, address: r }) =>
+    e.jsxs("div", {
+      children: [
+        e.jsx("h3", {
+          className: "text-base font-semibold text-foreground mb-2",
+          children: s,
+        }),
+        e.jsxs("address", {
+          className: "not-italic text-sm text-muted-foreground leading-relaxed",
+          children: [
+            r.firstName,
+            " ",
+            r.lastName,
+            e.jsx("br", {}),
+            r.street,
+            r.apartment
+              ? e.jsxs(e.Fragment, { children: [e.jsx("br", {}), r.apartment] })
+              : null,
+            e.jsx("br", {}),
+            r.suburb,
+            ", ",
+            Ie(r.state),
+            " ",
+            r.postcode,
+            e.jsx("br", {}),
+            r.country,
+            r.phone
+              ? e.jsxs(e.Fragment, { children: [e.jsx("br", {}), r.phone] })
+              : null,
+            e.jsx("br", {}),
+            r.email,
+          ],
+        }),
+      ],
+    }),
+  Fe =
+    "After transferring, come back to this page to upload your payment screenshot. Please upload it here.",
+  G = () =>
+    e.jsx("div", {
+      "data-return-upload-notice": !0,
+      className:
+        "rounded-lg border-2 border-[#d7b760] bg-[#d7b760]/10 px-3 py-2.5 text-sm leading-relaxed text-foreground",
+      children: e.jsxs("p", {
+        children: [
+          e.jsx("span", {
+            className: "font-semibold text-[#b8942e]",
+            children: "Important: ",
+          }),
+          Fe,
+        ],
+      }),
+    }),
+  Qe = () => {
+    var _, I, F;
+    const s = ae(),
+      r = ne(),
+      n = oe(),
+      [c] = le(),
+      i = s.state ?? null,
+      l = ((_ = c.get("order")) == null ? void 0 : _.trim()) ?? "",
+      m = ((I = c.get("email")) == null ? void 0 : I.trim()) ?? "",
+      [t, g] = d.useState(() => {
+        if (i != null && i.orderNumber) return i;
+        const a = q();
+        return a && (!l || a.orderNumber === l) ? a : null;
+      }),
+      [X, j] = d.useState(() => !!(l && m && !i)),
+      [Y, w] = d.useState(!1),
+      [x, R] = d.useState(null),
+      [O, E] = d.useState(!1),
+      [B, D] = d.useState(!1),
+      [f, Q] = d.useState(!1),
+      k = d.useRef(!1),
+      N = d.useRef(null);
+    if (
+      (d.useLayoutEffect(() => {
+        n !== "POP" && me(0);
+      }, [n, t == null ? void 0 : t.orderNumber]),
+      d.useEffect(() => {
+        if (i != null && i.orderNumber) {
+          (H(i), g(i), j(!1));
+          return;
+        }
+        const a = q(),
+          o = a && (!l || a.orderNumber === l) ? a : null;
+        if (o && !(l && m)) {
+          (g(o), j(!1));
+          return;
+        }
+        if (!l || !m) {
+          j(!1);
+          return;
+        }
+        let p = !1;
+        return (
+          j(!0),
+          Pe(l, m)
+            .then((y) => {
+              p || (H(y), g(y));
+            })
+            .catch((y) => {
+              if (!p) {
+                if (o) {
+                  g(o);
+                  return;
+                }
+                (u.error(
+                  y instanceof Error
+                    ? y.message
+                    : "Could not resume this order.",
+                ),
+                  g(null));
+              }
+            })
+            .finally(() => {
+              p || j(!1);
+            }),
+          () => {
+            p = !0;
+          }
+        );
+      }, [i, l, m]),
+      d.useEffect(() => {
+        t && xe(t);
+      }, [t]),
+      X)
+    )
+      return e.jsxs("div", {
+        className: "min-h-screen bg-background",
+        children: [
+          e.jsx(P, {
+            title: "Loading Order | Alibarbar Australia",
+            description: "Loading your Alibarbar Australia order confirmation.",
+            path: "/order-complete",
+            noindex: !0,
+          }),
+          e.jsx(S, {}),
+          e.jsx("main", {
+            className:
+              "container pt-[calc(6rem+env(safe-area-inset-top))] pb-20 max-w-lg text-center",
+            children: e.jsxs("div", {
+              className: "rounded-2xl border border-border bg-card p-8",
+              children: [
+                e.jsx("h1", {
+                  className: "text-2xl font-semibold text-foreground mb-3",
+                  children: "Loading your order…",
+                }),
+                e.jsx("p", {
+                  className: "text-muted-foreground",
+                  children: "Please wait while we restore your order details.",
+                }),
+              ],
+            }),
+          }),
+          e.jsx(T, {}),
+        ],
+      });
+    if (!t)
+      return e.jsxs("div", {
+        className: "min-h-screen bg-background",
+        children: [
+          e.jsx(P, {
+            title: "No Recent Order | Alibarbar Australia",
+            description:
+              "No recent Alibarbar Australia order was found for this browser session.",
+            path: "/order-complete",
+            noindex: !0,
+          }),
+          e.jsx(S, {}),
+          e.jsx("main", {
+            className:
+              "container pt-[calc(6rem+env(safe-area-inset-top))] pb-20 max-w-lg text-center",
+            children: e.jsxs("div", {
+              className: "rounded-2xl border border-border bg-card p-8",
+              children: [
+                e.jsx("h1", {
+                  className: "text-2xl font-semibold text-foreground mb-3",
+                  children: "No recent order",
+                }),
+                e.jsx("p", {
+                  className: "text-muted-foreground mb-6",
+                  children:
+                    "Place an order to see your confirmation and payment details here. Keep this browser open until you finish bank transfer, or bookmark the page with your order number.",
+                }),
+                e.jsx(v, {
+                  asChild: !0,
+                  children: e.jsx(A, {
+                    to: "/shop",
+                    children: "Browse flavours",
+                  }),
+                }),
+              ],
+            }),
+          }),
+          e.jsx(T, {}),
+        ],
+      });
+    const C = Se(t.orderNumber),
+      Z = async (a) => {
+        if (a) {
+          E(!0);
+          try {
+            const o = await Re(a);
+            R(o);
+          } catch (o) {
+            u.error(o instanceof Error ? o.message : "Could not upload image.");
+          } finally {
+            E(!1);
+          }
+        }
+      },
+      ee = (a, o) => {
+        const p = a instanceof Error ? a.message : o;
+        if (de(p)) {
+          u.error(ce, {
+            description:
+              "Your page was showing older prices. If you already transferred, email orders@ailibarbar.com with your screenshot.",
+            duration: 6e4,
+            action: {
+              label: "Refresh order",
+              onClick: () => ue(t.lines, t.discountCode),
+            },
+          });
+          return;
+        }
+        u.error(p);
+      },
+      L = () => {
+        (R(null), N.current && (N.current.value = ""));
+      },
+      re = async () => {
+        var a;
+        if (!(k.current || f)) {
+          if (!x) {
+            (u.error("Please upload your payment screenshot first."),
+              (a = N.current) == null || a.focus());
+            return;
+          }
+          ((k.current = !0), D(!0));
+          try {
+            const o = await Oe(t, x);
+            (Ee(o),
+              M(t.orderNumber),
+              he(t),
+              Q(!0),
+              w(!1),
+              u.success("Payment receipt received.", {
+                description: `We'll confirm transfer ${C} shortly.`,
+              }));
+          } catch (o) {
+            ((k.current = !1), D(!1), ee(o, "Could not save receipt."));
+          }
+        }
+      },
+      te = (a) => {
+        (w(a), !a && !f && L());
+      },
+      se = () => {
+        (M(t.orderNumber), u.message("Order cancelled"), r("/"));
+      };
+    return e.jsxs("div", {
+      className: "min-h-screen bg-background",
+      children: [
+        e.jsx(P, {
+          title: "Order Complete | Alibarbar Australia",
+          description:
+            "Alibarbar Australia order confirmation and bank transfer receipt upload.",
+          path: "/order-complete",
+          noindex: !0,
+        }),
+        e.jsx(S, {}),
+        e.jsxs("main", {
+          className:
+            "container pt-[calc(5rem+env(safe-area-inset-top))] sm:pt-[calc(6rem+env(safe-area-inset-top))] pb-16 sm:pb-20 max-w-5xl",
+          children: [
+            e.jsxs("nav", {
+              className: "text-sm text-muted-foreground mb-8",
+              "aria-label": "Checkout steps",
+              children: [
+                e.jsx(A, {
+                  to: "/cart",
+                  className: "hover:text-primary transition-colors",
+                  children: "Shopping Cart",
+                }),
+                e.jsx("span", { className: "mx-2", children: "→" }),
+                e.jsx(A, {
+                  to: "/checkout",
+                  className: "hover:text-primary transition-colors",
+                  children: "Checkout Details",
+                }),
+                e.jsx("span", { className: "mx-2", children: "→" }),
+                e.jsx("span", {
+                  className:
+                    "text-foreground font-medium underline underline-offset-4",
+                  children: "Order Complete",
+                }),
+              ],
+            }),
+            e.jsx("div", {
+              className: "grid gap-8 items-start",
+              children: e.jsxs("section", {
+                children: [
+                  e.jsx("h1", {
+                    className: "text-2xl font-semibold text-foreground mb-5",
+                    children: "Order details",
+                  }),
+                  e.jsx("div", {
+                    className:
+                      "rounded-2xl border border-border overflow-hidden",
+                    children: e.jsxs("table", {
+                      className: "w-full text-sm",
+                      children: [
+                        e.jsx("thead", {
+                          children: e.jsxs("tr", {
+                            className:
+                              "bg-muted/60 text-xs uppercase tracking-wider text-muted-foreground",
+                            children: [
+                              e.jsx("th", {
+                                className: "text-left font-medium px-4 py-3",
+                                children: "Product",
+                              }),
+                              e.jsx("th", {
+                                className: "text-right font-medium px-4 py-3",
+                                children: "Total",
+                              }),
+                            ],
+                          }),
+                        }),
+                        e.jsxs("tbody", {
+                          children: [
+                            t.lines.map((a) =>
+                              e.jsxs(
+                                "tr",
+                                {
+                                  className: "border-t border-border",
+                                  children: [
+                                    e.jsxs("td", {
+                                      className:
+                                        "px-4 py-3 text-foreground break-words",
+                                      children: [
+                                        pe(ve(a.name)),
+                                        " ",
+                                        e.jsxs("span", {
+                                          className: "text-muted-foreground",
+                                          children: ["× ", a.qty],
+                                        }),
+                                      ],
+                                    }),
+                                    e.jsx("td", {
+                                      className:
+                                        "px-4 py-3 text-right tabular-nums whitespace-nowrap",
+                                      children: b(a.price * a.qty),
+                                    }),
+                                  ],
+                                },
+                                a.slug,
+                              ),
+                            ),
+                            e.jsxs("tr", {
+                              className: "border-t border-border",
+                              children: [
+                                e.jsx("td", {
+                                  className: "px-4 py-3 text-muted-foreground",
+                                  children: "Subtotal",
+                                }),
+                                e.jsx("td", {
+                                  className:
+                                    "px-4 py-3 text-right tabular-nums",
+                                  children: b(t.subtotal),
+                                }),
+                              ],
+                            }),
+                            e.jsxs("tr", {
+                              className: "border-t border-border",
+                              children: [
+                                e.jsx("td", {
+                                  className: "px-4 py-3 text-muted-foreground",
+                                  children: "Shipping",
+                                }),
+                                e.jsxs("td", {
+                                  className:
+                                    "px-4 py-3 text-right tabular-nums whitespace-nowrap",
+                                  children: [b(t.shipping), " via ", Ne],
+                                }),
+                              ],
+                            }),
+                            t.discountAmount && t.discountAmount > 0
+                              ? e.jsxs("tr", {
+                                  className: "border-t border-border",
+                                  children: [
+                                    e.jsxs("td", {
+                                      className: "px-4 py-3 text-emerald-500",
+                                      children: [
+                                        "Discount",
+                                        t.discountCode
+                                          ? ` (${t.discountCode})`
+                                          : "",
+                                      ],
+                                    }),
+                                    e.jsxs("td", {
+                                      className:
+                                        "px-4 py-3 text-right tabular-nums text-emerald-500 whitespace-nowrap",
+                                      children: ["−", b(t.discountAmount)],
+                                    }),
+                                  ],
+                                })
+                              : null,
+                            e.jsxs("tr", {
+                              className: "border-t border-border",
+                              children: [
+                                e.jsx("td", {
+                                  className:
+                                    "px-4 py-3 font-semibold text-foreground",
+                                  children: "Total",
+                                }),
+                                e.jsx("td", {
+                                  className:
+                                    "px-4 py-3 text-right font-bold text-foreground tabular-nums",
+                                  children: b(t.total),
+                                }),
+                              ],
+                            }),
+                            e.jsxs("tr", {
+                              className: "border-t border-border",
+                              children: [
+                                e.jsx("td", {
+                                  className:
+                                    "px-4 py-3 text-muted-foreground align-middle",
+                                  children: "Payment method",
+                                }),
+                                e.jsx("td", {
+                                  className: "px-4 py-3",
+                                  children: e.jsxs("div", {
+                                    className:
+                                      "flex items-center justify-end gap-3",
+                                    children: [
+                                      e.jsx("span", {
+                                        className: "text-foreground",
+                                        children: t.paymentMethod,
+                                      }),
+                                      e.jsx(v, {
+                                        size: "sm",
+                                        onClick: () => w(!0),
+                                        disabled: f,
+                                        children: f
+                                          ? "Receipt uploaded"
+                                          : "Upload receipt",
+                                      }),
+                                    ],
+                                  }),
+                                }),
+                              ],
+                            }),
+                            e.jsxs("tr", {
+                              className: "border-t border-border",
+                              children: [
+                                e.jsx("td", {
+                                  className:
+                                    "px-4 py-3 text-muted-foreground align-middle",
+                                  children: "Actions",
+                                }),
+                                e.jsx("td", {
+                                  className: "px-4 py-3",
+                                  children: e.jsx("div", {
+                                    className: "flex justify-end",
+                                    children: e.jsx(v, {
+                                      size: "sm",
+                                      variant: "outline",
+                                      onClick: se,
+                                      children: "Cancel",
+                                    }),
+                                  }),
+                                }),
+                              ],
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  }),
+                  e.jsxs("div", {
+                    className:
+                      "mt-4 rounded-xl border border-border bg-card/70 p-3 space-y-3",
+                    children: [
+                      e.jsx(V, { amount: t.total, reference: C, compact: !0 }),
+                      f ? null : e.jsx(G, {}),
+                    ],
+                  }),
+                  e.jsxs("p", {
+                    className:
+                      "mt-3 text-sm text-muted-foreground leading-relaxed",
+                    children: [
+                      "如果您有疑问，可以先下单支付，或者",
+                      " ",
+                      e.jsxs("a", {
+                        href: $,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className:
+                          "text-muted-foreground underline underline-offset-2",
+                        children: ["WhatsApp 私聊 ", U],
+                      }),
+                      " ",
+                      "协商货到付款（邮箱 ",
+                      W,
+                      "）。",
+                    ],
+                  }),
+                  e.jsxs("div", {
+                    className: "mt-8 grid sm:grid-cols-2 gap-8",
+                    children: [
+                      e.jsx(z, {
+                        title: "Billing address",
+                        address: t.billing,
+                      }),
+                      t.shipToDifferent
+                        ? e.jsx(z, {
+                            title: "Shipping address",
+                            address: t.billing,
+                          })
+                        : null,
+                    ],
+                  }),
+                  (F = t.notes) != null && F.trim()
+                    ? e.jsxs("div", {
+                        className: "mt-8",
+                        children: [
+                          e.jsx("h3", {
+                            className:
+                              "text-base font-semibold text-foreground mb-2",
+                            children: "Order notes",
+                          }),
+                          e.jsx("p", {
+                            className:
+                              "text-sm text-muted-foreground whitespace-pre-wrap leading-relaxed",
+                            children: t.notes.trim(),
+                          }),
+                        ],
+                      })
+                    : null,
+                ],
+              }),
+            }),
+          ],
+        }),
+        e.jsx(T, {}),
+        e.jsx(be, {
+          open: Y,
+          onOpenChange: te,
+          children: e.jsxs(fe, {
+            className: "max-w-md max-h-[90vh] overflow-y-auto",
+            children: [
+              e.jsxs(ge, {
+                children: [
+                  e.jsx(je, {
+                    className: "text-center uppercase tracking-wide",
+                    children: "Pay with bank transfer",
+                  }),
+                  e.jsxs(ye, {
+                    className: "text-center",
+                    children: [
+                      "Transfer ",
+                      e.jsx("span", {
+                        className: "font-semibold text-foreground",
+                        children: b(t.total),
+                      }),
+                      " to the bank account details below.",
+                    ],
+                  }),
+                ],
+              }),
+              e.jsx(V, { amount: t.total, reference: C, compact: !0 }),
+              e.jsx(G, {}),
+              e.jsxs("p", {
+                className: "text-sm text-muted-foreground leading-relaxed",
+                children: [
+                  "如果您有疑问，可以先下单支付，或者",
+                  " ",
+                  e.jsxs("a", {
+                    href: $,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    className:
+                      "text-muted-foreground underline underline-offset-2",
+                    children: ["WhatsApp 私聊 ", U],
+                  }),
+                  " ",
+                  "协商货到付款（邮箱 ",
+                  W,
+                  "）。",
+                ],
+              }),
+              e.jsxs("div", {
+                className: "space-y-3",
+                children: [
+                  e.jsx("p", {
+                    className: "text-sm font-medium text-foreground",
+                    children: "Upload payment screenshot",
+                  }),
+                  x
+                    ? e.jsxs("div", {
+                        className:
+                          "relative rounded-lg border border-border overflow-hidden bg-muted/30",
+                        children: [
+                          x.kind === "pdf"
+                            ? e.jsxs("div", {
+                                className:
+                                  "flex items-center gap-3 px-3 py-6 text-sm text-foreground",
+                                children: [
+                                  e.jsx(ke, {
+                                    className:
+                                      "h-8 w-8 shrink-0 text-[#b8942e]",
+                                  }),
+                                  e.jsx("span", {
+                                    children: "PDF receipt ready to send",
+                                  }),
+                                ],
+                              })
+                            : e.jsx("img", {
+                                src: x.dataUrl,
+                                alt: "Payment receipt preview",
+                                className:
+                                  "w-full max-h-48 object-contain bg-black/20",
+                              }),
+                          e.jsxs("div", {
+                            className:
+                              "flex items-center justify-between gap-2 px-3 py-2 text-xs text-muted-foreground border-t border-border",
+                            children: [
+                              e.jsx("span", {
+                                className: "truncate",
+                                children: x.name,
+                              }),
+                              e.jsxs("button", {
+                                type: "button",
+                                onClick: L,
+                                className:
+                                  "inline-flex items-center gap-1 text-foreground hover:text-destructive transition-colors shrink-0",
+                                children: [
+                                  e.jsx(Ce, { className: "h-3.5 w-3.5" }),
+                                  "Remove",
+                                ],
+                              }),
+                            ],
+                          }),
+                        ],
+                      })
+                    : e.jsxs("label", {
+                        "data-receipt-upload": !0,
+                        className:
+                          "relative block cursor-pointer w-full rounded-lg border border-dashed border-border bg-muted/20 px-4 py-8 text-center hover:border-primary/50 hover:bg-muted/40 transition-colors",
+                        children: [
+                          e.jsxs("span", {
+                            className: "pointer-events-none block",
+                            children: [
+                              e.jsx(Ae, {
+                                className:
+                                  "h-8 w-8 mx-auto mb-2 text-muted-foreground",
+                              }),
+                              e.jsx("span", {
+                                className:
+                                  "block text-sm font-medium text-foreground",
+                                children: O
+                                  ? "Preparing your file…"
+                                  : "Tap to upload receipt",
+                              }),
+                              e.jsx("span", {
+                                className:
+                                  "block text-xs text-muted-foreground mt-1",
+                                children:
+                                  "Screenshot, photo (JPG, PNG, HEIC) or PDF · max 10 MB",
+                              }),
+                            ],
+                          }),
+                          e.jsx("input", {
+                            ref: N,
+                            type: "file",
+                            accept: Te,
+                            "aria-label": "Upload payment screenshot",
+                            className:
+                              "absolute inset-0 z-10 h-full w-full cursor-pointer opacity-0",
+                            onChange: (a) => {
+                              var o;
+                              (Z((o = a.target.files) == null ? void 0 : o[0]),
+                                (a.target.value = ""));
+                            },
+                          }),
+                        ],
+                      }),
+                ],
+              }),
+              f
+                ? null
+                : e.jsx("p", {
+                    className: "text-center text-xs text-muted-foreground",
+                    children: "Waiting for your transfer…",
+                  }),
+              e.jsx(v, {
+                className: "w-full",
+                onClick: () => void re(),
+                disabled: B || O || !x,
+                children: B ? "Submitting…" : "I have sent the money",
+              }),
+            ],
+          }),
+        }),
+      ],
+    });
+  };
+export { Fe as RETURN_TO_UPLOAD_NOTICE, Qe as default };

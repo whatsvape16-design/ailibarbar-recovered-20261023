@@ -1,0 +1,1146 @@
+import { j as e, L as a } from "./react-vendor-R4T0bNIa.js";
+import {
+  u as v,
+  a as w,
+  f as I,
+  ac as A,
+  X as n,
+  P as t,
+  T as m,
+  ag as k,
+  ad as T,
+  a1 as S,
+  S as E,
+  N as P,
+  a7 as c,
+  Q as L,
+  av as $,
+  R as _,
+  k as O,
+  l as C,
+  c as g,
+  F as D,
+} from "./index-Bwn3vGAd.js";
+import { P as F } from "./ProductPrice-BJiKzrJ6.js";
+import { F as U } from "./FlavourFamilyNav-wkokEJYz.js";
+import { IngotPackBuilder as M } from "./IngotPackBuilder-duO6IeYR.js";
+import { I as q } from "./IngotSpecStrip-DlvK-vKx.js";
+import { C as b } from "./ContentByline-DZdt81X3.js";
+import { K as B } from "./KeyTakeaways-BS73GR4f.js";
+import {
+  I as o,
+  b as x,
+  c as u,
+  d as f,
+  e as H,
+  f as G,
+  g as R,
+  h as Q,
+  i as W,
+  j as K,
+  k as Y,
+  l as z,
+  m as V,
+} from "./ingot-hub-CmU4AF5o.js";
+import { C as X } from "./CatalogueImage-3ZWkwIDw.js";
+import {
+  w as J,
+  d as j,
+  B as Z,
+  a as ee,
+  T as se,
+} from "./icons-vendor-BquxQ5DR.js";
+import "./query-vendor-L3kbwvGJ.js";
+import "./utils-CytzSlOG.js";
+const ae = [
+    { name: "Home", path: "/" },
+    { name: "Ingot 9000", path: o },
+  ],
+  te = [
+    {
+      icon: Z,
+      title: "Ingot 9000 specialist",
+      desc: "This catalogue is the Alibarbar Ingot 9000 only — flavours, packs and specs in one place, not a mixed-brand vape mall.",
+    },
+    {
+      icon: ee,
+      title: "Accurate device facts",
+      desc: `We publish the real hardware: ${t.eLiquidMl}ml, ${t.batteryMah}mAh, mesh coil, smart LED, non-rechargeable. No USB-C claim that does not apply to this SKU.`,
+    },
+    {
+      icon: se,
+      title: "Australia-wide Regular Post",
+      desc: "A$10 for 1–19 devices, free at 20+. Bank-transfer checkout after you confirm 18+.",
+    },
+  ],
+  N = (i) => `A$${Number.isInteger(i) ? i : i.toFixed(2)}`,
+  re = [
+    { id: "specs", label: "Specs" },
+    { id: "price", label: "Price per device" },
+    { id: "flavours", label: "Flavours" },
+    { id: "how-to-use", label: "How to use" },
+    { id: "charging", label: "Charging" },
+    { id: "how-long", label: "How long it lasts" },
+    { id: "led", label: "LED meaning" },
+    { id: "spot-a-fake", label: "Spot a fake" },
+    { id: "models", label: "vs other models" },
+    { id: "delivery", label: "Delivery" },
+    { id: "ingot-faq", label: "FAQ" },
+  ];
+function d({ items: i }) {
+  return e.jsx("ul", {
+    className: "mt-4 space-y-2",
+    children: i.map((l) =>
+      e.jsxs(
+        "li",
+        {
+          className:
+            "flex gap-2 text-sm sm:text-base text-muted-foreground leading-relaxed",
+          children: [
+            e.jsx(j, {
+              className: "w-4 h-4 mt-1 text-primary shrink-0",
+              "aria-hidden": !0,
+            }),
+            e.jsx("span", { children: l }),
+          ],
+        },
+        l,
+      ),
+    ),
+  });
+}
+const fe = () => {
+  v();
+  const i = w(),
+    l = i.length,
+    h = I(),
+    p = n.productGroupId,
+    y = {
+      "@context": "https://schema.org",
+      "@graph": [
+        ...A(),
+        {
+          "@type": "CollectionPage",
+          "@id": n.webpageId(o),
+          name: "Alibarbar Ingot 9000 Australia — Specs, Price, Flavours and How to Use",
+          description: `The Alibarbar Ingot 9000 is a sealed non-rechargeable disposable for adults in Australia: ${t.puffRating}, ${t.eLiquidMl}ml, ${t.batteryMah}mAh, mesh coil, smart LED, no charger. ${l} flavours, pack prices and Australia-wide delivery.`,
+          url: `${m}${o}`,
+          isPartOf: { "@id": n.websiteId },
+          inLanguage: "en-AU",
+          about: { "@id": p },
+          dateModified: x,
+          author: {
+            "@type": "Person",
+            name: h.name,
+            url: `${m}/author/${h.slug}`,
+          },
+          mainEntity: { "@id": p },
+          publisher: { "@id": n.organizationId },
+        },
+        k(),
+        {
+          "@type": "ItemList",
+          name: "Alibarbar Ingot 9000 flavours Australia",
+          numberOfItems: l,
+          itemListElement: i.map((s, r) => T(s, r + 1)),
+        },
+        S(ae, o),
+        {
+          "@type": "FAQPage",
+          "@id": n.faqId(o),
+          mainEntity: u.map((s) => ({
+            "@type": "Question",
+            name: s.question,
+            acceptedAnswer: { "@type": "Answer", text: s.answer },
+          })),
+        },
+        {
+          "@type": "HowTo",
+          name: "How to use the Alibarbar Ingot 9000",
+          description:
+            "Unbox, inhale to activate, and read the smart LED. The Ingot 9000 is not rechargeable.",
+          inLanguage: "en-AU",
+          step: f.map((s, r) => ({
+            "@type": "HowToStep",
+            position: r + 1,
+            name: s.name,
+            text: s.text,
+            url: `${m}${o}#step-${r + 1}`,
+          })),
+        },
+      ],
+    };
+  return e.jsxs("div", {
+    className: "min-h-screen bg-background",
+    children: [
+      e.jsx(E, {
+        title: `Alibarbar Ingot 9000 Australia | Specs, Price, ${l} Flavours & How to Use`,
+        description:
+          "Alibarbar Ingot 9000 disposable for adults in Australia: up to 9000 puffs, 22ml, 2350mAh, mesh coil, smart LED. Shop all flavours and custom packs.",
+        path: o,
+        jsonLd: y,
+      }),
+      e.jsx(P, {}),
+      e.jsxs("main", {
+        className: "pt-[calc(6rem+env(safe-area-inset-top))] pb-16 sm:pb-24",
+        children: [
+          e.jsxs("div", {
+            className: "container max-w-6xl",
+            children: [
+              e.jsxs("nav", {
+                "aria-label": "Breadcrumb",
+                className: "text-sm text-muted-foreground mb-6",
+                children: [
+                  e.jsx(a, {
+                    to: "/",
+                    className: "hover:text-primary",
+                    children: "Home",
+                  }),
+                  e.jsx("span", { className: "mx-2", children: "/" }),
+                  e.jsx("span", {
+                    className: "text-foreground",
+                    children: "Ingot 9000",
+                  }),
+                ],
+              }),
+              e.jsxs("header", {
+                className: "max-w-3xl mb-8 sm:mb-10",
+                children: [
+                  e.jsx("p", {
+                    className:
+                      "text-xs uppercase tracking-[0.25em] text-primary mb-3 font-semibold",
+                    children: "Alibarbar Ingot 9000",
+                  }),
+                  e.jsxs("h1", {
+                    className:
+                      "text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight",
+                    children: [
+                      "Alibarbar Ingot 9000 ",
+                      e.jsx("span", {
+                        className: "text-gold",
+                        children: "Australia",
+                      }),
+                    ],
+                  }),
+                  e.jsx(b, { dateModified: x }),
+                  e.jsxs("p", {
+                    className:
+                      "text-muted-foreground mt-4 text-sm sm:text-base leading-relaxed",
+                    children: [
+                      "The Alibarbar Ingot 9000 is a sealed disposable vape for adults in Australia. It is rated for",
+                      " ",
+                      t.puffRating,
+                      ", with a ",
+                      t.eLiquidMl,
+                      "ml tank, a ",
+                      t.batteryMah,
+                      "mAh battery, a mesh coil and a smart LED that shows battery and e-liquid. It is not rechargeable: there is no charger in the box and no USB port on the device. ",
+                      t.puffNote,
+                    ],
+                  }),
+                  e.jsxs("p", {
+                    className:
+                      "text-muted-foreground mt-3 text-sm sm:text-base leading-relaxed",
+                    children: [
+                      "This store sells the Alibarbar Ingot 9000 only — sometimes searched as the Alibarbar 9000. Browse",
+                      " ",
+                      l,
+                      " ",
+                      e.jsx(a, {
+                        to: "/guides/alibarbar-flavours-guide",
+                        className: "text-primary underline underline-offset-2",
+                        children: "Alibarbar flavours",
+                      }),
+                      ", or build a 3, 5, 10 or 20 pack. Price in Australia: A$",
+                      c.single,
+                      " per single, A$",
+                      c.pack3,
+                      " for 3, A$",
+                      c.pack5,
+                      " for 5, A$",
+                      c.pack10,
+                      " for 10 and A$",
+                      c.pack20,
+                      " for 20. Shipping is A$10 for 1–19 devices and free at 20+. Full breakdown in the",
+                      " ",
+                      e.jsx(a, {
+                        to: "/guides/alibarbar-ingot-9000-price-guide-australia",
+                        className: "text-primary underline underline-offset-2",
+                        children: "Alibarbar Ingot 9000 price Australia guide",
+                      }),
+                      ".",
+                    ],
+                  }),
+                  e.jsx(L, {
+                    data: {
+                      question:
+                        "Where can I buy Alibarbar Ingot 9000 in Australia?",
+                      answer: `${$.short} This page is the Ingot 9000 shop hub on ailibarbar.com: ${l} flavours plus 3, 5, 10 and 20 custom packs, with Australia-wide Regular Post.`,
+                    },
+                  }),
+                  e.jsx("div", {
+                    className: "mt-4",
+                    children: e.jsx(_, { compact: !0 }),
+                  }),
+                  e.jsx("div", {
+                    className: "mt-4",
+                    children: e.jsx(B, {
+                      items: [
+                        "Catalogue lists the Alibarbar Ingot 9000 only — not Swirl, Upload or Ingot 20000",
+                        `${l} flavours in stock plus 3 / 5 / 10 / 20 custom packs`,
+                        `${t.puffRating}, ${t.eLiquidMl}ml, ${t.batteryMah}mAh, mesh coil, smart LED`,
+                        "Not rechargeable — no charger, cable or USB-C port",
+                        "Unbox, remove the mouthpiece cap, then inhale — no buttons or filling",
+                        "ailibarbar.com is the official Australian store; alibarbar.com serves the global brand role",
+                      ],
+                    }),
+                  }),
+                  e.jsx("nav", {
+                    "aria-label": "On this page",
+                    className: "mt-5 flex flex-wrap gap-2",
+                    children: re.map((s) =>
+                      e.jsx(
+                        "a",
+                        {
+                          href: `#${s.id}`,
+                          className:
+                            "rounded-full border border-gold/30 px-3 py-1.5 text-xs sm:text-sm text-muted-foreground hover:text-primary hover:border-gold",
+                          children: s.label,
+                        },
+                        s.id,
+                      ),
+                    ),
+                  }),
+                ],
+              }),
+            ],
+          }),
+          e.jsx(q, {}),
+          e.jsx("section", {
+            id: "specs",
+            className: "py-10 sm:py-14 scroll-mt-24",
+            "aria-labelledby": "specs-heading",
+            children: e.jsxs("div", {
+              className: "container max-w-4xl",
+              children: [
+                e.jsxs("h2", {
+                  id: "specs-heading",
+                  className:
+                    "text-2xl sm:text-3xl font-extrabold leading-tight",
+                  children: [
+                    "Alibarbar Ingot 9000 ",
+                    e.jsx("span", {
+                      className: "text-gold",
+                      children: "specs",
+                    }),
+                  ],
+                }),
+                e.jsxs("p", {
+                  className:
+                    "text-muted-foreground mt-3 text-sm sm:text-base leading-relaxed",
+                  children: [
+                    "Every flavour uses the same hardware — only the e-liquid changes. ",
+                    t.puffNote,
+                  ],
+                }),
+                e.jsx("div", {
+                  className:
+                    "mt-5 overflow-hidden rounded-2xl border border-gold/25 bg-card/40",
+                  children: e.jsx("table", {
+                    className: "w-full text-left text-sm sm:text-base",
+                    children: e.jsx("tbody", {
+                      children: H.map((s) =>
+                        e.jsxs(
+                          "tr",
+                          {
+                            className:
+                              "border-b border-gold/10 last:border-0 align-top",
+                            children: [
+                              e.jsx("th", {
+                                scope: "row",
+                                className:
+                                  "w-[38%] px-3 sm:px-5 py-3 font-semibold",
+                                children: s.label,
+                              }),
+                              e.jsx("td", {
+                                className:
+                                  "px-3 sm:px-5 py-3 text-muted-foreground",
+                                children: s.value,
+                              }),
+                            ],
+                          },
+                          s.label,
+                        ),
+                      ),
+                    }),
+                  }),
+                }),
+                e.jsx("p", {
+                  className: "mt-3 text-xs sm:text-sm text-muted-foreground",
+                  children: G,
+                }),
+              ],
+            }),
+          }),
+          e.jsx("section", {
+            id: "price",
+            className: "py-10 sm:py-14 bg-card/20 scroll-mt-24",
+            "aria-labelledby": "price-heading",
+            children: e.jsxs("div", {
+              className: "container max-w-4xl",
+              children: [
+                e.jsxs("h2", {
+                  id: "price-heading",
+                  className:
+                    "text-2xl sm:text-3xl font-extrabold leading-tight",
+                  children: [
+                    "Ingot 9000 price per device in ",
+                    e.jsx("span", {
+                      className: "text-gold",
+                      children: "Australia",
+                    }),
+                  ],
+                }),
+                e.jsx("p", {
+                  className:
+                    "text-muted-foreground mt-3 text-sm sm:text-base leading-relaxed",
+                  children:
+                    "Current catalogue prices in AUD; per-device is the pack price divided by devices. The product page and checkout are the source of truth.",
+                }),
+                e.jsx("div", {
+                  className:
+                    "mt-5 overflow-hidden rounded-2xl border border-gold/25 bg-card/40",
+                  children: e.jsxs("table", {
+                    className: "w-full text-left text-xs sm:text-sm",
+                    children: [
+                      e.jsx("thead", {
+                        className:
+                          "text-[11px] sm:text-xs uppercase tracking-wide text-muted-foreground border-b border-gold/20",
+                        children: e.jsxs("tr", {
+                          children: [
+                            e.jsx("th", {
+                              scope: "col",
+                              className: "px-2.5 sm:px-4 py-3",
+                              children: "Option",
+                            }),
+                            e.jsx("th", {
+                              scope: "col",
+                              className: "px-2.5 sm:px-4 py-3",
+                              children: "Price",
+                            }),
+                            e.jsx("th", {
+                              scope: "col",
+                              className: "px-2.5 sm:px-4 py-3",
+                              children: "Per device",
+                            }),
+                            e.jsx("th", {
+                              scope: "col",
+                              className: "px-2.5 sm:px-4 py-3",
+                              children: "Shipping",
+                            }),
+                          ],
+                        }),
+                      }),
+                      e.jsx("tbody", {
+                        children: R.map((s) =>
+                          e.jsxs(
+                            "tr",
+                            {
+                              className:
+                                "border-b border-gold/10 last:border-0",
+                              children: [
+                                e.jsx("th", {
+                                  scope: "row",
+                                  className:
+                                    "px-2.5 sm:px-4 py-3 font-semibold",
+                                  children: e.jsx(a, {
+                                    to: s.path,
+                                    className: "text-primary hover:text-gold",
+                                    children: s.label,
+                                  }),
+                                }),
+                                e.jsx("td", {
+                                  className: "px-2.5 sm:px-4 py-3",
+                                  children: N(s.price),
+                                }),
+                                e.jsx("td", {
+                                  className: "px-2.5 sm:px-4 py-3",
+                                  children: N(s.perDevice),
+                                }),
+                                e.jsx("td", {
+                                  className: "px-2.5 sm:px-4 py-3",
+                                  children: s.shipping.replace(
+                                    " Regular Post",
+                                    "",
+                                  ),
+                                }),
+                              ],
+                            },
+                            s.label,
+                          ),
+                        ),
+                      }),
+                    ],
+                  }),
+                }),
+                e.jsxs("p", {
+                  className:
+                    "mt-3 text-sm text-muted-foreground leading-relaxed",
+                  children: [
+                    "Buying more than 20? See",
+                    " ",
+                    e.jsx(a, {
+                      to: "/wholesale",
+                      className: "text-primary hover:text-gold font-semibold",
+                      children: "wholesale",
+                    }),
+                    " ",
+                    "or the",
+                    " ",
+                    e.jsx(a, {
+                      to: "/guides/alibarbar-ingot-9000-price-guide-australia",
+                      className: "text-primary hover:text-gold font-semibold",
+                      children:
+                        "Alibarbar Ingot 9000 price guide (pack savings vs singles)",
+                    }),
+                    ".",
+                  ],
+                }),
+              ],
+            }),
+          }),
+          e.jsx(M, {}),
+          e.jsx("section", {
+            id: "flavours",
+            className: "py-12 sm:py-16 md:py-20 scroll-mt-24",
+            children: e.jsxs("div", {
+              className: "container",
+              children: [
+                e.jsxs("div", {
+                  className:
+                    "flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6 sm:mb-8",
+                  children: [
+                    e.jsxs("div", {
+                      className: "max-w-2xl",
+                      children: [
+                        e.jsx("p", {
+                          className:
+                            "text-xs uppercase tracking-[0.2em] text-primary mb-3 font-semibold",
+                          children: "Current range",
+                        }),
+                        e.jsxs("h2", {
+                          className:
+                            "text-3xl sm:text-4xl font-extrabold leading-tight",
+                          children: [
+                            "Explore Ingot 9000 ",
+                            e.jsx("span", {
+                              className: "text-gold",
+                              children: "flavours",
+                            }),
+                          ],
+                        }),
+                        e.jsxs("p", {
+                          className:
+                            "text-muted-foreground mt-3 text-sm sm:text-base",
+                          children: [
+                            l,
+                            " Ingot 9000 flavour SKUs with taste guides and matching buy pages. Hardware is the same on every single — only the e-liquid changes.",
+                          ],
+                        }),
+                      ],
+                    }),
+                    e.jsxs(a, {
+                      to: "/flavours",
+                      className:
+                        "inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-gold self-start",
+                      children: [
+                        "Full taste guides ",
+                        e.jsx(J, { className: "w-4 h-4" }),
+                      ],
+                    }),
+                  ],
+                }),
+                e.jsx(U, {}),
+                e.jsx("div", {
+                  className: "grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5",
+                  children: i.map((s) => {
+                    const r = O(s.slug);
+                    return e.jsxs(
+                      "article",
+                      {
+                        className:
+                          "rounded-xl sm:rounded-2xl border border-gold/20 bg-card/60 overflow-hidden flex flex-col min-w-0 hover:border-gold/50 transition-colors",
+                        children: [
+                          e.jsx(a, {
+                            to: `/product/${s.slug}`,
+                            className:
+                              "relative aspect-square bg-gradient-to-br from-secondary to-background block",
+                            children: e.jsx(X, {
+                              src: s.img,
+                              srcSet: s.imgSrcSet,
+                              alt: s.imgAlt ?? C(g(s)),
+                              className:
+                                "w-full h-full object-contain p-3 sm:p-5",
+                            }),
+                          }),
+                          e.jsxs("div", {
+                            className:
+                              "p-2.5 sm:p-4 flex flex-col gap-1.5 border-t border-gold/15 flex-1",
+                            children: [
+                              r
+                                ? e.jsx("span", {
+                                    className:
+                                      "text-[10px] uppercase tracking-wide text-primary truncate",
+                                    children: r.family,
+                                  })
+                                : null,
+                              e.jsx("h3", {
+                                className:
+                                  "text-sm sm:text-base font-bold leading-snug",
+                                children: e.jsx(a, {
+                                  to: `/product/${s.slug}`,
+                                  className:
+                                    "hover:text-primary transition-colors",
+                                  children: g(s),
+                                }),
+                              }),
+                              e.jsx(F, {
+                                price: s.price,
+                                originalPrice: s.originalPrice,
+                                priceClassName: "text-sm sm:text-base",
+                              }),
+                              e.jsxs("div", {
+                                className:
+                                  "mt-auto flex flex-wrap gap-x-3 gap-y-1 pt-1 text-xs font-semibold",
+                                children: [
+                                  e.jsx(a, {
+                                    to: `/product/${s.slug}`,
+                                    className: "text-gold hover:text-primary",
+                                    children: "Shop →",
+                                  }),
+                                  r
+                                    ? e.jsx(a, {
+                                        to: `/flavours/${r.slug}`,
+                                        className:
+                                          "text-muted-foreground hover:text-primary",
+                                        children: "Taste notes",
+                                      })
+                                    : null,
+                                ],
+                              }),
+                            ],
+                          }),
+                        ],
+                      },
+                      s.slug,
+                    );
+                  }),
+                }),
+              ],
+            }),
+          }),
+          e.jsx("section", {
+            id: "how-to-use",
+            className: "py-12 sm:py-16 bg-card/20 scroll-mt-24",
+            children: e.jsxs("div", {
+              className: "container max-w-5xl",
+              children: [
+                e.jsxs("div", {
+                  className: "text-center max-w-2xl mx-auto mb-8 sm:mb-10",
+                  children: [
+                    e.jsx("p", {
+                      className:
+                        "text-xs uppercase tracking-[0.2em] text-primary mb-3 font-semibold",
+                      children: "How it works",
+                    }),
+                    e.jsx("h2", {
+                      className:
+                        "text-3xl sm:text-4xl font-extrabold leading-tight",
+                      children: "How to use an Alibarbar Ingot 9000",
+                    }),
+                    e.jsx("p", {
+                      className:
+                        "text-muted-foreground mt-3 text-sm sm:text-base",
+                      children:
+                        "Three steps. No buttons, no cable, no refill. Opening it means unboxing — not cracking the casing.",
+                    }),
+                  ],
+                }),
+                e.jsx("ol", {
+                  className: "grid md:grid-cols-3 gap-4 sm:gap-6",
+                  children: f.map((s, r) =>
+                    e.jsxs(
+                      "li",
+                      {
+                        id: `step-${r + 1}`,
+                        className:
+                          "rounded-2xl border border-gold/20 bg-card/50 p-5 sm:p-6 scroll-mt-28",
+                        children: [
+                          e.jsx("span", {
+                            className:
+                              "flex h-8 w-8 items-center justify-center rounded-full bg-primary/15 text-primary text-sm font-bold mb-3",
+                            children: r + 1,
+                          }),
+                          e.jsx("h3", {
+                            className: "text-lg font-bold mb-2",
+                            children: s.name,
+                          }),
+                          e.jsx("p", {
+                            className:
+                              "text-sm text-muted-foreground leading-relaxed",
+                            children: s.text,
+                          }),
+                        ],
+                      },
+                      s.name,
+                    ),
+                  ),
+                }),
+                e.jsxs("div", {
+                  className: "mt-8 max-w-3xl mx-auto",
+                  children: [
+                    e.jsx("h3", {
+                      className: "text-lg font-bold mb-2",
+                      children: "What is in the box",
+                    }),
+                    e.jsx(d, { items: Q }),
+                    e.jsxs("p", {
+                      className: "mt-4 text-sm text-muted-foreground",
+                      children: [
+                        "Step-by-step:",
+                        " ",
+                        e.jsx(a, {
+                          to: "/guides/how-to-open-alibarbar-vape",
+                          className:
+                            "text-primary hover:text-gold font-semibold",
+                          children: "how to open an Alibarbar vape",
+                        }),
+                        " · ",
+                        e.jsx(a, {
+                          to: "/guides/how-to-use-a-disposable-vape",
+                          className:
+                            "text-primary hover:text-gold font-semibold",
+                          children: "how to use a disposable vape",
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          }),
+          e.jsx("section", {
+            id: "charging",
+            className: "py-10 sm:py-14 scroll-mt-24",
+            "aria-labelledby": "charging-heading",
+            children: e.jsxs("div", {
+              className: "container max-w-4xl",
+              children: [
+                e.jsx("h2", {
+                  id: "charging-heading",
+                  className:
+                    "text-2xl sm:text-3xl font-extrabold leading-tight",
+                  children: "Can you charge an Alibarbar Ingot 9000?",
+                }),
+                e.jsxs("p", {
+                  className:
+                    "text-muted-foreground mt-3 text-sm sm:text-base leading-relaxed",
+                  children: [
+                    "No. The Alibarbar Ingot 9000 is a non-rechargeable disposable. The ",
+                    t.batteryMah,
+                    "mAh battery is built in and sized for the ",
+                    t.eLiquidMl,
+                    "ml tank, so there is no USB-C port, no cable in the box, and no safe way to top it up. When the smart LED shows the battery or e-liquid is finished, or vapour drops off, replace the device and recycle the old one at an e-waste or battery drop-off. Do not open the casing, and do not follow videos that wire a charger to a sealed stick.",
+                  ],
+                }),
+                e.jsxs("p", {
+                  className: "mt-4 text-sm text-muted-foreground",
+                  children: [
+                    "More:",
+                    " ",
+                    e.jsx(a, {
+                      to: "/guides/can-you-recharge-alibarbar-ingot-9000",
+                      className: "text-primary hover:text-gold font-semibold",
+                      children: "can you recharge an Alibarbar Ingot 9000",
+                    }),
+                    " · ",
+                    e.jsx(a, {
+                      to: "/guides/how-to-recharge-alibarbar",
+                      className: "text-primary hover:text-gold font-semibold",
+                      children: "how to recharge Alibarbar",
+                    }),
+                    " · ",
+                    e.jsx(a, {
+                      to: "/guides/how-to-read-alibarbar-led-when-finished",
+                      className: "text-primary hover:text-gold font-semibold",
+                      children: "reading the LED when it is finished",
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          }),
+          e.jsx("section", {
+            id: "how-long",
+            className: "py-10 sm:py-14 scroll-mt-24",
+            children: e.jsxs("div", {
+              className: "container max-w-4xl grid gap-10 md:grid-cols-2",
+              children: [
+                e.jsxs("div", {
+                  children: [
+                    e.jsx("h2", {
+                      className:
+                        "text-2xl sm:text-3xl font-extrabold leading-tight",
+                      children: "How long it lasts & how many puffs",
+                    }),
+                    e.jsx(d, { items: W }),
+                    e.jsxs("p", {
+                      className: "mt-4 text-sm text-muted-foreground",
+                      children: [
+                        "More:",
+                        " ",
+                        e.jsx(a, {
+                          to: "/guides/how-long-does-alibarbar-ingot-9000-last",
+                          className:
+                            "text-primary hover:text-gold font-semibold",
+                          children: "how long it lasts",
+                        }),
+                        " ",
+                        "·",
+                        " ",
+                        e.jsx(a, {
+                          to: "/guides/how-many-puffs-does-alibarbar-ingot-9000-have",
+                          className:
+                            "text-primary hover:text-gold font-semibold",
+                          children: "how many puffs",
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+                e.jsxs("div", {
+                  id: "led",
+                  className: "scroll-mt-24",
+                  children: [
+                    e.jsx("h2", {
+                      className:
+                        "text-2xl sm:text-3xl font-extrabold leading-tight",
+                      children: "What the LED means",
+                    }),
+                    e.jsx(d, { items: K }),
+                    e.jsxs("p", {
+                      className: "mt-4 text-sm text-muted-foreground",
+                      children: [
+                        "More:",
+                        " ",
+                        e.jsx(a, {
+                          to: "/guides/how-to-read-alibarbar-led-when-finished",
+                          className:
+                            "text-primary hover:text-gold font-semibold",
+                          children: "reading the Ingot 9000 LED",
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          }),
+          e.jsx("section", {
+            id: "spot-a-fake",
+            className: "py-10 sm:py-14 bg-card/20 scroll-mt-24",
+            children: e.jsxs("div", {
+              className: "container max-w-4xl grid gap-10 md:grid-cols-2",
+              children: [
+                e.jsxs("div", {
+                  children: [
+                    e.jsx("h2", {
+                      className:
+                        "text-2xl sm:text-3xl font-extrabold leading-tight",
+                      children: "How to spot a fake Ingot 9000",
+                    }),
+                    e.jsx(d, { items: Y }),
+                    e.jsxs("p", {
+                      className: "mt-4 text-sm text-muted-foreground",
+                      children: [
+                        "More:",
+                        " ",
+                        e.jsx(a, {
+                          to: "/guides/how-to-spot-fake-alibarbar-ingot",
+                          className:
+                            "text-primary hover:text-gold font-semibold",
+                          children: "fake Alibarbar checks",
+                        }),
+                        " ",
+                        "·",
+                        " ",
+                        e.jsx(a, {
+                          to: "/faq/authenticity",
+                          className:
+                            "text-primary hover:text-gold font-semibold",
+                          children: "authenticity FAQ",
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+                e.jsxs("div", {
+                  id: "models",
+                  className: "scroll-mt-24",
+                  children: [
+                    e.jsx("h2", {
+                      className:
+                        "text-2xl sm:text-3xl font-extrabold leading-tight",
+                      children: "Ingot 9000 vs other Alibarbar models",
+                    }),
+                    e.jsx(d, { items: z }),
+                    e.jsxs("p", {
+                      className: "mt-4 text-sm text-muted-foreground",
+                      children: [
+                        "More:",
+                        " ",
+                        e.jsx(a, {
+                          to: "/guides/alibarbar-ingot-9000-vs-ingot-20000",
+                          className:
+                            "text-primary hover:text-gold font-semibold",
+                          children: "Ingot 9000 vs Ingot 20000",
+                        }),
+                        " ",
+                        "·",
+                        " ",
+                        e.jsx(a, {
+                          to: "/guides/what-is-alibarbar-ingot-9000",
+                          className:
+                            "text-primary hover:text-gold font-semibold",
+                          children: "what is the Ingot 9000",
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          }),
+          e.jsx("section", {
+            id: "delivery",
+            className: "py-10 sm:py-14 scroll-mt-24",
+            children: e.jsxs("div", {
+              className: "container max-w-4xl",
+              children: [
+                e.jsxs("h2", {
+                  className:
+                    "text-2xl sm:text-3xl font-extrabold leading-tight",
+                  children: [
+                    "Delivery across ",
+                    e.jsx("span", {
+                      className: "text-gold",
+                      children: "Australia",
+                    }),
+                  ],
+                }),
+                e.jsx(d, { items: V }),
+                e.jsxs("p", {
+                  className: "mt-4 text-sm text-muted-foreground",
+                  children: [
+                    "Full details:",
+                    " ",
+                    e.jsx(a, {
+                      to: "/shipping",
+                      className: "text-primary hover:text-gold font-semibold",
+                      children: "shipping policy",
+                    }),
+                    " ",
+                    "·",
+                    " ",
+                    e.jsx(a, {
+                      to: "/faq/shipping",
+                      className: "text-primary hover:text-gold font-semibold",
+                      children: "shipping FAQ",
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          }),
+          e.jsx("section", {
+            className: "py-12 sm:py-16",
+            children: e.jsxs("div", {
+              className: "container",
+              children: [
+                e.jsxs("div", {
+                  className: "text-center max-w-2xl mx-auto mb-8 sm:mb-10",
+                  children: [
+                    e.jsx("p", {
+                      className:
+                        "text-xs uppercase tracking-[0.2em] text-primary mb-3 font-semibold",
+                      children: "Why this catalogue",
+                    }),
+                    e.jsxs("h2", {
+                      className:
+                        "text-3xl sm:text-4xl font-extrabold leading-tight",
+                      children: [
+                        "Why buy Ingot 9000 ",
+                        e.jsx("span", {
+                          className: "text-gold",
+                          children: "here",
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+                e.jsx("div", {
+                  className: "grid sm:grid-cols-3 gap-4 sm:gap-6",
+                  children: te.map((s) =>
+                    e.jsxs(
+                      "div",
+                      {
+                        className:
+                          "rounded-2xl border border-gold/20 bg-card/50 p-5 sm:p-6 flex flex-col gap-2",
+                        children: [
+                          e.jsx(s.icon, { className: "w-6 h-6 text-primary" }),
+                          e.jsx("h3", {
+                            className: "font-bold",
+                            children: s.title,
+                          }),
+                          e.jsx("p", {
+                            className:
+                              "text-sm text-muted-foreground leading-relaxed",
+                            children: s.desc,
+                          }),
+                        ],
+                      },
+                      s.title,
+                    ),
+                  ),
+                }),
+              ],
+            }),
+          }),
+          e.jsx("section", {
+            id: "ingot-faq",
+            className: "py-12 sm:py-16 bg-card/20 scroll-mt-24",
+            children: e.jsxs("div", {
+              className: "container max-w-3xl",
+              children: [
+                e.jsx("h2", {
+                  className:
+                    "text-3xl sm:text-4xl font-extrabold mb-6 text-center",
+                  children: "Ingot 9000 questions",
+                }),
+                e.jsx("dl", {
+                  className: "space-y-4",
+                  children: u.map((s) =>
+                    e.jsxs(
+                      "div",
+                      {
+                        className:
+                          "rounded-2xl border border-gold/20 bg-card/50 p-4 sm:p-5",
+                        children: [
+                          e.jsx("dt", {
+                            className: "text-sm sm:text-base font-semibold",
+                            children: s.question,
+                          }),
+                          e.jsx("dd", {
+                            className:
+                              "mt-2 text-sm sm:text-base text-muted-foreground leading-relaxed",
+                            children: s.answer,
+                          }),
+                        ],
+                      },
+                      s.question,
+                    ),
+                  ),
+                }),
+                e.jsxs("p", {
+                  className:
+                    "mt-6 text-sm text-muted-foreground text-center leading-relaxed",
+                  children: [
+                    "More detail in the",
+                    " ",
+                    e.jsx(a, {
+                      to: "/guides/what-is-alibarbar-ingot-9000",
+                      className: "text-primary font-semibold hover:text-gold",
+                      children: "full Ingot 9000 guide",
+                    }),
+                    ",",
+                    " ",
+                    e.jsx(a, {
+                      to: "/topics/alibarbar-ingot-9000",
+                      className: "text-primary font-semibold hover:text-gold",
+                      children: "topic hub",
+                    }),
+                    ",",
+                    " ",
+                    e.jsx(a, {
+                      to: "/reviews/alibarbar-ingot-9000-review",
+                      className: "text-primary font-semibold hover:text-gold",
+                      children: "device review",
+                    }),
+                    " ",
+                    "and",
+                    " ",
+                    e.jsx(a, {
+                      to: "/faq",
+                      className: "text-primary font-semibold hover:text-gold",
+                      children: "FAQ",
+                    }),
+                    ".",
+                  ],
+                }),
+                e.jsx("div", {
+                  className: "mt-6 text-center",
+                  children: e.jsx(b, { dateModified: x }),
+                }),
+              ],
+            }),
+          }),
+          e.jsx("section", {
+            className: "py-12 sm:py-16",
+            children: e.jsxs("div", {
+              className: "container max-w-3xl text-center space-y-5",
+              children: [
+                e.jsx("h2", {
+                  className:
+                    "text-3xl sm:text-4xl font-extrabold leading-tight",
+                  children: "Ready to shop the Ingot 9000?",
+                }),
+                e.jsx("p", {
+                  className: "text-muted-foreground text-sm sm:text-base",
+                  children:
+                    "Pick a flavour or build a mixed pack. Adults 18+ only.",
+                }),
+                e.jsxs("div", {
+                  className: "flex flex-col sm:flex-row gap-3 justify-center",
+                  children: [
+                    e.jsx(a, {
+                      to: "/shop",
+                      className:
+                        "inline-flex items-center justify-center min-h-[48px] px-8 rounded-full bg-gold text-primary-foreground font-bold uppercase tracking-widest text-xs sm:text-sm shadow-gold",
+                      children: "Open the shop",
+                    }),
+                    e.jsx(a, {
+                      to: "/product/custom-5-pack",
+                      className:
+                        "inline-flex items-center justify-center min-h-[48px] px-8 rounded-full border border-gold text-primary font-semibold uppercase tracking-widest text-xs sm:text-sm hover:bg-primary/10",
+                      children: "Start a 5 pack",
+                    }),
+                  ],
+                }),
+                e.jsxs("p", {
+                  className:
+                    "text-xs text-muted-foreground flex items-center justify-center gap-1.5",
+                  children: [
+                    e.jsx(j, { className: "w-3.5 h-3.5 text-primary" }),
+                    "Genuine Ingot 9000 stock · Australia-wide Regular Post",
+                  ],
+                }),
+              ],
+            }),
+          }),
+        ],
+      }),
+      e.jsx(D, {}),
+    ],
+  });
+};
+export { fe as default };

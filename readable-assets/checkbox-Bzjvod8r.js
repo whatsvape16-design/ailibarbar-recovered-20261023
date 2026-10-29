@@ -1,0 +1,24 @@
+import { r as n, j as e } from "./react-vendor-R4T0bNIa.js";
+import { e as s, f as c } from "./ui-vendor-DvfZJg73.js";
+import { c as a } from "./utils-CytzSlOG.js";
+import { b as d, d as m } from "./icons-vendor-BquxQ5DR.js";
+const f = n.forwardRef(({ className: t, checked: r, ...i }, o) =>
+  e.jsx(s, {
+    ref: o,
+    checked: r,
+    className: a(
+      "peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground data-[state=indeterminate]:bg-primary data-[state=indeterminate]:text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+      t,
+    ),
+    ...i,
+    children: e.jsx(c, {
+      className: a("flex items-center justify-center text-current"),
+      children:
+        r === "indeterminate"
+          ? e.jsx(d, { className: "h-3 w-3" })
+          : e.jsx(m, { className: "h-4 w-4" }),
+    }),
+  }),
+);
+f.displayName = s.displayName;
+export { f as C };

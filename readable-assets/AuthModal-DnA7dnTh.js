@@ -1,0 +1,255 @@
+import { r as o, j as e } from "./react-vendor-R4T0bNIa.js";
+import { u as r } from "./ui-vendor-DvfZJg73.js";
+import { D as S, a as A, b as F, c as I, d as q } from "./dialog-Czj21GWi.js";
+import { B } from "./button-DuRxsHai.js";
+import { L as d, I as u } from "./label--J037EDp.js";
+import { t as L, ax as P, ay as R, az as V } from "./index-Bwn3vGAd.js";
+import "./utils-CytzSlOG.js";
+import "./icons-vendor-BquxQ5DR.js";
+import "./index-BwobEAja.js";
+import "./query-vendor-L3kbwvGJ.js";
+const Q = ({ open: m, onOpenChange: w, onSuccess: g }) => {
+  const { login: C, register: N, verifyCode: E } = L(),
+    [t, a] = o.useState("login"),
+    [i, f] = o.useState(""),
+    [h, x] = o.useState(""),
+    [j, p] = o.useState(""),
+    [b, c] = o.useState(""),
+    [y, n] = o.useState(!1);
+  o.useEffect(() => {
+    m || (a("login"), f(""), x(""), p(""), c(""), n(!1));
+  }, [m]);
+  const v = () => {
+      (f(""), x(""), p(""), c(""), w(!1), g == null || g());
+    },
+    k = async (s) => {
+      (s.preventDefault(), n(!0));
+      try {
+        t === "login"
+          ? (await C(i, h), r.success("Signed in"), v())
+          : t === "register"
+            ? (await N(i, h, j)).needsVerification
+              ? (a("verify"),
+                c(""),
+                r.success("We emailed you a 6-digit code."))
+              : (r.success("Account created and signed in"), v())
+            : t === "verify"
+              ? (await E(i, b),
+                r.success("Email verified. You are signed in."),
+                v())
+              : (await P(i),
+                r.success("If this email exists, a reset link has been sent."),
+                a("login"));
+      } catch (l) {
+        l instanceof R && l.needsVerification
+          ? (a("verify"), r.message("Enter the 6-digit code from your email."))
+          : r.error(l instanceof Error ? l.message : "Authentication failed");
+      } finally {
+        n(!1);
+      }
+    },
+    D = async () => {
+      if (!i.trim()) {
+        r.error("Enter your email first.");
+        return;
+      }
+      n(!0);
+      try {
+        (await V(i),
+          r.success("If verification is still needed, a new code was sent."));
+      } catch (s) {
+        r.error(s instanceof Error ? s.message : "Could not resend code.");
+      } finally {
+        n(!1);
+      }
+    };
+  return e.jsx(S, {
+    open: m,
+    onOpenChange: w,
+    children: e.jsxs(A, {
+      className: "sm:max-w-md",
+      children: [
+        e.jsxs(F, {
+          children: [
+            e.jsx(I, {
+              children:
+                t === "login"
+                  ? "Sign in"
+                  : t === "register"
+                    ? "Create an account"
+                    : t === "verify"
+                      ? "Enter verification code"
+                      : "Forgot password",
+            }),
+            e.jsx(q, {
+              children:
+                t === "login"
+                  ? "Sign in to leave a review on Alibarbar Australia."
+                  : t === "register"
+                    ? "Create an account to review your favourite flavours."
+                    : t === "verify"
+                      ? `We sent a 6-digit code to ${i || "your email"}. Enter it below.`
+                      : "Enter your email and we will send you a reset link.",
+            }),
+          ],
+        }),
+        e.jsxs("form", {
+          onSubmit: k,
+          className: "space-y-4",
+          children: [
+            t === "register"
+              ? e.jsxs("div", {
+                  className: "space-y-1.5",
+                  children: [
+                    e.jsx(d, {
+                      htmlFor: "auth-name",
+                      children: "Display name",
+                    }),
+                    e.jsx(u, {
+                      id: "auth-name",
+                      value: j,
+                      onChange: (s) => p(s.target.value),
+                      placeholder: "How your name shows on reviews",
+                      autoComplete: "name",
+                    }),
+                  ],
+                })
+              : null,
+            t !== "verify"
+              ? e.jsxs("div", {
+                  className: "space-y-1.5",
+                  children: [
+                    e.jsx(d, { htmlFor: "auth-email", children: "Email" }),
+                    e.jsx(u, {
+                      id: "auth-email",
+                      type: "email",
+                      required: !0,
+                      value: i,
+                      onChange: (s) => f(s.target.value),
+                      autoComplete: "email",
+                    }),
+                  ],
+                })
+              : null,
+            t === "login" || t === "register"
+              ? e.jsxs("div", {
+                  className: "space-y-1.5",
+                  children: [
+                    e.jsx(d, {
+                      htmlFor: "auth-password",
+                      children: "Password",
+                    }),
+                    e.jsx(u, {
+                      id: "auth-password",
+                      type: "password",
+                      required: !0,
+                      minLength: 6,
+                      value: h,
+                      onChange: (s) => x(s.target.value),
+                      autoComplete:
+                        t === "login" ? "current-password" : "new-password",
+                      placeholder: "At least 6 characters",
+                    }),
+                  ],
+                })
+              : null,
+            t === "verify"
+              ? e.jsxs("div", {
+                  className: "space-y-1.5",
+                  children: [
+                    e.jsx(d, {
+                      htmlFor: "auth-code",
+                      children: "6-digit code",
+                    }),
+                    e.jsx(u, {
+                      id: "auth-code",
+                      inputMode: "numeric",
+                      pattern: "[0-9]{6}",
+                      maxLength: 6,
+                      required: !0,
+                      value: b,
+                      onChange: (s) =>
+                        c(s.target.value.replace(/\D/g, "").slice(0, 6)),
+                      autoComplete: "one-time-code",
+                      placeholder: "",
+                      className: "tracking-[0.35em] text-center text-lg",
+                    }),
+                  ],
+                })
+              : null,
+            e.jsx(B, {
+              type: "submit",
+              className: "w-full",
+              disabled: y,
+              children: y
+                ? "Please wait…"
+                : t === "login"
+                  ? "Sign in"
+                  : t === "register"
+                    ? "Create account"
+                    : t === "verify"
+                      ? "Verify and sign in"
+                      : "Send reset link",
+            }),
+          ],
+        }),
+        e.jsxs("div", {
+          className: "flex flex-col gap-2",
+          children: [
+            t === "login"
+              ? e.jsxs(e.Fragment, {
+                  children: [
+                    e.jsx("button", {
+                      type: "button",
+                      className:
+                        "text-sm text-muted-foreground hover:text-primary transition-colors text-left",
+                      onClick: () => a("register"),
+                      children: "No account? Create one",
+                    }),
+                    e.jsx("button", {
+                      type: "button",
+                      className:
+                        "text-sm text-muted-foreground hover:text-primary transition-colors text-left",
+                      onClick: () => a("forgot"),
+                      children: "Forgot password?",
+                    }),
+                  ],
+                })
+              : null,
+            t === "verify"
+              ? e.jsxs(e.Fragment, {
+                  children: [
+                    e.jsx("button", {
+                      type: "button",
+                      className:
+                        "text-sm text-muted-foreground hover:text-primary transition-colors text-left",
+                      onClick: () => void D(),
+                      disabled: y,
+                      children: "Resend code",
+                    }),
+                    e.jsx("button", {
+                      type: "button",
+                      className:
+                        "text-sm text-muted-foreground hover:text-primary transition-colors text-left",
+                      onClick: () => a("login"),
+                      children: "Back to sign in",
+                    }),
+                  ],
+                })
+              : null,
+            t === "register" || t === "forgot"
+              ? e.jsx("button", {
+                  type: "button",
+                  className:
+                    "text-sm text-muted-foreground hover:text-primary transition-colors text-left",
+                  onClick: () => a("login"),
+                  children: "Back to sign in",
+                })
+              : null,
+          ],
+        }),
+      ],
+    }),
+  });
+};
+export { Q as AuthModal };

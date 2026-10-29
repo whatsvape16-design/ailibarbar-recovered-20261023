@@ -1,0 +1,163 @@
+import { t as n, j as e, N as c, L as o } from "./react-vendor-R4T0bNIa.js";
+import { A as d, a as x, b as p, c as u } from "./accordion-BBH6Vkfz.js";
+import {
+  u as h,
+  U as b,
+  S as g,
+  N as j,
+  ap as f,
+  Q as N,
+  F as v,
+} from "./index-Bwn3vGAd.js";
+import { M as r } from "./ManufacturerVerifyText-Dr_h7BDx.js";
+import { g as A } from "./faq-topics-BsVQeyl5.js";
+import { g as q } from "./content-figures-Bki_EQx4.js";
+import { b as F } from "./ContentFigure-DsDVXXXr.js";
+import "./ui-vendor-DvfZJg73.js";
+import "./utils-CytzSlOG.js";
+import "./icons-vendor-BquxQ5DR.js";
+import "./query-vendor-L3kbwvGJ.js";
+import "./CatalogueImage-3ZWkwIDw.js";
+const H = () => {
+  h();
+  const { slug: i } = n(),
+    s = A(i);
+  if (!s) return e.jsx(c, { to: "/faq", replace: !0 });
+  const t = `/faq/${s.slug}`,
+    l = b(
+      s.items,
+      [
+        { name: "Home", path: "/" },
+        { name: "FAQ", path: "/faq" },
+        { name: s.title, path: t },
+      ],
+      t,
+    );
+  return e.jsxs("div", {
+    className: "min-h-screen bg-background",
+    children: [
+      e.jsx(g, {
+        title: `${s.title} | Alibarbar Australia`,
+        description: s.description,
+        path: t,
+        jsonLd: l,
+      }),
+      e.jsx(j, {}),
+      e.jsx("main", {
+        className: "pt-[calc(6rem+env(safe-area-inset-top))] pb-16 sm:pb-24",
+        children: e.jsxs("div", {
+          className: "container max-w-3xl",
+          children: [
+            e.jsxs("nav", {
+              "aria-label": "Breadcrumb",
+              className: "text-sm text-muted-foreground mb-6",
+              children: [
+                e.jsx(o, {
+                  to: "/",
+                  className: "hover:text-primary",
+                  children: "Home",
+                }),
+                e.jsx("span", { className: "mx-2", children: "/" }),
+                e.jsx(o, {
+                  to: "/faq",
+                  className: "hover:text-primary",
+                  children: "FAQ",
+                }),
+                e.jsx("span", { className: "mx-2", children: "/" }),
+                e.jsx("span", {
+                  className: "text-foreground",
+                  children: s.title,
+                }),
+              ],
+            }),
+            e.jsxs("header", {
+              className: "mb-10",
+              children: [
+                e.jsx("p", {
+                  className:
+                    "text-xs uppercase tracking-[0.25em] text-primary mb-3 font-semibold",
+                  children: "FAQ Hub",
+                }),
+                e.jsx("h1", {
+                  className:
+                    "text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight",
+                  children: s.title,
+                }),
+                e.jsx("p", {
+                  className:
+                    "text-muted-foreground mt-4 text-sm sm:text-base leading-relaxed",
+                  children: e.jsx(r, { text: s.intro }),
+                }),
+                s.slug === "authenticity"
+                  ? e.jsx("p", {
+                      className:
+                        "text-muted-foreground mt-4 text-sm sm:text-base leading-relaxed",
+                      children: e.jsx(r, { text: f }),
+                    })
+                  : null,
+                e.jsx("div", {
+                  className: "mt-6",
+                  children: e.jsx(N, {
+                    data: {
+                      question: `What does the ${s.title} cover?`,
+                      answer: s.description,
+                    },
+                  }),
+                }),
+                e.jsx(F, { figures: q(s.slug) }),
+              ],
+            }),
+            e.jsx(d, {
+              type: "single",
+              collapsible: !0,
+              className:
+                "rounded-2xl border border-gold/25 bg-card/50 px-4 sm:px-6",
+              children: s.items.map((a, m) =>
+                e.jsxs(
+                  x,
+                  {
+                    value: `faq-topic-${m}`,
+                    className: "border-gold/15",
+                    children: [
+                      e.jsx(p, {
+                        className:
+                          "text-left text-sm sm:text-base font-semibold hover:text-primary",
+                        children: a.question,
+                      }),
+                      e.jsx(u, {
+                        className:
+                          "text-sm sm:text-base text-muted-foreground leading-relaxed",
+                        children: e.jsx(r, { text: a.answer }),
+                      }),
+                    ],
+                  },
+                  a.question,
+                ),
+              ),
+            }),
+            e.jsx("div", {
+              className:
+                "mt-10 rounded-2xl border border-gold/20 bg-card/50 p-6 text-center",
+              children: e.jsxs("p", {
+                className: "text-sm sm:text-base text-muted-foreground",
+                children: [
+                  "Still need help? Email",
+                  " ",
+                  e.jsx("a", {
+                    href: "mailto:orders@ailibarbar.com",
+                    className: "text-primary font-semibold hover:text-gold",
+                    children: "orders@ailibarbar.com",
+                  }),
+                  " ",
+                  "with your order number.",
+                ],
+              }),
+            }),
+          ],
+        }),
+      }),
+      e.jsx(v, {}),
+    ],
+  });
+};
+export { H as default };

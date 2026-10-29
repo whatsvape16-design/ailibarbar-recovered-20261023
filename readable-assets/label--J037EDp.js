@@ -1,0 +1,24 @@
+import { r as s, j as t } from "./react-vendor-R4T0bNIa.js";
+import { c as a } from "./utils-CytzSlOG.js";
+import { s as i } from "./ui-vendor-DvfZJg73.js";
+import { c as d } from "./index-BwobEAja.js";
+const l = s.forwardRef(({ className: e, type: o, ...r }, n) =>
+  t.jsx("input", {
+    type: o,
+    className: a(
+      "flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:h-10 md:text-sm",
+      e,
+    ),
+    ref: n,
+    ...r,
+  }),
+);
+l.displayName = "Input";
+const f = d(
+    "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+  ),
+  m = s.forwardRef(({ className: e, ...o }, r) =>
+    t.jsx(i, { ref: r, className: a(f(), e), ...o }),
+  );
+m.displayName = i.displayName;
+export { l as I, m as L };

@@ -1,0 +1,114 @@
+import { q as P, i as S, r as a, j as c } from "./react-vendor-R4T0bNIa.js";
+const f = "whatsapp-float-position",
+  N = () => {
+    const h = P(),
+      i = S(),
+      [m, u] = a.useState(!1),
+      [r, l] = a.useState(null),
+      s = a.useRef(null),
+      x =
+        i.pathname === "/checkout" ||
+        i.pathname === "/cart" ||
+        i.pathname.startsWith("/order-complete"),
+      g = a.useMemo(
+        () => ({
+          right: "max(1rem, env(safe-area-inset-right))",
+          bottom: "max(1rem, env(safe-area-inset-bottom))",
+        }),
+        [],
+      ),
+      d = (t, e) => {
+        if (typeof window > "u") return { x: t, y: e };
+        const n = 56,
+          o = 8;
+        return {
+          x: Math.min(Math.max(o, t), window.innerWidth - n - o),
+          y: Math.min(Math.max(o, e), window.innerHeight - n - o),
+        };
+      };
+    (a.useEffect(() => {
+      if (!(typeof window > "u"))
+        try {
+          const t = window.localStorage.getItem(f);
+          if (!t) return;
+          const e = JSON.parse(t);
+          if (
+            typeof (e == null ? void 0 : e.x) != "number" ||
+            typeof (e == null ? void 0 : e.y) != "number"
+          )
+            return;
+          l(d(e.x, e.y));
+        } catch {}
+    }, []),
+      a.useEffect(() => {
+        typeof window > "u" ||
+          !r ||
+          window.localStorage.setItem(f, JSON.stringify(r));
+      }, [r]));
+    const p = (t) => {
+        (t.currentTarget.hasPointerCapture(t.pointerId) &&
+          t.currentTarget.releasePointerCapture(t.pointerId),
+          (s.current = null));
+      },
+      w = (t) => {
+        ((s.current = {
+          pointerId: t.pointerId,
+          startX: t.clientX,
+          startY: t.clientY,
+          moved: !1,
+        }),
+          t.currentTarget.setPointerCapture(t.pointerId));
+      },
+      y = (t) => {
+        const e = s.current;
+        if (!e || e.pointerId !== t.pointerId) return;
+        const n = t.clientX - e.startX,
+          o = t.clientY - e.startY;
+        (!e.moved && Math.hypot(n, o) < 6) ||
+          ((e.moved = !0), u(!1), l(d(t.clientX - 28, t.clientY - 28)));
+      },
+      b = (t) => {
+        const e = s.current;
+        if (!e || e.pointerId !== t.pointerId) return;
+        const n = !e.moved;
+        (p(t), n && h("/whatsapp-qr"));
+      },
+      I = (t) => {
+        const e = s.current;
+        !e || e.pointerId !== t.pointerId || p(t);
+      },
+      M = r ? { left: `${r.x}px`, top: `${r.y}px` } : g;
+    return x || i.pathname === "/wholesale" || i.pathname === "/orders2589"
+      ? null
+      : c.jsxs("div", {
+          className: "fixed z-50",
+          style: M,
+          onMouseEnter: () => u(!0),
+          onMouseLeave: () => u(!1),
+          children: [
+            c.jsx("button", {
+              type: "button",
+              "aria-label": "Open WhatsApp QR page",
+              className:
+                "flex h-14 w-14 cursor-grab touch-none items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_10px_30px_rgba(0,0,0,0.25)] transition-transform duration-200 hover:scale-105 active:cursor-grabbing",
+              onPointerDown: w,
+              onPointerMove: y,
+              onPointerUp: b,
+              onPointerCancel: I,
+              children: c.jsx("svg", {
+                viewBox: "0 0 24 24",
+                "aria-hidden": "true",
+                className: "h-8 w-8 fill-current",
+                children: c.jsx("path", {
+                  d: "M19.05 4.94A9.86 9.86 0 0 0 12 2C6.49 2 2 6.49 2 12c0 1.76.46 3.49 1.34 5.02L2 22l5.09-1.33A9.95 9.95 0 0 0 12 22c5.51 0 10-4.49 10-10 0-2.67-1.04-5.18-2.95-7.06ZM12 20.29a8.28 8.28 0 0 1-4.2-1.15l-.3-.18-3.02.79.81-2.95-.2-.31A8.27 8.27 0 0 1 3.71 12c0-4.57 3.72-8.29 8.29-8.29 2.21 0 4.28.86 5.85 2.43a8.21 8.21 0 0 1 2.43 5.86c0 4.57-3.71 8.29-8.28 8.29Zm4.55-6.17c-.25-.13-1.48-.73-1.71-.82-.23-.08-.39-.13-.56.13-.16.25-.64.82-.79.99-.14.17-.28.2-.53.07-.25-.12-1.05-.39-2-1.24-.73-.64-1.23-1.43-1.37-1.67-.14-.24-.01-.37.1-.49.11-.1.25-.28.37-.42.12-.14.16-.24.24-.4.08-.17.04-.32-.02-.45-.06-.12-.56-1.35-.76-1.85-.2-.47-.4-.4-.56-.4h-.48c-.17 0-.45.06-.69.32-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.16 1.76 2.68 4.26 3.76 2.5 1.07 2.5.72 2.95.68.45-.04 1.48-.61 1.69-1.21.21-.6.21-1.11.15-1.21-.06-.1-.22-.17-.47-.3Z",
+                }),
+              }),
+            }),
+            c.jsx("div", {
+              className: `pointer-events-none absolute right-[72px] top-1/2 -translate-y-1/2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-base font-medium text-zinc-700 shadow-md transition-all duration-200 ${m ? "translate-x-0 opacity-100" : "translate-x-2 opacity-0"}`,
+              children: "WhatsApp",
+            }),
+          ],
+        });
+  };
+export { N as WhatsAppFloat };

@@ -1,0 +1,185 @@
+const i = {
+    src: "/images/ingot-9000-collection.webp",
+    width: 1198,
+    height: 798,
+  },
+  t = { src: "/images/ingot-9000-hero-pair.webp", width: 1200, height: 648 };
+function e(r, a) {
+  return { src: r.src, alt: a, width: r.width, height: r.height };
+}
+const s = {
+    "alibarbar-vs-iget":
+      "Alibarbar Ingot 9000 gold devices, the product compared with the IGET Bar on this page",
+    "alibarbar-vs-hqd":
+      "Alibarbar Ingot 9000 gold devices, the product compared with the HQD Cuvie Plus on this page",
+    "alibarbar-vs-gunnpod":
+      "Alibarbar Ingot 9000 gold devices, the product compared with the Gunnpod 2000 on this page",
+    "alibarbar-vs-kuz":
+      "Alibarbar Ingot 9000 gold devices, the product compared with the KUZ x10000 on this page",
+    "alibarbar-vs-relx":
+      "Alibarbar Ingot 9000 gold devices, the product compared with the RELX Infinity on this page",
+    "alibarbar-vs-geek-bar":
+      "Alibarbar Ingot 9000 gold devices, the product compared with the Geek Bar Pulse on this page",
+  },
+  o = {
+    shipping: [
+      e(i, "Alibarbar Ingot 9000 devices packed for delivery in Australia"),
+    ],
+    payment: [
+      e(
+        t,
+        "Alibarbar Ingot 9000 gold devices available to order with the payment methods in this FAQ",
+      ),
+    ],
+    product: [
+      e(
+        i,
+        "Alibarbar Ingot 9000 disposable vapes described in the product FAQ",
+      ),
+    ],
+    authenticity: [
+      e(
+        i,
+        "Alibarbar Ingot 9000 devices and retail boxes covered by the authenticity FAQ",
+      ),
+    ],
+    legal: [
+      e(
+        t,
+        "Alibarbar Ingot 9000 devices discussed in the Australian legal and safety FAQ",
+      ),
+    ],
+  },
+  n = {
+    "mesh-coil": e(
+      t,
+      "Alibarbar Ingot 9000 gold devices, which use a mesh coil",
+    ),
+    "9000-puffs": e(i, "Alibarbar Ingot 9000 devices rated up to 9000 puffs"),
+    "disposable-vape-australia": e(
+      i,
+      "Alibarbar Ingot 9000 disposable vapes sold to adults in Australia",
+    ),
+    "alibarbar-ingot-9000": e(
+      i,
+      "Alibarbar Ingot 9000 device lineup in gold and other finishes",
+    ),
+    "alibarbar-vs-iget": e(
+      t,
+      "Alibarbar Ingot 9000 gold devices, the store's product in the IGET comparison hub",
+    ),
+  },
+  d = {
+    alibarbar: e(
+      i,
+      "Alibarbar Ingot 9000 devices sold under the Alibarbar name",
+    ),
+    iget: e(
+      t,
+      "Alibarbar Ingot 9000 gold devices, shown as this store's product on the IGET brand guide",
+    ),
+    hqd: e(
+      t,
+      "Alibarbar Ingot 9000 gold devices, shown as this store's product on the HQD brand guide",
+    ),
+    gunnpod: e(
+      t,
+      "Alibarbar Ingot 9000 gold devices, shown as this store's product on the Gunnpod brand guide",
+    ),
+    kuz: e(
+      t,
+      "Alibarbar Ingot 9000 gold devices, shown as this store's product on the KUZ brand guide",
+    ),
+    "geek-bar": e(
+      t,
+      "Alibarbar Ingot 9000 gold devices, shown as this store's product on the Geek Bar brand guide",
+    ),
+  };
+function b() {
+  return e(
+    t,
+    "Two Alibarbar Ingot 9000 gold disposable vapes shown side by side",
+  );
+}
+function c(r) {
+  if (r.leftProductSlug && r.rightProductSlug)
+    return { kind: "products", slugs: [r.leftProductSlug, r.rightProductSlug] };
+  const a = s[r.slug];
+  return {
+    kind: "figures",
+    figures: [
+      e(
+        t,
+        a ??
+          "Alibarbar Ingot 9000 gold devices, the product this comparison describes",
+      ),
+    ],
+  };
+}
+function g() {
+  return e(i, "Alibarbar Ingot 9000 devices covered by the store FAQ");
+}
+function l(r) {
+  return o[r] ?? [e(i, "Alibarbar Ingot 9000 devices covered by this FAQ")];
+}
+function u() {
+  return e(
+    t,
+    "Alibarbar Ingot 9000 gold devices featured across these topic guides",
+  );
+}
+function h(r) {
+  if (r === "peach-ice") return { kind: "products", slugs: ["peach-ice"] };
+  const a = n[r];
+  return {
+    kind: "figures",
+    figures: a
+      ? [a]
+      : [e(i, "Alibarbar Ingot 9000 devices discussed in this topic")],
+  };
+}
+function p() {
+  return e(i, "Alibarbar Ingot 9000 devices from the brand this store sells");
+}
+function v(r) {
+  const a = d[r];
+  return a
+    ? [a]
+    : [
+        e(
+          t,
+          "Alibarbar Ingot 9000 gold devices, shown as this store's product on this brand guide",
+        ),
+      ];
+}
+function I() {
+  return e(
+    i,
+    "Alibarbar Ingot 9000 devices ranked for adult buyers in Australia",
+  );
+}
+function A() {
+  return e(
+    i,
+    "Alibarbar Ingot 9000 devices in several finishes, the subject of this device review",
+  );
+}
+function f() {
+  return e(
+    i,
+    "Alibarbar Ingot 9000 devices in several finishes on the device review card",
+  );
+}
+export {
+  v as a,
+  p as b,
+  b as c,
+  f as d,
+  A as e,
+  g as f,
+  l as g,
+  h,
+  c as i,
+  I as j,
+  u as t,
+};
